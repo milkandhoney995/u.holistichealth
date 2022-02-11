@@ -15,7 +15,7 @@ export default function Philosophy() {
       <h1>
         全ての人に<br></br>ホリスティック栄養学を
       </h1>
-      <div className="flex__columnCenter">
+      <div className="section flex__columnCenter">
         <div className="container--large">
           <h2 className="section__titleCenter">ホリスティック栄養学とは</h2>
           <p>

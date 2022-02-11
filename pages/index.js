@@ -17,7 +17,7 @@ export default function Home() {
       <div className="container__top">
         <Image
           src="/images/site/570x570.png"
-          width={770}
+          width={570}
           height={570}
           alt="debug"
         />
@@ -31,10 +31,10 @@ export default function Home() {
       <div className="section">
         <div className="section__container">
           <div>
-            <h1>
+            <h2>
               食事から自分を探す<br></br>ヘルスコーチング
-            </h1>
-            <p>
+            </h2>
+            <p className="container__text">
               私たちは、私たちの食べるものでできています<br></br>
               <br></br>
               大事な人と食べる<br></br>
@@ -57,7 +57,7 @@ export default function Home() {
             alt="debug"
           />
         </div>
-        <div className="button__container">
+        <div className="container__button">
           <div className="button">
             <Link href="/philosophy">Holistic Health</Link>
           </div>
@@ -76,8 +76,8 @@ export default function Home() {
           />
           <div className="section__text">
             <div>
-              <h1>あなたのセーフスペースに</h1>
-              <p>
+              <h2>あなたのセーフスペースに</h2>
+              <p className="container__text">
                 私のセッションは、どんなことを言っても大丈夫な場所です。
                 <br></br>
                 <br></br>
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </div>
       <div className="latestBlog section">
-        <h1>Blog</h1>
+        <h2>Blog</h2>
         <ul className="center latestBlog__list">
           <li className="latestBlog__item">
             <Image

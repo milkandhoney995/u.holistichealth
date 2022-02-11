@@ -15,6 +15,12 @@ body {
     "Yu Mincho", "MS PMincho", serif;
   line-height: 1.5;
 }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -81,6 +87,18 @@ ul {
     margin: 0 24px;
     margin-top: 5rem;
   }
+  &__text {
+    margin-top: 1.5rem;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 2rem 0 2rem;
+  }
+  &__button .button {
+    margin-top: 0;
+  }
 }
 // title
 .text {
@@ -118,18 +136,13 @@ ul {
 .button {
   width: 250px;
   text-align: center;
+  margin-top: 1rem;
   padding: 1rem 2rem;
   border-radius: 4px;
   -webkit-box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
     2px 5px 11px 1px rgba(204, 204, 204, 0.86);
   box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
     2px 5px 11px 1px rgba(204, 204, 204, 0.86);
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem 2rem 0 2rem;
-  }
   &--last {
     margin-left: 2rem;
   }
