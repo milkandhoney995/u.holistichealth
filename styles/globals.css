@@ -71,6 +71,9 @@ ul {
 .container--large {
   width: 60%;
 }
+.container--center {
+  margin: 0 auto;
+}
 .container__top {
   display: flex;
   align-items: center;
@@ -79,11 +82,18 @@ ul {
   margin-top: 5rem;
 }
 
+.text--center {
+  text-align: center;
+}
+
 .title--small {
   font-size: 1rem;
   color: #b2b2a2;
 }
 .title__top {
+  text-align: center;
+}
+.title--center {
   text-align: center;
 }
 

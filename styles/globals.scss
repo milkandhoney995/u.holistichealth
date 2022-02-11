@@ -71,6 +71,9 @@ ul {
   &--large {
     width: 60%;
   }
+  &--center {
+    margin: 0 auto;
+  }
   &__top {
     display: flex;
     align-items: center;
@@ -80,12 +83,20 @@ ul {
   }
 }
 // title
+.text {
+  &--center {
+    text-align: center;
+  }
+}
 .title {
   &--small {
     font-size: 1rem;
     color: #b2b2a2;
   }
   &__top {
+    text-align: center;
+  }
+  &--center {
     text-align: center;
   }
 }
