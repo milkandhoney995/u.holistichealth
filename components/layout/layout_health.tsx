@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import Navigation from "./navigation/navigation.jsx";
-import Footer from "./footer/footer.jsx";
+import Navigation from "./navigation/navigation";
+import Footer from "./footer/footer";
 
-function Layout(props) {
+function LayoutHealth(props) {
   return (
     <Fragment>
       <Navigation></Navigation>
@@ -11,4 +11,4 @@ function Layout(props) {
     </Fragment>
   );
 }
-export default Layout;
+export default LayoutHealth;

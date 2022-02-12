@@ -1,6 +1,6 @@
 import Link from "next/link";
 import classes from "./navigation.module.scss";
-import Logo from "../logo/logo.jsx";
+import Logo from "../logo/logo";
 
 function Navigation() {
   return (

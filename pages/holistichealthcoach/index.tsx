@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Hero from "../components/home-page/hero/hero.jsx";
+// import Hero from "../components/home-page/hero/hero";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
@@ -126,4 +126,12 @@ export default function Home() {
       </div>
     </Fragment>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      layout: "health",
+    },
+  };
 }
