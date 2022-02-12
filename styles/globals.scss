@@ -4,13 +4,15 @@
   box-sizing: border-box;
   margin: 0;
 }
-html {
-  background-color: #f5e8da;
-}
+// html {
+//   background-color: #f5e8da;
+// }
 body {
   margin: 0;
-  font-family: "Cochin", "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
-    "Yu Mincho", "MS PMincho", serif;
+  font-family: "Cochin", "YuGothic", "Times New Roman",
+    "FOT-筑紫Aオールド明朝 Pr6 R", TsukuAOldMinPr6-R,
+    "FOT-筑紫Aオールド明朝 Pr6", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
+    "MS PMincho", serif;
   line-height: 1.5;
 }
 h1 {

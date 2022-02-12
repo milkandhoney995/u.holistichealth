@@ -13,16 +13,16 @@ function Navigation() {
       <nav>
         <ul>
           <li>
-            <Link href="/philosophy">Holistic Health</Link>
+            <Link href="/holistichealthcoach/philosophy">Holistic Health</Link>
           </li>
           <li>
-            <Link href="/profile">About Me</Link>
+            <Link href="/holistichealthcoach/profile">About Me</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/holistichealthcoach/blog">Blog</Link>
           </li>
           <li>
-            <Link href="/service">Service</Link>
+            <Link href="/holistichealthcoach/service">Service</Link>
           </li>
         </ul>
       </nav>

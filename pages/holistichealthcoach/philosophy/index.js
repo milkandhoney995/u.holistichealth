@@ -6,10 +6,10 @@ export default function Philosophy() {
   return (
     <Fragment>
       <Head>
-        <title>u.holistichealthcoach</title>
+        <title>u.holistichealth</title>
         <meta
           name="description"
-          content="this is u.holistichealthcoach's website."
+          content="this is u.holistichealth's website."
         />
       </Head>
       <h1>
