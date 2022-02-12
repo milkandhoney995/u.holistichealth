@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Hero from "../components/home-page/hero/hero";
+// import Hero from "../components/home-page/hero/hero.jsx";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";

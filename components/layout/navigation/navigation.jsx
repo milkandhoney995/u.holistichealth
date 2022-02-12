@@ -1,11 +1,11 @@
 import Link from "next/link";
 import classes from "./navigation.module.scss";
-import Logo from "../logo/logo";
+import Logo from "../logo/logo.jsx";
 
 function Navigation() {
   return (
     <header className={classes.header}>
-      <Link href="/">
+      <Link href="/holistichealthcoach">
         <a>
           <Logo />
         </a>

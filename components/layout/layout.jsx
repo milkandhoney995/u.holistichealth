@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import Navigation from "./navigation/navigation";
-import Footer from "./footer/footer";
+import Navigation from "./navigation/navigation.jsx";
+import Footer from "./footer/footer.jsx";
 
 function Layout(props) {
   return (
