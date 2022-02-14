@@ -15,7 +15,41 @@ export default function Service() {
       </Head>
       <h1 className="title__top">Service</h1>
       <div className="section section__container">
-        <div className="container--medium">
+        <Image
+          className="image"
+          src="/images/site/570x570.png"
+          width={600}
+          height={600}
+          alt="debug"
+        />
+        <div className="container--medium section__text">
+          <h2>単発セッション</h2>
+          <p>
+            セッションの前日までにワークシートを記入していただきます。
+            <br></br>
+            <br></br>
+            記入していただいた内容をベースに、過去と現在の食生活、人間関係、環境の変化など多方面から今の自分を深掘りしていきます。{" "}
+            <br></br>
+            <br></br>
+            話を聞いてほしい、ちょっと試してみたいなど理由はなんでも構いません。
+            <br></br>
+            <br></br>1セッション50分<br></br>
+            初回無料、2回目以降3,000円。
+          </p>
+          <div className="button button--pink">
+            <Link href="/">Book</Link>
+          </div>
+        </div>
+      </div>
+      <div className="section section__container">
+        <Image
+          className="image"
+          src="/images/site/570x570.png"
+          width={600}
+          height={600}
+          alt="debug"
+        />
+        <div className="container--medium section__text">
           <h2>長期コーチング</h2>
           <p>
             もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
@@ -31,61 +65,19 @@ export default function Service() {
             甘いものの食べ過ぎをやめたい<br></br> - お酒、タバコをやめたい
             <br></br> - 自炊を頑張りたい
           </p>
-        </div>
-        <Image
-          src="/images/site/570x570.png"
-          width={600}
-          height={600}
-          alt="debug"
-        />
-      </div>
-      <div className="section section__container">
-        <Image
-          src="/images/site/570x570.png"
-          width={600}
-          height={600}
-          alt="debug"
-        />
-        <div className="container--medium section__text">
-          <p>
-            最初の3回は、お試しで無料<br></br>
-            それ以降は一回3,000円 × 9回です。<br></br>
-            <br></br>
-            セッションはオンライン・対面両形式で受けられます。<br></br>
-            対面の場合は、カフェなどお好きな場所をご指定ください。<br></br>
-            交通費は料金に含まれませんので、ご了承ください。
-          </p>
-          <div className="button">
+          <div className="button button--pink">
             <Link href="/">Book</Link>
           </div>
         </div>
-      </div>
-      <div className="section section__container">
-        <div className="container--medium section__text">
-          <h2>単発セッション</h2>
-          <p>
-            セッションの前日までにワークシートを記入していただきます。
-            <br></br>
-            <br></br>
-            記入していただいた内容をベースに、過去と現在の食生活、人間関係、環境の変化など多方面から今の自分を深掘りしていきます。{" "}
-            <br></br>
-            <br></br>
-            話を聞いてほしい、ちょっと試してみたいなど理由はなんでも構いません。
-            <br></br>
-            <br></br>1セッション50分<br></br>
-            初回無料、2回目以降3,000円。
-          </p>
-          <div className="button">
-            <Link href="/">Book</Link>
-          </div>
-        </div>
-        <Image
-          src="/images/site/570x570.png"
-          width={600}
-          height={600}
-          alt="debug"
-        />
       </div>
     </Fragment>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      layout: "health",
+    },
+  };
 }

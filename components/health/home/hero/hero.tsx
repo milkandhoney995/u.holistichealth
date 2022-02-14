@@ -6,6 +6,7 @@ function Hero() {
     <div className={classes.hero}>
       <div className={classes.image}>
         <Image
+          className="image"
           src="/images/site/hero1.jpg"
           width={1200}
           height={600}

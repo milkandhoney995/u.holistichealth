@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import Navigation from "./navigation/navigation";
+import NavigationWeb from "./navigation/navigationWeb";
 import Footer from "./footer/footer";
 
 function LayoutWeb(props) {
   return (
     <Fragment>
-      <Navigation></Navigation>
+      <NavigationWeb></NavigationWeb>
       <main>{props.children}</main>
       <Footer></Footer>
     </Fragment>

@@ -1,41 +1,47 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 10%;
-  width: 100%;
-  height: 6rem;
-  color: #3f3931;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("/images/life/veg.jpg") center / cover;
+    &__navi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        height: 4rem;
+        background: #fff;
+    }
 }
 
 .header ul {
-  display: flex;
-  align-items: baseline;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .header li {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .header a {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 .header a:hover,
 .header a:active,
 .header a.active {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 @media (min-width: 768px) {
-  .header ul {
-    gap: 0.5rem;
-  }
+    .header ul {
+        gap: 0.5rem;
+    }
 
-  .header a {
-    font-size: 1.25rem;
-  }
+    .header a {
+        font-size: 1.25rem;
+    }
 }

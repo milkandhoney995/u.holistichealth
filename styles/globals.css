@@ -100,6 +100,11 @@ ul {
   margin-top: 0;
 }
 
+.image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .text--center {
   text-align: center;
 }
@@ -140,8 +145,12 @@ ul {
 .button--last {
   margin-left: 2rem;
 }
-.button:hover {
+.button--pink:hover {
   background-color: #e7baa0;
+  color: #ffffff;
+}
+.button--green:hover {
+  background-color: #cbe87b;
   color: #ffffff;
 }
 .button:hover > a {
