@@ -2,31 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 4rem;
+    padding: 0 10%;
+    border: 1px solid #ccc;
     background: #fff;
-    &__navi {
-        position: relative;
-        width: 100%;
-        min-height: 100vh;
-        background: url("/images/life/veg.jpg") center / cover;
-    }
+    z-index: 2;
 }
 
-.header ul {
+.menu {
     display: flex;
     align-items: baseline;
     margin: 0;
     padding: 0;
     list-style: none;
+    transition: 0.3s;
 }
 
-.header li {
+.menuList {
     margin: 0 1rem;
 }
 
 .header a {
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .header a:hover,
@@ -41,6 +41,6 @@
     }
 
     .header a {
-        font-size: 1.25rem;
+        font-size: 0.875rem;
     }
 }

@@ -11,20 +11,20 @@ function Navigation() {
                 </a>
             </Link>
             <nav>
-                <ul>
-                    <li>
+                <ul className={classes.menu}>
+                    <li className={classes.menuList}>
                         <Link href="/holistichealthcoach">Home</Link>
                     </li>
-                    <li>
+                    <li className={classes.menuList}>
                         <Link href="/holistichealthcoach/philosophy">Holistic Health</Link>
                     </li>
-                    <li>
+                    <li className={classes.menuList}>
                         <Link href="/holistichealthcoach/profile">About Me</Link>
                     </li>
-                    <li>
+                    <li className={classes.menuList}>
                         <Link href="/holistichealthcoach/blog">Blog</Link>
                     </li>
-                    <li>
+                    <li className={classes.menuList}>
                         <Link href="/holistichealthcoach/service">Service</Link>
                     </li>
                 </ul>

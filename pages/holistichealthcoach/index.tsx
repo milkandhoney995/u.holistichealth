@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-//import Hero from "../components/health/home/hero/hero.tsx";
+import Hero from "../../components/hero/hero";
 // import Scroll from "../../components/scroll/scroll";
 import Button from "../../components/button/button";
 import { client } from "../../libs/client";
 import { Fragment } from "react";
-import Blog from "./blog";
 
 export default function Home({ blog }) {
     return (
@@ -15,7 +14,7 @@ export default function Home({ blog }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="hero"></div>
+            <Hero bgImageUrl='"/images/life/sunnyday.png"' />
             <div className="section">
                 <div className="section section__container">
                     <div>

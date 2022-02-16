@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import Button from "../../../components/button/button";
 import Hero from "../../../components/hero/hero";
 import { Fragment } from "react";
@@ -13,7 +12,7 @@ export default function Service() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="Service" bgImageUrl='"/images/life/hill.jpg"' />
-            <div className="section section section__container recommend">
+            <div className="section section__container recommend">
                 <h2>こんな人におすすめ</h2>
                 <div>
                     <br></br>- 人間関係を良くしたい<br></br>- 疲れを取りたい<br></br>-
@@ -22,7 +21,7 @@ export default function Service() {
                     <br></br> - 自炊を頑張りたい
                 </div>
             </div>
-            <div className="section section section__container">
+            <div className="section section__container">
                 <Image
                     objectFit="cover"
                     src="/images/life/veg1.jpg"
@@ -47,7 +46,7 @@ export default function Service() {
                     <Button href='"/"' label="Book" />
                 </div>
             </div>
-            <div className="section section section__container">
+            <div className="section section__container">
                 <Image
                     objectFit="cover"
                     src="/images/life/strawberry.jpg"

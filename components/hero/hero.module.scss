@@ -8,8 +8,8 @@
     min-height: 80vh;
     padding-left: 2rem;
     color: #fff;
-    background: url("/images/life/veg.jpg") center / cover;
-    &--service {
-        background: url("/images/life/hill.jpg") center / cover;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // background: url("/images/life/veg.jpg") center / cover;
 }

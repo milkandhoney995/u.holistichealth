@@ -5,13 +5,11 @@ import Logo from "../logo/logo";
 function NavigationWeb() {
     return (
         <header className={classes.header}>
-            <div className={classes.header__navi}>
-                <Link href="/">
-                    <a>
-                        <Logo />
-                    </a>
-                </Link>
-            </div>
+            <Link href="/">
+                <a>
+                    <Logo />
+                </a>
+            </Link>
             <nav>
                 <ul>
                     <li>

@@ -11,49 +11,9 @@ export default function Blog({ blog }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-
-            <div className="section flex__spaceBetween">
-                <div className="sidemenu container--small">
-                    <div className="sidemenu__profile">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={70}
-                            height={70}
-                            alt="debug"
-                        />
-                    </div>
-                    <div className="sentence sidemenu__info">Utano Harada</div>
-                    <div className="caption sidemenu__info">
-                        Holistic Health Coach & Web Front Engineer
-                    </div>
-                    <div className="sidemenu__sns">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                    </div>
-                </div>
-
+            <div className="section">
+                <h1 className="title--center">Blog</h1>
                 <div className="container--large">
-                    <h1 className="title__top">Blog</h1>
                     <div className="section section__container">
                         <ul className="center latestBlog__list">
                             {blog.map((blog) => (

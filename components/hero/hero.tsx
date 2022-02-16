@@ -9,6 +9,7 @@ function Hero(props) {
             }}
         >
             <h1>{props.pageTitle}</h1>
+            <div dangerouslySetInnerHTML={{ __html: props.heroBody }}></div>
         </div>
     );
 }
