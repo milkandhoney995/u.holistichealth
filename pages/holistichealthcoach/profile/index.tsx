@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Hero from "../../../components/hero/hero";
 import { Fragment } from "react";
 
 export default function Profile() {
@@ -9,16 +10,10 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Image
-                className="image"
-                src="/images/site/570x570.png"
-                width={1000}
-                height={500}
-                alt="debug"
-            />
-            <div className="section__container">
+            <Hero pageTitle="About Me" bgImageUrl='"/images/life/sunnyday.png"' />
+            <div className="section section__container">
                 <Image
-                    className="image"
+                    objectFit="cover"
                     src="/images/site/570x570.png"
                     width={500}
                     height={500}
@@ -27,7 +22,7 @@ export default function Profile() {
                 <div className="container--medium">
                     <h2>Utano Harada</h2>
                     <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
-                    <p>
+                    <p className="container__text">
                         皆さん、こんにちは。Utanoです。<br></br>
                         サイトに足を運んでくださって、ありがとうございます。
                         <br></br>
@@ -42,9 +37,9 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section__container">
+            <div className="section section__container">
                 <div className="container--medium">
-                    <p>
+                    <p className="container__text">
                         私は、ストレスと極端な食事制限のせいで心身のバランスを壊したことがあります。
                         <br></br>
                         卒業研究も就職活動もうまく行かず、<br></br>
@@ -62,23 +57,23 @@ export default function Profile() {
                     </p>
                 </div>
                 <Image
-                    className="image"
+                    objectFit="cover"
                     src="/images/life/meal.jpg"
                     width={500}
                     height={500}
                     alt="debug"
                 />
             </div>
-            <div className="section__container">
+            <div className="section section__container">
                 <Image
-                    className="image"
+                    objectFit="cover"
                     src="/images/life/strawberry.jpg"
                     width={500}
                     height={500}
                     alt="debug"
                 />
                 <div className="container--medium">
-                    <p>
+                    <p className="container__text">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
                         <br></br>
                         だけれど、生き急いで、ゆっくり食事について考える時間がない人が多いなあ、という気がしています。

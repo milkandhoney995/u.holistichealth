@@ -1,0 +1,30 @@
+.button {
+    width: 250px;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
+        2px 5px 11px 1px rgba(204, 204, 204, 0.86);
+    box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
+        2px 5px 11px 1px rgba(204, 204, 204, 0.86);
+    &--last {
+        margin-left: 2rem;
+    }
+    &:hover {
+        background-color: #e7baa0;
+        color: #ffffff;
+    }
+    &--pink:hover {
+        background-color: #e7baa0;
+        color: #ffffff;
+    }
+    &--green:hover {
+        background-color: #cbe87b;
+        color: #ffffff;
+    }
+    &:hover > a {
+        color: #ffffff;
+    }
+}

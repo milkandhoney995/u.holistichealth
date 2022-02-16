@@ -1,23 +1,69 @@
 import Head from "next/head";
 import Image from "next/image";
+import { client } from "../../../libs/client";
 import { Fragment } from "react";
 
-export default function PostId({ post }) {
+export default function PostId({ data }) {
     return (
         <Fragment>
             <Head>
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Image
-                className="image"
-                src="/images/site/570x570.png"
-                width={1000}
-                height={500}
-                alt="debug"
-            />
-            <div className="section__container">
-                <h1>{post.id}</h1>
+            <div className="post__container">
+                <div className="sidemenu">
+                    <div className="sidemenu__profile">
+                        <Image
+                            objectFit="cover"
+                            src="/images/site/570x570.png"
+                            width={70}
+                            height={70}
+                            alt="debug"
+                        />
+                    </div>
+                    <div className="sentence sidemenu__info">Utano Harada</div>
+                    <div className="caption sidemenu__info">
+                        Holistic Health Coach & Web Front Engineer
+                    </div>
+                    <div className="sidemenu__sns">
+                        <Image
+                            objectFit="cover"
+                            src="/images/site/570x570.png"
+                            width={25}
+                            height={25}
+                            alt="debug"
+                        />
+                        <Image
+                            objectFit="cover"
+                            src="/images/site/570x570.png"
+                            width={25}
+                            height={25}
+                            alt="debug"
+                        />
+                        <Image
+                            objectFit="cover"
+                            src="/images/site/570x570.png"
+                            width={25}
+                            height={25}
+                            alt="debug"
+                        />
+                    </div>
+                </div>
+                <div className="post">
+                    <h1>{data.title}</h1>
+                    <Image
+                        className="post__image"
+                        src={data.image.url}
+                        width={700}
+                        height={500}
+                        objectFit="cover"
+                        alt="debug"
+                    />
+                    <div
+                        className="post__sentence"
+                        dangerouslySetInnerHTML={{ __html: data.body }}
+                    ></div>
+                </div>
             </div>
         </Fragment>
     );
@@ -26,29 +72,22 @@ export default function PostId({ post }) {
 // ビルド時に呼び出される
 export async function getStaticPaths() {
     // 外部APIからデータを取得
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const posts = await res.json();
-
+    const data = await client.get({ endpoint: "blog" });
     // データに基づいて事前レンダリングするパスを取得
-    const paths = posts.map((post) => ({
-        params: { id: post.id },
-    }));
+    const paths = data.contents.map((content) => `/holistichealthcoach/blog/${content.id}`);
 
     // ビルド時に取得したパスのみを事前レンダリングする
     // { fallback: false } は他のルートが404であることを意味します
     return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params }) {
-    // paramsには投稿idが含まれている
-    // ルートが/posts/1のような場合、params.idは1
-    const res = await fetch(`/posts/${params.id}`);
-    const post = await res.json();
-
+export async function getStaticProps(context) {
+    const id = context.params.id;
+    const data = await client.get({ endpoint: "blog", contentId: id });
     return {
         props: {
             layout: "health",
-            post,
+            data,
         },
     };
 }

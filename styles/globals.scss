@@ -1,184 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 // html {
 //   background-color: #fddad6;
 // }
 body {
-  margin: 0;
-  font-family: "Cochin", "YuGothic", "Times New Roman",
-    "FOT-筑紫Aオールド明朝 Pr6 R", TsukuAOldMinPr6-R,
-    "FOT-筑紫Aオールド明朝 Pr6", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho",
-    "MS PMincho", serif;
-  line-height: 1.5;
+    margin: 0;
+    font-family: "Yu Gothic", "Cochin", "游ゴシック", YuGothic, "游ゴシック体",
+        "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    line-height: 1.5;
 }
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 a,
 a:hover {
-  text-decoration: none;
-  color: #3f3931;
-  cursor: pointer;
+    text-decoration: none;
+    color: #3f3931;
+    cursor: pointer;
 }
 
 button {
-  font: inherit;
-  cursor: pointer;
+    font: inherit;
+    cursor: pointer;
 }
 li,
 ul {
-  list-style: none;
+    list-style: none;
+}
+.border {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
 }
 // flex関連
 .flex {
-  display: flex;
-  &__columnCenter {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &--column {
+        flex-direction: column;
+    }
+    &__spaceBetween {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__columnCenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 .center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &--text {
-    text-align: center;
-  }
-}
-// block要素関連
-.section {
-  margin-top: 10rem;
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  &__titleCenter {
-    text-align: center;
-  }
-  &__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.container {
-  &--medium {
-    width: 45%;
-  }
-  &--large {
-    width: 60%;
-  }
-  &--center {
-    margin: 0 auto;
-  }
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 24px;
-    margin-top: 5rem;
-  }
-  &__text {
-    margin-top: 1.5rem;
-  }
-  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem 2rem 0 2rem;
-  }
-  &__button .button {
-    margin-top: 0;
-  }
+    &--text {
+        text-align: center;
+    }
+}
+.background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("/images/life/sky.png") center / cover;
+    color: #fff;
+}
+.hero {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 2rem;
+    color: #fff;
+    background: url("/images/life/veg.jpg") center / cover;
+    &--philosophy {
+        background: url("/images/life/sky.png") center / cover;
+    }
+    &--profile {
+        background: url("/images/life/sunnyday.png") center / cover;
+    }
+    &--service {
+        background: url("/images/life/hill.jpg") center / cover;
+    }
+}
+.recommend {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+// block要素関連
+.section {
+    margin-top: 5rem;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 5rem auto 0;
+    }
+    &__titleCenter {
+        text-align: center;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.container {
+    &--small {
+        width: 20%;
+    }
+    &--medium {
+        width: 45%;
+    }
+    &--large {
+        width: 80%;
+    }
+    &--center {
+        margin: 0 auto;
+    }
+    &__index {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 24px;
+        margin-top: 5rem;
+    }
+    &__text {
+        margin-top: 1.5rem;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 2rem 0 2rem;
+    }
+    &__button .button {
+        margin-top: 0;
+    }
 }
 .image {
-  object-fit: cover;
+    object-fit: cover;
 }
 // title
 .text {
-  &--center {
-    text-align: center;
-  }
+    &--center {
+        text-align: center;
+    }
 }
 .title {
-  &--small {
-    font-size: 1rem;
-    color: #b2b2a2;
-  }
-  &__top {
-    text-align: center;
-  }
-  &--center {
-    text-align: center;
-  }
+    &--small {
+        font-size: 1rem;
+        color: #b2b2a2;
+    }
+    &__top {
+        text-align: center;
+    }
+    &--center {
+        text-align: center;
+    }
 }
 
 .latestBlog {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__list {
-    padding-left: 0;
-  }
-  &__item {
-    width: 400px;
-    margin: 2rem;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list {
+        padding-left: 0;
+    }
+    &__item {
+        width: 400px;
+        margin: 2rem;
+    }
 }
 
 //button
-.button {
-  width: 250px;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  background: #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
-    2px 5px 11px 1px rgba(204, 204, 204, 0.86);
-  box-shadow: 2px 5px 11px 1px rgba(204, 204, 204, 0.86),
-    2px 5px 11px 1px rgba(204, 204, 204, 0.86);
-  &--last {
+.container__button > .lastButton {
     margin-left: 2rem;
-  }
-  &--pink:hover {
-    background-color: #e7baa0;
-    color: #ffffff;
-  }
-  &--green:hover {
-    background-color: #cbe87b;
-    color: #ffffff;
-  }
-  &:hover > a {
-    color: #ffffff;
-  }
 }
 // caption and sentence
 .caption,
 .sentence {
-  text-align: left;
+    text-align: left;
 }
 .caption {
-  font-size: 0.625rem;
-  color: #b2b2a2;
+    font-size: 0.625rem;
+    color: #b2b2a2;
 }
 .sentence {
-  font-size: 1.5rem;
-  color: #3f3931;
-  word-break: break-word;
+    font-size: 1.5rem;
+    color: #3f3931;
+    word-break: break-word;
 }
 // animation
 .shadow-drop-lr {
-  -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+//sidemenu
+.sidemenu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    &__sns {
+        margin: 0.5rem;
+    }
+}
+.post {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: scroll;
+    &__container {
+        display: flex;
+        position: relative;
+        margin-top: 5rem;
+    }
+    &__image {
+        margin-top: 1.5rem;
+    }
+    &__sentence {
+        margin-top: 2rem;
+        width: 80%;
+    }
 }

@@ -1,0 +1,15 @@
+.hero {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 2rem;
+    color: #fff;
+    background: url("/images/life/veg.jpg") center / cover;
+    &--service {
+        background: url("/images/life/hill.jpg") center / cover;
+    }
+}

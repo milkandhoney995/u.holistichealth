@@ -2,8 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 //import Hero from "../components/health/home/hero/hero.tsx";
+// import Scroll from "../../components/scroll/scroll";
+import Button from "../../components/button/button";
 import { client } from "../../libs/client";
 import { Fragment } from "react";
+import Blog from "./blog";
 
 export default function Home({ blog }) {
     return (
@@ -12,8 +15,9 @@ export default function Home({ blog }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
+            <div className="hero"></div>
             <div className="section">
-                <div className="section__container">
+                <div className="section section__container">
                     <div>
                         <h2>
                             食事から自分を探す<br></br>ヘルスコーチング
@@ -35,26 +39,26 @@ export default function Home({ blog }) {
                         </p>
                     </div>
                     <Image
-                        className="image"
-                        src="/images/site/570x570.png"
+                        src="/images/life/veg.jpg"
                         width={500}
                         height={500}
+                        objectFit="cover"
                         alt="debug"
                     />
                 </div>
                 <div className="container__button">
-                    <div className="button button--pink">
-                        <Link href="/holistichealthcoach/philosophy">Holistic Health</Link>
-                    </div>
-                    <div className="button button--last button--pink">
-                        <Link href="/holistichealthcoach/profile">About Me</Link>
-                    </div>
+                    <Button label="Philosophy" href="/holistichealthcoach/philosophy" />
+                    <Button
+                        className="lastButton"
+                        label="About Me"
+                        href="/holistichealthcoach/profile"
+                    />
                 </div>
             </div>
             <div className="section">
-                <div className="section__container">
+                <div className="section section__container">
                     <Image
-                        className="image"
+                        objectFit="cover"
                         src="/images/life/latte.jpg"
                         width={545}
                         height={552}
@@ -72,9 +76,7 @@ export default function Home({ blog }) {
                                 あなたのことについて話しませんか。
                             </p>
                         </div>
-                        <div className="button button--pink">
-                            <Link href="/holistichealthcoach/service">Service</Link>
-                        </div>
+                        <Button label="Service" href="/holistichealthcoach/service" />
                     </div>
                 </div>
             </div>
@@ -84,49 +86,20 @@ export default function Home({ blog }) {
                     {blog.map((blog) => (
                         <li key={blog.id} className="latestBlog__item">
                             <Image
-                                className="image"
+                                objectFit="cover"
                                 src={blog.image.url}
                                 width={400}
                                 height={400}
                                 alt="debug"
                             />
                             <p className="caption">{blog.created_at}</p>
-                            <Link href={`/blog/${blog.id}`}>
+                            <Link href={`holistichealthcoach/blog/${blog.id}`}>
                                 <a className="sentence">{blog.title}</a>
                             </Link>
                         </li>
                     ))}
                 </ul>
-                {/* <ul >
-                    <li >
-                        <Image
-                            src="/images/life/strawberry.jpg"
-                            width={400}
-                            height={400}
-                            alt="debug"
-                        />
-                        <p className="caption">YYYY.MM.DD</p>
-                        <p className="sentence">
-                            ニュースニュースニュースニュースニュースニュースニュースニュースニュース
-                        </p>
-                    </li>
-                    <li className="latestBlog__item">
-                        <Image
-                            className="image"
-                            src="/images/life/salada.jpg"
-                            width={400}
-                            height={400}
-                            alt="debug"
-                        />
-                        <p className="caption">YYYY.MM.DD</p>
-                        <p className="sentence">
-                            ニュースニュースニュースニュースニュースニュースニュースニュースニュース
-                        </p>
-                    </li>
-                </ul> */}
-                <div className="button button--pink">
-                    <Link href="/blog">Blog</Link>
-                </div>
+                <Button label="Blog" href="/holistichealthcoach/blog" />
             </div>
         </Fragment>
     );
@@ -137,7 +110,6 @@ export async function getStaticProps() {
     return {
         props: {
             layout: "health",
-
             blog: data.contents,
         },
     };
