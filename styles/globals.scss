@@ -55,19 +55,6 @@ ul {
         flex-direction: column;
     }
 }
-.background {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background: url("/images/life/sky.png") center / cover;
-    color: #fff;
-}
-.recommend {
-    margin: 0 auto;
-    width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
 // block要素関連
 .section {
     margin-top: 5rem;
@@ -80,11 +67,6 @@ ul {
             flex-direction: column;
             flex-wrap: wrap;
         }
-    }
-    &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     &--centeredColumn {
         display: flex;
@@ -101,6 +83,9 @@ ul {
         width: 20%;
     }
     &--sentence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @media screen and (min-width: 800px) {
             width: 45%;
         }
@@ -145,9 +130,6 @@ ul {
         margin-top: 0;
     }
 }
-.image {
-    object-fit: cover;
-}
 // text
 .text {
     &--center {
@@ -180,10 +162,6 @@ ul {
     }
 }
 
-//button
-.container__button > .lastButton {
-    margin-left: 2rem;
-}
 // caption and sentence
 .caption,
 .sentence {

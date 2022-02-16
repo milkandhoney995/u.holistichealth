@@ -12,15 +12,6 @@ export default function Service() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="Service" bgImageUrl='"/images/life/hill.jpg"' />
-            <div className="section section__container recommend">
-                <h2>こんな人におすすめ</h2>
-                <div>
-                    <br></br>- 人間関係を良くしたい<br></br>- 疲れを取りたい<br></br>-
-                    イライラをなくしたい<br></br> - 体の内側から綺麗に<br></br> -
-                    甘いものの食べ過ぎをやめたい<br></br> - お酒、タバコをやめたい
-                    <br></br> - 自炊を頑張りたい
-                </div>
-            </div>
             <div className="section section__container">
                 <Image
                     objectFit="cover"
@@ -29,7 +20,7 @@ export default function Service() {
                     height={600}
                     alt="debug"
                 />
-                <div className="container--sentence section__text">
+                <div className="container--sentence">
                     <h2>単発セッション</h2>
                     <p className="container__text">
                         セッションの前日までにワークシートを記入していただきます。
@@ -54,7 +45,7 @@ export default function Service() {
                     height={600}
                     alt="debug"
                 />
-                <div className="container--sentence section__text">
+                <div className="container--sentence">
                     <h2>6ヶ月プログラム</h2>
                     <p className="container__text">
                         もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
