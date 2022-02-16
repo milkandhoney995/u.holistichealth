@@ -9,9 +9,17 @@
 // }
 body {
     margin: 0;
-    font-family: "Yu Gothic", "Cochin", "游ゴシック", YuGothic, "游ゴシック体",
-        "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック",
+        "Yu Gothic", sans-serif;
+
     line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+    @media screen and (max-width: 880px) {
+        text-align: center;
+    }
 }
 h1 {
     font-size: 2.5rem;
@@ -38,29 +46,13 @@ ul {
     border: 1px solid #ccc;
     border-radius: 1rem;
 }
-// flex関連
-.flex {
-    display: flex;
-    &--column {
-        flex-direction: column;
-    }
-    &__spaceBetween {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__columnCenter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
+
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
-    &--text {
-        text-align: center;
+    @media screen and (max-width: 880px) {
+        flex-direction: column;
     }
 }
 .background {
@@ -84,25 +76,39 @@ ul {
         align-items: center;
         justify-content: space-evenly;
         margin: 5rem auto 0;
-    }
-    &__titleCenter {
-        text-align: center;
+        @media screen and (max-width: 880px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
     }
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    &--centeredColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        @media screen and (max-width: 880px) {
+            flex-direction: column;
+        }
+    }
 }
 .container {
     &--small {
         width: 20%;
     }
-    &--medium {
-        width: 45%;
+    &--sentence {
+        @media screen and (min-width: 800px) {
+            width: 45%;
+        }
     }
     &--large {
-        width: 80%;
+        @media screen and (min-width: 800px) {
+            width: 80%;
+        }
     }
     &--center {
         margin: 0 auto;
@@ -121,7 +127,13 @@ ul {
         margin-top: 5rem;
     }
     &__text {
+        margin: 0 auto;
         margin-top: 1.5rem;
+        width: 601px;
+        @media screen and (max-width: 880px) {
+            padding: 1.5rem;
+            width: 400px;
+        }
     }
     &__button {
         display: flex;
@@ -136,22 +148,17 @@ ul {
 .image {
     object-fit: cover;
 }
-// title
+// text
 .text {
     &--center {
         text-align: center;
     }
 }
+// title
 .title {
     &--small {
         font-size: 1rem;
         color: #b2b2a2;
-    }
-    &__top {
-        text-align: center;
-    }
-    &--center {
-        text-align: center;
     }
 }
 
@@ -160,11 +167,16 @@ ul {
     flex-direction: column;
     align-items: center;
     &__list {
-        padding-left: 0;
+        @media screen and (min-width: 450px) {
+            padding-left: 0;
+        }
     }
     &__item {
         width: 400px;
         margin: 2rem;
+        @media screen and (max-width: 880px) {
+            margin: 1rem;
+        }
     }
 }
 

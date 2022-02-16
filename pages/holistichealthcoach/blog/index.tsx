@@ -12,8 +12,8 @@ export default function Blog({ blog }) {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <div className="section">
-                <h1 className="title--center">Blog</h1>
-                <div className="container--large">
+                <h1 className="text--center">Blog</h1>
+                <div>
                     <div className="section section__container">
                         <ul className="center latestBlog__list">
                             {blog.map((blog) => (

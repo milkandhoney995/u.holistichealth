@@ -10,7 +10,7 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <h1 className="title__top">Profile</h1>
+            <h1 className="text--center">Profile</h1>
             <div className="section section__container">
                 <Image
                     objectFit="cover"
@@ -19,7 +19,7 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <div className="container--medium">
+                <div className="container--sentence">
                     <h2>Utano Harada</h2>
                     <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
                     <p className="container__text">

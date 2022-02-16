@@ -19,7 +19,7 @@ export default function Home({ blog }) {
                 <div className="section section__container">
                     <div>
                         <h2>
-                            食事から自分を探す<br></br>ヘルスコーチング
+                            私たちは、<br></br>私たちの食べるものでできている
                         </h2>
                         <p className="container__text">
                             私たちは、私たちの食べるものでできています<br></br>
@@ -45,38 +45,47 @@ export default function Home({ blog }) {
                         alt="debug"
                     />
                 </div>
-                <div className="container__button">
-                    <Button label="Philosophy" href="/holistichealthcoach/philosophy" />
-                    <Button
-                        className="lastButton"
-                        label="About Me"
-                        href="/holistichealthcoach/profile"
-                    />
-                </div>
+            </div>
+            <div className="section text--center">
+                <h1>あなたのセーフスペースになりたい</h1>
+                <p className="container__text">
+                    生き急ぐ日々の中で、忘れがちになってしまう食事の関係
+                    <br></br>
+                    <br></br>
+                    毎日たくさん働いてくれる体が、<br></br>
+                    バランスの良い食生活で健康になると、心も満たされる。
+                    自分が満たされた状態は、自分の内の声に従って、自分らしく生きること。<br></br>
+                    自分らしく生きるとは、自分を愛すること<br></br>
+                    <br></br>
+                    大事な人と食べる<br></br>
+                    食材ひとつひとつを味わい<br></br>
+                    感謝する時間、人間らしい時間を愛してほしい<br></br>
+                    <br></br>
+                    どんなことを言っても大丈夫<br></br>
+                    深呼吸して、あなたの背負っているものを置いて、<br></br>
+                    あなたのことについて話しませんか。
+                </p>
             </div>
             <div className="section">
                 <div className="section section__container">
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/latte.jpg"
-                        width={545}
-                        height={552}
-                        alt="debug"
-                    />
-                    <div className="section__text">
-                        <div>
-                            <h2>あなたのセーフスペースに</h2>
-                            <p className="container__text">
-                                私のセッションは、どんなことを言っても大丈夫な場所です。
-                                <br></br>
-                                <br></br>
-                                深呼吸して、あなたの背負っているものを置いて、<br></br>
-                                <br></br>
-                                あなたのことについて話しませんか。
-                            </p>
-                        </div>
-                        <Button label="Service" href="/holistichealthcoach/service" />
-                    </div>
+                    <Link href="/holistichealthcoach/philosophy">
+                        <Image
+                            objectFit="cover"
+                            src="/images/life/latte.jpg"
+                            width={545}
+                            height={552}
+                            alt="debug"
+                        />
+                    </Link>
+                    <Link href="/holistichealthcoach/profile">
+                        <Image
+                            objectFit="cover"
+                            src="/images/life/veg1.jpg"
+                            width={545}
+                            height={552}
+                            alt="debug"
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="latestBlog section">

@@ -1,0 +1,14 @@
+//sidemenu
+.sidemenu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    &__sns {
+        margin: 0.5rem;
+    }
+}

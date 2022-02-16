@@ -29,7 +29,7 @@ export default function Service() {
                     height={600}
                     alt="debug"
                 />
-                <div className="container--medium section__text">
+                <div className="container--sentence section__text">
                     <h2>単発セッション</h2>
                     <p className="container__text">
                         セッションの前日までにワークシートを記入していただきます。
@@ -54,7 +54,7 @@ export default function Service() {
                     height={600}
                     alt="debug"
                 />
-                <div className="container--medium section__text">
+                <div className="container--sentence section__text">
                     <h2>6ヶ月プログラム</h2>
                     <p className="container__text">
                         もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。

@@ -11,9 +11,9 @@ export default function Philosophy() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="What is Holistic Health" bgImageUrl='"/images/life/sky.png"' />
-            <div className="section flex__columnCenter">
+            <div className="section section__container">
                 <div className="container--large">
-                    <h2 className="section__titleCenter">ホリスティック栄養学とは</h2>
+                    <h2 className="text--center">本当のあなたに戻ろう</h2>
                     <p className="container__text">
                         Holistic（全体）という言葉の通り、ホリスティック栄養学は、物理的な栄養だけでなく、
                         <br></br>
@@ -27,25 +27,26 @@ export default function Philosophy() {
                 <Image
                     objectFit="cover"
                     src="/images/site/570x570.png"
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     alt="debug"
                 />
             </div>
             <div className="section">
+                <h2 className="text--center">
+                    もっと幸せになるために
+                    <br></br>
+                    今すべきことがわかる
+                </h2>
                 <div className="section section__container">
                     <Image
                         objectFit="cover"
                         src="/images/life/meal.jpg"
-                        width={500}
-                        height={500}
+                        width={300}
+                        height={300}
                         alt="debug"
                     />
-                    <div className="container--medium">
-                        <h2>
-                            あなたの幸せのために <br></br>
-                            一緒に歩んでいくパートナーになります
-                        </h2>
+                    <div className="container--sentence">
                         <p className="container__text">
                             私のヘルスコーチングは、NY拠点の栄養学校 Institute for Integrative
                             Nutritionのホリスティック栄養学に基づいています。
@@ -56,57 +57,6 @@ export default function Philosophy() {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="section">
-                <div className="section section__container">
-                    <div className="container--medium">
-                        <h2>
-                            もっと幸せになるために
-                            <br></br>
-                            今すべきことがわかる
-                        </h2>
-                        <p className="container__text">
-                            過去に経験した環境の変化や仕事、人間関係、食生活などからあなたのルーツをたどります。
-                            <br></br>
-                            <br></br>
-                            多方面から自分を深掘りすることで、自分が気になっていることの原因が明確になります。
-                            <br></br>
-                            <br></br>
-                            悩みの根本に向き合うことで、体の内側から綺麗になるだけでなく、
-                            <br></br>
-                            人間関係が良くなったり、もっと自分を好きになれます。
-                        </p>
-                    </div>
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/veg1.jpg"
-                        width={500}
-                        height={500}
-                        alt="debug"
-                    />
-                </div>
-            </div>
-            <div className="section background flex__columnCenter">
-                <h2>私たちは、 私たちの食べるものでできている</h2>
-                <p className="container__text text--center">
-                    あなたは、いつも何を食べていますか？<br></br>
-                    <br></br>
-                    私たちは、私たちの食べるものでできています <br></br>
-                    <br></br>
-                    毎日たくさん働いてくれる体が、バランスの良い食生活で健康になると、心も満たされる。
-                    <br></br>
-                    自分が満たされた状態は、自分の内の声に従って、自分らしく生きること。
-                    <br></br>
-                    自分らしく生きるとは、自分を愛すること<br></br>
-                    <br></br>
-                    生き急ぐ日々<br></br>
-                    周りからの期待 <br></br>
-                    真面目なあなたの責任感 <br></br>
-                    <br></br>
-                    少し止まって、あなたと食事について考えてみませんか。<br></br>
-                    どんな小さなことでも構いません。<br></br>
-                    <br></br>あなたの話、聞かせてくれませんか。
-                </p>
             </div>
         </Fragment>
     );
