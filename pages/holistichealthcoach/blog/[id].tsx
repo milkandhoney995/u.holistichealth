@@ -16,8 +16,8 @@ export default function PostId({ data }) {
                     <Image
                         className="post__image"
                         src={data.image.url}
-                        width={650}
-                        height={700}
+                        width={680}
+                        height={500}
                         objectFit="cover"
                         alt="debug"
                     />

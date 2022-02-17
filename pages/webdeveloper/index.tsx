@@ -19,7 +19,7 @@ export default function Home() {
                     alt="debug"
                 />
             </div>
-            <div className="section">
+            <div className="margin--top">
                 <Image
                     objectFit="cover"
                     src="/images/site/570x570.png"
@@ -28,7 +28,7 @@ export default function Home() {
                     alt="debug"
                 />
             </div>
-            <div className="latestBlog section">
+            <div className="latestBlog margin--top">
                 <h2>Blog</h2>
                 <ul className="center latestBlog__list">
                     <li className="latestBlog__item">

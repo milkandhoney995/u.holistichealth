@@ -11,7 +11,7 @@ export default function Profile() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="About Me" bgImageUrl='"/images/life/sunnyday.png"' />
-            <div className="section section__container">
+            <div className="section">
                 <Image
                     objectFit="cover"
                     src="/images/site/570x570.png"
@@ -19,7 +19,7 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <div className="container--sentence">
+                <div className="container__sentence">
                     <h2>Utano Harada</h2>
                     <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
                     <p className="container__text">
@@ -37,8 +37,8 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section section__container">
-                <div className="container--sentence">
+            <div className="section">
+                <div className="container__sentence">
                     <p className="container__text">
                         私は、ストレスと極端な食事制限のせいで心身のバランスを壊したことがあります。
                         <br></br>
@@ -64,7 +64,7 @@ export default function Profile() {
                     alt="debug"
                 />
             </div>
-            <div className="section section__container">
+            <div className="section">
                 <Image
                     objectFit="cover"
                     src="/images/life/strawberry.jpg"
@@ -72,7 +72,7 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <div className="container--sentence">
+                <div className="container__sentence">
                     <p className="container__text">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
                         <br></br>

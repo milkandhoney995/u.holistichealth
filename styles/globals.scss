@@ -4,13 +4,14 @@
     box-sizing: border-box;
     margin: 0;
 }
-// html {
-//   background-color: #fddad6;
-// }
+html {
+    background-color: #fddad6;
+}
 body {
     margin: 0;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック",
-        "Yu Gothic", sans-serif;
+        "Yu Gothic", -apple-system, BlinkMacSystemFont, Helvetica Nueu, arial, Noto Sans JP,
+        Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
 
     line-height: 1.5;
 }
@@ -55,34 +56,32 @@ ul {
         flex-direction: column;
     }
 }
+.margin {
+    &--top {
+        margin-top: 5rem;
+    }
+}
 // block要素関連
 .section {
-    margin-top: 5rem;
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: 5rem auto 0;
-        @media screen and (max-width: 880px) {
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    }
-    &--centeredColumn {
-        display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5rem auto 0;
+    @media screen and (max-width: 880px) {
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 880px) {
+        padding: 0 5rem;
+    }
+    &--reverse {
         @media screen and (max-width: 880px) {
-            flex-direction: column;
+            flex-direction: row-reverse;
         }
     }
 }
 .container {
-    &--small {
-        width: 20%;
-    }
-    &--sentence {
+    &__sentence {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,9 +124,6 @@ ul {
         align-items: center;
         justify-content: space-evenly;
         margin: 5rem 2rem 0 2rem;
-    }
-    &__button .button {
-        margin-top: 0;
     }
 }
 // text
@@ -182,6 +178,31 @@ ul {
     animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.post {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 auto;
+    overflow: scroll;
+    @media screen and (min-width: 880px) {
+        width: 40%;
+    }
+    &__container {
+        position: relative;
+        margin-top: 5rem;
+        @media screen and (min-width: 880px) {
+            display: flex;
+        }
+    }
+    &__image {
+        margin-top: 1.5rem;
+    }
+    &__sentence {
+        margin-top: 2rem;
+    }
+}
+
 //sidemenu
 .sidemenu {
     display: flex;
@@ -189,30 +210,10 @@ ul {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    background: #fff;
     border: 1px solid #ccc;
     border-radius: 1rem;
     &__sns {
         margin: 0.5rem;
-    }
-}
-.post {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 60%;
-    padding: 2rem;
-    margin: 0 auto;
-    overflow: scroll;
-    &__container {
-        display: flex;
-        position: relative;
-        margin-top: 5rem;
-    }
-    &__image {
-        margin-top: 1.5rem;
-    }
-    &__sentence {
-        margin-top: 2rem;
-        width: 80%;
     }
 }

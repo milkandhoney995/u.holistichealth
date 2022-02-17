@@ -12,7 +12,7 @@ export default function Service() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="Service" bgImageUrl='"/images/life/hill.jpg"' />
-            <div className="section section__container">
+            <div className="section">
                 <Image
                     objectFit="cover"
                     src="/images/life/veg1.jpg"
@@ -37,14 +37,7 @@ export default function Service() {
                     <Button href='"/"' label="Book" />
                 </div>
             </div>
-            <div className="section section__container">
-                <Image
-                    objectFit="cover"
-                    src="/images/life/strawberry.jpg"
-                    width={600}
-                    height={600}
-                    alt="debug"
-                />
+            <div className="section section--reverse">
                 <div className="container--sentence">
                     <h2>6ヶ月プログラム</h2>
                     <p className="container__text">
@@ -71,6 +64,13 @@ export default function Service() {
                     </p>
                     <Button href='"/"' label="Book" />
                 </div>
+                <Image
+                    objectFit="cover"
+                    src="/images/life/strawberry.jpg"
+                    width={600}
+                    height={600}
+                    alt="debug"
+                />
             </div>
         </Fragment>
     );

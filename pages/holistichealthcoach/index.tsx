@@ -16,37 +16,35 @@ export default function Home({ blog }) {
             </Head>
             <Hero bgImageUrl='"/images/life/sunnyday.png"' />
             <div className="section">
-                <div className="section section__container">
-                    <div>
-                        <h2>
-                            私たちは、<br></br>私たちの食べるものでできている
-                        </h2>
-                        <p className="container__text">
-                            私たちは、私たちの食べるものでできています<br></br>
-                            <br></br>
-                            大事な人と食べる<br></br>
-                            <br></br>
-                            食材ひとつひとつを味わい<br></br>
-                            <br></br>
-                            感謝する時間、人間らしい時間を愛したい<br></br>
-                            <br></br>
-                            生き急ぐ日々<br></br>
-                            <br></br>
-                            忘れがちな、あなたと食事の関係<br></br>
-                            <br></br>
-                            一緒に、考えてみませんか。
-                        </p>
-                    </div>
-                    <Image
-                        src="/images/life/veg.jpg"
-                        width={500}
-                        height={500}
-                        objectFit="cover"
-                        alt="debug"
-                    />
+                <div>
+                    <h2>
+                        私たちは、<br></br>私たちの食べるものでできている
+                    </h2>
+                    <p className="container__text">
+                        私たちは、私たちの食べるものでできています<br></br>
+                        <br></br>
+                        大事な人と食べる<br></br>
+                        <br></br>
+                        食材ひとつひとつを味わい<br></br>
+                        <br></br>
+                        感謝する時間、人間らしい時間を愛したい<br></br>
+                        <br></br>
+                        生き急ぐ日々<br></br>
+                        <br></br>
+                        忘れがちな、あなたと食事の関係<br></br>
+                        <br></br>
+                        一緒に、考えてみませんか。
+                    </p>
                 </div>
+                <Image
+                    src="/images/life/veg.jpg"
+                    width={500}
+                    height={500}
+                    objectFit="cover"
+                    alt="debug"
+                />
             </div>
-            <div className="section text--center">
+            <div className="margin--top text--center">
                 <h1>あなたのセーフスペースになりたい</h1>
                 <p className="container__text">
                     生き急ぐ日々の中で、忘れがちになってしまう食事の関係
@@ -67,28 +65,26 @@ export default function Home({ blog }) {
                 </p>
             </div>
             <div className="section">
-                <div className="section section__container">
-                    <Link href="/holistichealthcoach/philosophy">
-                        <Image
-                            objectFit="cover"
-                            src="/images/life/latte.jpg"
-                            width={545}
-                            height={552}
-                            alt="debug"
-                        />
-                    </Link>
-                    <Link href="/holistichealthcoach/profile">
-                        <Image
-                            objectFit="cover"
-                            src="/images/life/veg1.jpg"
-                            width={545}
-                            height={552}
-                            alt="debug"
-                        />
-                    </Link>
-                </div>
+                <Link href="/holistichealthcoach/philosophy">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/latte.jpg"
+                        width={545}
+                        height={552}
+                        alt="debug"
+                    />
+                </Link>
+                <Link href="/holistichealthcoach/profile">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/veg1.jpg"
+                        width={545}
+                        height={552}
+                        alt="debug"
+                    />
+                </Link>
             </div>
-            <div className="latestBlog section">
+            <div className="latestBlog margin--top">
                 <h2>Blog</h2>
                 <ul className="center latestBlog__list">
                     {blog.map((blog) => (
