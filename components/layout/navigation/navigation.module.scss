@@ -19,8 +19,13 @@
     padding: 0;
     list-style: none;
     transition: 0.3s;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        float: right;
+        margin: 20px 0;
+        padding: 0 25px;
+    }
 }
-
 .menuList {
     margin: 0 1rem;
 }
@@ -42,5 +47,14 @@
 
     .header a {
         font-size: 0.875rem;
+    }
+}
+.hamburger {
+    display: none;
+    @media (max-width: 768px) {
+        display: flex;
+        padding-top: 10px;
+        margin-left: 10px;
+        z-index: 10;
     }
 }

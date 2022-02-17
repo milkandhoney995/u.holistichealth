@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import Navigation from "./navigation/navigation";
+import Header from "../../components/layout/header/header";
 import Footer from "./footer/footer";
 
 function LayoutHealth(props) {
     return (
         <Fragment>
-            <Navigation></Navigation>
+            <Header></Header>
             <main>{props.children}</main>
             <Footer></Footer>
         </Fragment>
