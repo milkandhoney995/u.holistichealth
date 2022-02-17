@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "../../components/hero/hero";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -10,15 +11,7 @@ export default function Home() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="container__top">
-                <Image
-                    objectFit="cover"
-                    src="/images/site/570x570.png"
-                    width={570}
-                    height={570}
-                    alt="debug"
-                />
-            </div>
+            <Hero bgImageUrl='"/images/life/sunnyday.png"' />
             <div className="margin--top">
                 <Image
                     objectFit="cover"
