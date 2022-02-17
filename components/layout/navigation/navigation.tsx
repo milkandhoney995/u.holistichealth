@@ -10,50 +10,47 @@ function Navigation() {
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     };
+    const menuList = [
+        { id: 1, href: "/holistichealthcoach", title: "home" },
+        { id: 2, href: "/holistichealthcoach/philosophy", title: "Holistic Health" },
+        { id: 3, href: "/holistichealthcoach/profile", title: "About Me" },
+        { id: 4, href: "/holistichealthcoach/blog", title: "Blog" },
+        { id: 5, href: "/holistichealthcoach/service", title: "Service" },
+    ];
     return (
-        <>
-            <header className={classes.header}>
-                <Link href="/">
-                    <a>
-                        <Logo />
-                    </a>
-                </Link>
-                <nav>
-                    <ul className={classes.menu}>
+        <div>
+            <div className="navigation">
+                <ul className={classes.menu}>
+                    {menuList.map((menu) => (
                         <li className={classes.menuList}>
-                            <Link href="/holistichealthcoach">Home</Link>
+                            <Link key={menu.id} href={menu.href}>
+                                {menu.title}
+                            </Link>
                         </li>
-                        <li className={classes.menuList}>
-                            <Link href="/holistichealthcoach/philosophy">Holistic Health</Link>
-                        </li>
-                        <li className={classes.menuList}>
-                            <Link href="/holistichealthcoach/profile">About Me</Link>
-                        </li>
-                        <li className={classes.menuList}>
-                            <Link href="/holistichealthcoach/blog">Blog</Link>
-                        </li>
-                        <li className={classes.menuList}>
-                            <Link href="/holistichealthcoach/service">Service</Link>
-                        </li>
-                    </ul>
-                    <div className={classes.hamburger} onClick={toggleHamburger}>
-                        <Hamburger isOpen={hamburgerOpen} />
-                    </div>
-                </nav>
-            </header>
+                    ))}
+                </ul>
+                <div className={classes.hamburger} onClick={toggleHamburger}>
+                    <Hamburger isOpen={hamburgerOpen} />
+                </div>
+            </div>
             <style jsx>
                 {`
-                    .menu {
-                        display: ${hamburgerOpen ? "inline" : "open"};
-                        background-color: pink;
-                        height: 100vh;
-                        width: 50vw;
-                        margin-top: 2.5rem;
-                        position: absolute;
+                    .navigation {
+                        width: 100%;
+                    }
+                    @media (max-width: 768px) {
+                        .navigation ul {
+                            display: ${hamburgerOpen ? "inline" : "none"};
+                            position: absolute;
+                            background-color: pink;
+                            height: 100vh;
+                            width: 50vw;
+                            margin-top: 2.5rem;
+                        }
                     }
                 `}
             </style>
-        </>
+        </div>
     );
 }
 
