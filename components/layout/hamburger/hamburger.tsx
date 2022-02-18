@@ -30,15 +30,14 @@ export default function Hamburger({ isOpen }) {
                     .menu-items {
                         display: flex;
                         flex-direction: column;
-                        padding-top: 120px;
-                        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-                        height: 100vh;
-                        width: 100vw;
-                        transform: translate(-150%);
-                        margin-left: -40px;
-                        padding-left: 50px;
-                        transition: transform 0.5s ease-in-out;
                         text-align: center;
+                        height: 100vh;
+                        margin-left: -40px;
+                        padding-top: 8rem;
+                        background: #fff;
+                        box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+                        transform: translate(-150%);
+                        transition: transform 0.5s ease-in-out;
                     }
                     .menu-items li {
                         margin-bottom: 1.2rem;
@@ -51,6 +50,7 @@ export default function Hamburger({ isOpen }) {
                         width: 32px;
                         position: absolute;
                         top: 15px;
+                        left: 15px;
                         z-index: 2;
                         display: flex;
                         flex-direction: column;
