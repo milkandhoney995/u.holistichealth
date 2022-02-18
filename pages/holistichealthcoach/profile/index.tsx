@@ -37,7 +37,17 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section">
+            <div className="section section--gridReverse">
+                <h2 className="text--center">頑張りすぎた</h2>
+                <div className="grid__Reverseimage">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/meal.jpg"
+                        width={600}
+                        height={600}
+                        alt="debug"
+                    />
+                </div>
                 <div className="container__sentence">
                     <p className="container__text">
                         私は、ストレスと極端な食事制限のせいで心身のバランスを壊したことがあります。
@@ -56,22 +66,18 @@ export default function Profile() {
                         この経験から、今は同じように頑張りすぎている人をサポートするために、ヘルスコーチングをしています。
                     </p>
                 </div>
-                <Image
-                    objectFit="cover"
-                    src="/images/life/meal.jpg"
-                    width={500}
-                    height={500}
-                    alt="debug"
-                />
             </div>
-            <div className="section">
-                <Image
-                    objectFit="cover"
-                    src="/images/life/strawberry.jpg"
-                    width={500}
-                    height={500}
-                    alt="debug"
-                />
+            <div className="section section--grid">
+                <h2>あなたのセーフスペースになりたい</h2>
+                <div className="grid__image">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/strawberry.jpg"
+                        width={600}
+                        height={600}
+                        alt="debug"
+                    />
+                </div>
                 <div className="container__sentence">
                     <p className="container__text">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。

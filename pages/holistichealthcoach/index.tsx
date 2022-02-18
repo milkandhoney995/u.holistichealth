@@ -70,30 +70,22 @@ export default function Home({ blog }) {
                 </p>
             </div>
             <div className="section">
-                <Link href="/holistichealthcoach/philosophy">
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/latte.jpg"
-                        width={545}
-                        height={552}
-                        alt="debug"
-                    />
-                </Link>
-                <Link href="/holistichealthcoach/profile">
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/veg1.jpg"
-                        width={545}
-                        height={552}
-                        alt="debug"
-                    />
-                </Link>
+                <div className="background background--1">
+                    <div className="background__button">
+                        <Button label="Holistic Health" href="/holistichealthcoach/philosophy" />
+                    </div>
+                </div>
+                <div className="background background--2">
+                    <div className="background__button">
+                        <Button label="About Me" href="/holistichealthcoach/profile" />
+                    </div>
+                </div>
             </div>
-            <div className="latestBlog margin--top">
-                <h2>Blog</h2>
-                <ul className="center latestBlog__list">
+            <div className="margin--top">
+                <h2 className="text--center">Blog</h2>
+                <ul className="center newPosts">
                     {blog.map((blog) => (
-                        <li key={blog.id} className="latestBlog__item">
+                        <li key={blog.id}>
                             <Image
                                 objectFit="cover"
                                 src={blog.image.url}
@@ -110,7 +102,6 @@ export default function Home({ blog }) {
                         </li>
                     ))}
                 </ul>
-                <Button label="Blog" href="/holistichealthcoach/blog" />
             </div>
         </Fragment>
     );

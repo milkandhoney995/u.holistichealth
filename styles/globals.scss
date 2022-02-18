@@ -128,6 +128,18 @@ ul {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr;
     }
+    .newPosts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .post--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+    }
     .grid {
         &__image {
             grid-column: 1/3;
@@ -227,5 +239,28 @@ ul {
     border-radius: 1rem;
     &__sns {
         margin: 0.5rem;
+    }
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &--1 {
+        width: 500px;
+        height: 500px;
+        background: url("/images/life/latte.jpg") center / cover;
+    }
+    &--2 {
+        width: 500px;
+        height: 500px;
+        background: url("/images/life/veg1.jpg") center / cover;
+        @media screen and (max-width: 880px) {
+            margin-top: 2rem;
+        }
+    }
+    &__button {
+        position: absolute;
+        bottom: 35px;
     }
 }
