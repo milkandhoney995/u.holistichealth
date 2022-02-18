@@ -6,8 +6,13 @@ import Hero from "../../components/hero/hero";
 import Button from "../../components/button/button";
 import { client } from "../../libs/client";
 import { Fragment } from "react";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
 
 export default function Home({ blog }) {
+    dayjs.extend(utc);
+    dayjs.extend(timezone);
     return (
         <Fragment>
             <Head>
@@ -96,7 +101,9 @@ export default function Home({ blog }) {
                                 height={400}
                                 alt="debug"
                             />
-                            <p className="caption">{blog.created_at}</p>
+                            <p className="caption">
+                                {dayjs.utc(blog.publishedAt).tz("Asia/Tokyo").format("YYYY-MM-DD")}
+                            </p>
                             <Link href={`holistichealthcoach/blog/${blog.id}`}>
                                 <a className="sentence">{blog.title}</a>
                             </Link>
