@@ -1,6 +1,7 @@
 import Head from "next/head";
 // import Hero from "../components/home-page/hero/hero";
-import Header from "../components/layout/header/header";
+import Navigation from "../components/layout/navigation/navigation";
+// import Header from "../components/layout/header/header";
 import Link from "next/link";
 import { Fragment } from "react";
 
@@ -11,7 +12,7 @@ export default function Home() {
                 <title>Utano Harada</title>
                 <meta name="description" content="this is Utano's website." />
             </Head>
-            <Header />
+            <Navigation />
             <div className="firstPage">
                 <h1 className="text--center">
                     Utano Harada<br></br>

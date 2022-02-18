@@ -1,16 +1,31 @@
 .hamburger {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
     display: flex;
-    width: 2rem;
-    height: 2rem;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    z-index: 10;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.burger {
-    width: 2rem;
-    height: 0.25rem;
+.hamburger .line {
+    display: block;
+    height: 4px;
+    width: 100%;
     border-radius: 10px;
-    background-color: black;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
+    background: #0e2431;
+}
+.hamburger .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+.hamburger .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
 }

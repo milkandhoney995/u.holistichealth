@@ -1,32 +1,45 @@
 import Link from "next/link";
 import classes from "./navigation.module.scss";
-import Logo from "../logo/logo";
+import Hamburger from "../hamburger/hamburger";
+import { useState } from "react";
 
 function NavigationWeb() {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    };
+    const menuList = [
+        { id: 1, href: "/webdeveloper", title: "home" },
+        { id: 2, href: "/webdeveloper/philosophy", title: "Holistic Health" },
+        { id: 3, href: "/webdeveloper/profile", title: "About Me" },
+        { id: 4, href: "/webdeveloper/blog", title: "Blog" },
+        { id: 5, href: "/webdeveloper/service", title: "Service" },
+    ];
     return (
-        <header className={classes.header}>
-            <Link href="/">
-                <a>
-                    <Logo />
-                </a>
-            </Link>
+        <div>
             <nav>
-                <ul>
-                    <li>
-                        <Link href="/webdeveloper">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/webdeveloper/profile">About Me</Link>
-                    </li>
-                    <li>
-                        <Link href="/webdeveloper/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link href="/webdeveloper/techblog">TechBlog</Link>
-                    </li>
-                </ul>
+                <div className={classes.navbar}>
+                    <div className={classes.navContainer}>
+                        <div className={classes.burger} onClick={toggleHamburger}>
+                            <Hamburger isOpen={hamburgerOpen} />
+                        </div>
+                        <div className={classes.logo}>
+                            <h1>Utano Harada</h1>
+                        </div>
+                        <ul className={classes.menu}>
+                            {menuList.map((menu) => (
+                                <li className={classes.menuItem}>
+                                    <Link key={menu.id} href={menu.href}>
+                                        {menu.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </header>
+        </div>
     );
 }
 

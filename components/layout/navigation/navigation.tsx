@@ -1,10 +1,9 @@
 import Link from "next/link";
 import classes from "./navigation.module.scss";
-import Logo from "../logo/logo";
 import Hamburger from "../hamburger/hamburger";
 import { useState } from "react";
 
-function Navigation() {
+export default function Navigation() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () => {
@@ -19,39 +18,27 @@ function Navigation() {
     ];
     return (
         <div>
-            <div className="navigation">
-                <ul className={classes.menu}>
-                    {menuList.map((menu) => (
-                        <li className={classes.menuList}>
-                            <Link key={menu.id} href={menu.href}>
-                                {menu.title}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={classes.hamburger} onClick={toggleHamburger}>
-                    <Hamburger isOpen={hamburgerOpen} />
+            <nav>
+                <div className={classes.navbar}>
+                    <div className={classes.navContainer}>
+                        <div className={classes.burger} onClick={toggleHamburger}>
+                            <Hamburger isOpen={hamburgerOpen} />
+                        </div>
+                        <div className={classes.logo}>
+                            <h1>Utano Harada</h1>
+                        </div>
+                        <ul className={classes.menu}>
+                            {menuList.map((menu) => (
+                                <li className={classes.menuItem}>
+                                    <Link key={menu.id} href={menu.href}>
+                                        {menu.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <style jsx>
-                {`
-                    .navigation {
-                        width: 100%;
-                    }
-                    @media (max-width: 768px) {
-                        .navigation ul {
-                            display: ${hamburgerOpen ? "inline" : "none"};
-                            position: absolute;
-                            background-color: pink;
-                            height: 100vh;
-                            width: 50vw;
-                            margin-top: 2.5rem;
-                        }
-                    }
-                `}
-            </style>
+            </nav>
         </div>
     );
 }
-
-export default Navigation;
