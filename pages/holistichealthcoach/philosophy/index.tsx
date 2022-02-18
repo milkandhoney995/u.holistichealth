@@ -60,16 +60,19 @@ export default function Philosophy() {
                 </div>
             </div>
             <h1 className="text--center">My Offering</h1>
-            <div className="section">
-                <Image
-                    objectFit="cover"
-                    src="/images/life/veg1.jpg"
-                    width={600}
-                    height={600}
-                    alt="debug"
-                />
+            <div className="section--grid section">
+                <h2>1:1 90 Minute Session</h2>
+                <div className="grid__image">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/veg1.jpg"
+                        width={600}
+                        height={600}
+                        alt="debug"
+                    />
+                </div>
+
                 <div className="container__sentence">
-                    <h2>1:1 90 Minute Session</h2>
                     <p className="container__text">
                         セッションの前日までにワークシートを記入していただきます。
                         <br></br>
@@ -85,9 +88,18 @@ export default function Philosophy() {
                     <Button href='"/"' label="Book" />
                 </div>
             </div>
-            <div className="section section--reverse">
+            <div className="section--gridReverse section">
+                <h2>6 month program</h2>
+                <div className="grid__Reverseimage">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/veg1.jpg"
+                        width={600}
+                        height={600}
+                        alt="debug"
+                    />
+                </div>
                 <div className="container__sentence">
-                    <h2>6 month program</h2>
                     <p className="container__text">
                         もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
                         <br></br>
@@ -99,13 +111,6 @@ export default function Philosophy() {
                     </p>
                     <Button href='"/holistichealthcoach/service"' label="Detail" />
                 </div>
-                <Image
-                    objectFit="cover"
-                    src="/images/life/strawberry.jpg"
-                    width={600}
-                    height={600}
-                    alt="debug"
-                />
             </div>
         </Fragment>
     );
