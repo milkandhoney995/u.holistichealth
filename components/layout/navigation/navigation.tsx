@@ -1,6 +1,7 @@
 import Link from "next/link";
 import classes from "./navigation.module.scss";
 import Hamburger from "../hamburger/hamburger";
+import Logo from "../logo/logo";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -25,7 +26,11 @@ export default function Navigation() {
                             <Hamburger isOpen={hamburgerOpen} />
                         </div>
                         <div className={classes.logo}>
-                            <h1>Utano Harada</h1>
+                            <Link href="/">
+                                <a>
+                                    <Logo />
+                                </a>
+                            </Link>
                         </div>
                         <ul className={classes.menu}>
                             {menuList.map((menu) => (

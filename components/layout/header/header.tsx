@@ -6,11 +6,6 @@ import Navigation from "../navigation/navigation";
 function Header() {
     return (
         <header className={classes.header}>
-            <Link href="/">
-                <a>
-                    <Logo />
-                </a>
-            </Link>
             <Navigation />
         </header>
     );

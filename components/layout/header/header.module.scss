@@ -1,14 +1,13 @@
 .header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     height: 4rem;
-    padding: 0 10%;
     border: 1px solid #ccc;
     background: #fff;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     z-index: 2;
 }
 .header a {
