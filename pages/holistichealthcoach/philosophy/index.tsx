@@ -11,10 +11,10 @@ export default function Philosophy() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Hero pageTitle="What is Holistic Health" bgImageUrl='"/images/life/sky.png"' />
+            <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' />
             <div className="section">
-                <div className="container--large">
-                    <h2 className="text--center">内側の答えを見つける、 原因がわかる</h2>
+                <div>
+                    <h2>内側の答えを見つける、原因がわかる</h2>
                     <p className="container__text">
                         情報が国境を越える社会
                         <br></br>
@@ -43,7 +43,7 @@ export default function Philosophy() {
                 <div className="section">
                     <Image
                         objectFit="cover"
-                        src="/images/life/meal.jpg"
+                        src="/images/site/570x570.png"
                         width={300}
                         height={300}
                         alt="debug"
@@ -66,13 +66,13 @@ export default function Philosophy() {
                 <div className="section section--reverse">
                     <Image
                         objectFit="cover"
-                        src="/images/life/meal.jpg"
+                        src="/images/site/570x570.png"
                         width={300}
                         height={300}
                         alt="debug"
                     />
                     <div className="container__sentence">
-                        <h2 className="text--center">ヘルスコーチングで偏りを見つける</h2>
+                        <h2>ヘルスコーチングで偏りを見つける</h2>
                         <p className="container__text">
                             ヘルスコーチとは、クライアントが悩みの根本に向き合うサポートをする仕事です。
                             <br></br>
@@ -82,16 +82,16 @@ export default function Philosophy() {
                     </div>
                 </div>
             </div>
+            <h1 className="margin--top">
+                あなたの好きな場所で、<br></br>
+                あなたの話をしませんか
+            </h1>
             <div className="margin--top">
-                <h2 className="text--center">
-                    あなたの好きな場所で、<br></br>
-                    あなたの話をしませんか
-                </h2>
                 <div className="section">
                     <Image
                         objectFit="cover"
-                        src="/images/life/meal.jpg"
-                        width={300}
+                        src="/images/site/570x570.png"
+                        width={400}
                         height={300}
                         alt="debug"
                     />
@@ -108,59 +108,6 @@ export default function Philosophy() {
                             あなたの落ち着く場所で、少しお話ししませんか
                         </p>
                     </div>
-                </div>
-            </div>
-            <h1 className="text--center">My Offering</h1>
-            <div className="section--grid section">
-                <h2>1:1 90 Minute Session</h2>
-                <div className="grid__image">
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/veg1.jpg"
-                        width={600}
-                        height={600}
-                        alt="debug"
-                    />
-                </div>
-
-                <div className="container__sentence">
-                    <p className="container__text">
-                        セッションの前日までにワークシートを記入していただきます。
-                        <br></br>
-                        <br></br>
-                        記入していただいた内容をベースに、過去と現在の食生活、人間関係、環境の変化など多方面から今の自分を深掘りしていきます。{" "}
-                        <br></br>
-                        <br></br>
-                        話を聞いてほしい、ちょっと試してみたいなど理由はなんでも構いません。
-                        <br></br>
-                        <br></br>1セッション50分<br></br>
-                        初回無料、2回目以降3,000円。
-                    </p>
-                    <Button href='"/"' label="Book" />
-                </div>
-            </div>
-            <div className="section--gridReverse section">
-                <h2>6 month program</h2>
-                <div className="grid__Reverseimage">
-                    <Image
-                        objectFit="cover"
-                        src="/images/life/veg1.jpg"
-                        width={600}
-                        height={600}
-                        alt="debug"
-                    />
-                </div>
-                <div className="container__sentence">
-                    <p className="container__text">
-                        もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
-                        <br></br>
-                        <br></br>
-                        最初のセッションで、今のあなたを知るワークを行い、<br></br>
-                        ひとりひとりの目的に合わせて月2回、6ヶ月のプログラムを考えます。
-                        <br></br>
-                        定期的にセッションを受けることで、知識が習慣化しやすくなるだけでなく、自分自身の変化をより実感することができます。
-                    </p>
-                    <Button href='"/holistichealthcoach/service"' label="Detail" />
                 </div>
             </div>
         </Fragment>

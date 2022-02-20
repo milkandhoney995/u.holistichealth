@@ -23,7 +23,7 @@ export default function Service() {
                         alt="debug"
                     />
                     <div className="container__sentence">
-                        <h2 className="text--center">変化を習慣化する</h2>
+                        <h2>変化を習慣化する</h2>
                         <p className="container__text">
                             食事、マインドセット、人間関係など、<br></br>
                             何事も新しいことを定着させるには、時間がかかります。<br></br>
@@ -47,7 +47,7 @@ export default function Service() {
                         alt="debug"
                     />
                     <div className="container__sentence">
-                        <h2 className="text--center">あなたのお気に入りの場所で</h2>
+                        <h2>あなたのお気に入りの場所で</h2>
                         <p className="container__text">
                             セッションは対面形式です。<br></br>
                             ＊オンライン希望の場合、ご相談ください。<br></br>
@@ -60,7 +60,7 @@ export default function Service() {
                     </div>
                 </div>
             </div>
-            <h1 className="text--center">My Offering</h1>
+            <h1 className="margin--top">My Offering</h1>
             <div className="section--grid section">
                 <h2>1:1 90 Minute Session</h2>
                 <div className="grid__image">

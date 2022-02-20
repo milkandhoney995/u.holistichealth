@@ -47,7 +47,7 @@ export default function Home({ blog }) {
             </div>
             <div className="text--emphasized">
                 <h1>あなたが、あなたを変える</h1>
-                <p className="container__text">
+                <p>
                     どんな悩みを持っていても<br></br>
                     どんな理想があっても<br></br>
                     あなたは、すでに答えを持っています<br></br>
@@ -86,9 +86,10 @@ export default function Home({ blog }) {
                     alt="debug"
                 />
             </div>
+            <h1 className="margin--top">Blog</h1>
+
             <div className="margin--top">
-                <h2 className="text--center">Blog</h2>
-                <ul className="center grid--square">
+                <ul className="grid--square">
                     {blog.map((blog) => (
                         <li key={blog.id}>
                             <Image

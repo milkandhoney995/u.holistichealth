@@ -10,7 +10,6 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <h1 className="text--center">Profile</h1>
             <div className="section">
                 <Image
                     objectFit="cover"

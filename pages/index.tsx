@@ -10,7 +10,7 @@ export default function Home() {
                 <meta name="description" content="this is Utano's website." />
             </Head>
             <div className="firstPage">
-                <h1 className="text--center">
+                <h1>
                     Utano Harada<br></br>
                     as…
                 </h1>

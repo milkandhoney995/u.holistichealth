@@ -10,15 +10,15 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="section">
+            <div className="section--top">
                 <Image
                     objectFit="cover"
                     src="/images/site/570x570.png"
-                    width={500}
+                    width={700}
                     height={500}
                     alt="debug"
                 />
-                <h1>
+                <h1 className="text--left">
                     あなたの<br></br>セーフスペースに
                 </h1>
             </div>
@@ -31,8 +31,13 @@ export default function Profile() {
                     alt="debug"
                 />
                 <div className="container__sentence">
-                    <h2>Utano Harada</h2>
-                    <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
+                    <div>
+                        <h2>Utano Harada</h2>
+                        <h3 className="title--small">
+                            Holistic Health Coach & Web Frontend Engineer
+                        </h3>
+                    </div>
+
                     <p className="container__text">
                         皆さん、こんにちは。Utanoです。<br></br>
                         サイトに足を運んでくださって、ありがとうございます。
@@ -48,9 +53,9 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section section--gridReverse">
-                <h2 className="text--center">頑張りすぎた私</h2>
-                <div className="grid__Reverseimage">
+            <div className="section section--grid">
+                <h2>頑張りすぎた私</h2>
+                <div className="grid__image">
                     <Image
                         objectFit="cover"
                         src="/images/site/570x570.png"
@@ -73,17 +78,16 @@ export default function Profile() {
                         食事制限もやめ、大好きな人と食事ができることに感謝をしました。
                         <br></br>
                         <br></br>
-                        <br></br>
                         この経験から、今は同じように頑張りすぎている人をサポートするために、ヘルスコーチングをしています。
                     </p>
                 </div>
             </div>
-            <h1 className="text--center">あなたに安心して話してほしい</h1>
-            <div className="section section--grid">
-                <div className="grid__image">
+            <h1 className="margin--top">あなたに安心して話してほしい</h1>
+            <div className="section  section--gridReverse">
+                <div className="grid__Reverseimage">
                     <Image
                         objectFit="cover"
-                        src="/images/life/strawberry.jpg"
+                        src="/images/site/570x570.png"
                         width={600}
                         height={600}
                         alt="debug"
@@ -94,7 +98,6 @@ export default function Profile() {
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
                         <br></br>
                         だけれど、生き急いで、ゆっくり食事について考える時間がない人が多いなあ、という気がしています。
-                        <br></br>
                         <br></br>
                         <br></br>
                         私のセッションは、どんなことを言っても大丈夫な場所です。<br></br>

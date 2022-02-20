@@ -8,9 +8,8 @@ html {
     background-color: #fff;
 }
 body {
-    margin: 0;
-    font-family: “DNP 秀英角ゴシック銀 Std”, "游ゴシック体 Pr6N", “Hiragino Sans”,
-        “Hiragino Kaku Gothic ProN”, “Arial”, “Meiryo”, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
+        HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
 h1,
 h2,
@@ -22,6 +21,7 @@ h3 {
     }
 }
 h1 {
+    text-align: center;
     font-size: 2.5rem;
 }
 h2 {
@@ -76,17 +76,27 @@ ul {
 }
 
 // block要素関連
-.section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 5rem auto 0;
-    @media screen and (max-width: 880px) {
+@media screen and (max-width: 880px) {
+    .section,
+    .section--top {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    @media screen and (min-width: 880px) {
+}
+@media screen and (min-width: 880px) {
+    .section {
         padding: 0 5rem;
+    }
+}
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto 0;
+    &--top {
+        display: flex;
+        align-items: center;
+        margin: 5rem auto 0;
     }
     &--reverse {
         flex-direction: row-reverse;
@@ -96,20 +106,23 @@ ul {
     &__sentence {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
     }
-    &--large {
-        @media screen and (min-width: 800px) {
-            width: 80%;
-        }
-    }
+    // &--large {
+    //     @media screen and (min-width: 800px) {
+    //         width: 80%;
+    //     }
+    // }
     &__text {
         margin: 0 auto;
-        margin-top: 1.5rem;
+        /* margin-top: 1.5rem; */
+        margin-left: 2rem;
+        margin-right: 2rem;
         width: 601px;
+        line-height: 2;
         @media screen and (max-width: 880px) {
             padding: 1.5rem;
-            width: 400px;
+            width: auto;
         }
     }
 }
@@ -124,12 +137,6 @@ ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr;
-    }
-    .grid--square {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
     }
     .grid--three {
         display: grid;
@@ -147,10 +154,30 @@ ul {
         }
     }
 }
+.grid--square {
+    @media screen and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    @media screen and (max-width: 880px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
+// // 文字関連 // //
 // text
 .text {
+    &--left {
+        text-align: left;
+        margin: 0 auto;
+    }
     &--center {
+        margin-top: 5rem;
         text-align: center;
     }
     &--emphasized {
@@ -181,6 +208,7 @@ ul {
     color: #3f3931;
     word-break: break-word;
 }
+// // 文字関連終わり // //
 // animation
 .shadow-drop-lr {
     -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -232,7 +260,9 @@ ul {
 //sidemenu
 .sidemenu {
     display: flex;
-    position: relative;
+    position: fixed;
+    right: 0;
+    height: 50%;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
@@ -241,28 +271,5 @@ ul {
     border-radius: 1rem;
     &__sns {
         margin: 0.5rem;
-    }
-}
-
-.background {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    &--1 {
-        width: 500px;
-        height: 500px;
-        background: url("/images/life/latte.jpg") center / cover;
-    }
-    &--2 {
-        width: 500px;
-        height: 500px;
-        background: url("/images/life/veg1.jpg") center / cover;
-        @media screen and (max-width: 880px) {
-            margin-top: 2rem;
-        }
-    }
-    &__button {
-        position: absolute;
-        bottom: 35px;
     }
 }

@@ -17,7 +17,7 @@ export default function Blog({ blog }) {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <div className="margin--top">
-                <h1 className="text--center">Blog</h1>
+                <h1 className="margin--top">Blog</h1>
                 <div>
                     <div className="section">
                         <ul className="center grid--three">
