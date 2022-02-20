@@ -20,7 +20,7 @@ export default function Blog({ blog }) {
                 <h1 className="text--center">Blog</h1>
                 <div>
                     <div className="section">
-                        <ul className="center post--grid">
+                        <ul className="center grid--three">
                             {blog.map((blog) => (
                                 <li key={blog.id} className="latestBlog__item">
                                     <Image

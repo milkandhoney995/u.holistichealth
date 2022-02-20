@@ -5,19 +5,18 @@
     margin: 0;
 }
 html {
-    background-color: #fddad6;
+    background-color: #fff;
 }
 body {
     margin: 0;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック",
-        "Yu Gothic", -apple-system, BlinkMacSystemFont, Helvetica Nueu, arial, Noto Sans JP,
-        Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
-
-    line-height: 1.5;
+    font-family: “DNP 秀英角ゴシック銀 Std”, "游ゴシック体 Pr6N", “Hiragino Sans”,
+        “Hiragino Kaku Gothic ProN”, “Arial”, “Meiryo”, sans-serif;
 }
 h1,
 h2,
 h3 {
+    font-weight: normal;
+    font-family: "游ゴシック体 Pr6N", sans-serif;
     @media screen and (max-width: 880px) {
         text-align: center;
     }
@@ -90,9 +89,7 @@ ul {
         padding: 0 5rem;
     }
     &--reverse {
-        @media screen and (max-width: 880px) {
-            flex-direction: row-reverse;
-        }
+        flex-direction: row-reverse;
     }
 }
 .container {
@@ -128,13 +125,13 @@ ul {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr;
     }
-    .newPosts {
+    .grid--square {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
-    .post--grid {
+    .grid--three {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -155,6 +152,11 @@ ul {
 .text {
     &--center {
         text-align: center;
+    }
+    &--emphasized {
+        text-align: center;
+        margin: 12rem auto;
+        line-height: 2.8;
     }
 }
 // title

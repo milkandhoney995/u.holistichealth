@@ -23,22 +23,59 @@ export default function Home({ blog }) {
             <div className="section">
                 <div>
                     <h2>
-                        私たちは、<br></br>私たちの食べるものでできている
+                        誰かのための自分から、
+                        <br></br>自分のための自分に戻ろう
                     </h2>
                     <p className="container__text">
-                        私たちは、私たちの食べるものでできています<br></br>
+                        一生懸命に生きて、いつの間にか
                         <br></br>
-                        大事な人と食べる<br></br>
-                        <br></br>
-                        食材ひとつひとつを味わい<br></br>
-                        <br></br>
-                        感謝する時間、人間らしい時間を愛したい<br></br>
+                        あなたは誰かのために生きていませんか<br></br>
                         <br></br>
                         生き急ぐ日々<br></br>
                         <br></br>
-                        忘れがちな、あなたと食事の関係<br></br>
+                        期待され評価されるあなたの重荷を置いて<br></br>
+                        体と心のサインに目を向けましょう。
+                    </p>
+                </div>
+                <Image
+                    src="/images/site/570x570.png"
+                    width={500}
+                    height={400}
+                    objectFit="cover"
+                    alt="debug"
+                />
+            </div>
+            <div className="text--emphasized">
+                <h1>あなたが、あなたを変える</h1>
+                <p className="container__text">
+                    どんな悩みを持っていても<br></br>
+                    どんな理想があっても<br></br>
+                    あなたは、すでに答えを持っています<br></br>
+                    <br></br>
+                    あなたの過去は、宝です。<br></br>
+                    食生活や育ってきた環境、人間関係<br></br>
+                    楽しいこと、辛いこと<br></br>
+                    あなたの宝の軌跡は、幸せへの道標<br></br>
+                    <br></br>
+                    体と心に必要なものをあげて、<br></br>
+                    あなたらしく生きてほしい<br></br>
+                    あなた自身を愛してほしい<br></br>
+                    <br></br>
+                    あなたが持っている答えを一緒に見つけませんか
+                </p>
+            </div>
+            <div className="section section--reverse">
+                <div>
+                    <h2>食の軌跡は、人生の軌跡</h2>
+                    <p className="container__text">
+                        あなたは、あなたの食べるものでできています<br></br>
                         <br></br>
-                        一緒に、考えてみませんか。
+                        あなたの心は、あなたの食べるものに現れます<br></br>
+                        <br></br>
+                        大事な人と食べる喜び<br></br>
+                        食材ひとつひとつを味わい感謝する<br></br>
+                        <br></br>
+                        深呼吸して、人間らしい時間を思い出しませんか。
                     </p>
                 </div>
                 <Image
@@ -49,41 +86,9 @@ export default function Home({ blog }) {
                     alt="debug"
                 />
             </div>
-            <div className="margin--top text--center">
-                <h1>あなたのセーフスペースになりたい</h1>
-                <p className="container__text">
-                    生き急ぐ日々の中で、忘れがちになってしまう食事の関係
-                    <br></br>
-                    <br></br>
-                    毎日たくさん働いてくれる体が、<br></br>
-                    バランスの良い食生活で健康になると、心も満たされる。
-                    自分が満たされた状態は、自分の内の声に従って、自分らしく生きること。<br></br>
-                    自分らしく生きるとは、自分を愛すること<br></br>
-                    <br></br>
-                    大事な人と食べる<br></br>
-                    食材ひとつひとつを味わい<br></br>
-                    感謝する時間、人間らしい時間を愛してほしい<br></br>
-                    <br></br>
-                    どんなことを言っても大丈夫<br></br>
-                    深呼吸して、あなたの背負っているものを置いて、<br></br>
-                    あなたのことについて話しませんか。
-                </p>
-            </div>
-            <div className="section">
-                <div className="background background--1">
-                    <div className="background__button">
-                        <Button label="Holistic Health" href="/holistichealthcoach/philosophy" />
-                    </div>
-                </div>
-                <div className="background background--2">
-                    <div className="background__button">
-                        <Button label="About Me" href="/holistichealthcoach/profile" />
-                    </div>
-                </div>
-            </div>
             <div className="margin--top">
                 <h2 className="text--center">Blog</h2>
-                <ul className="center newPosts">
+                <ul className="center grid--square">
                     {blog.map((blog) => (
                         <li key={blog.id}>
                             <Image
@@ -102,6 +107,15 @@ export default function Home({ blog }) {
                         </li>
                     ))}
                 </ul>
+            </div>
+            <div className="margin--top">
+                <h1>Webサイト制作のご依頼はこちら</h1>
+                <p className="container__text">
+                    Webサイト制作のご依頼も受け付けております。<br></br>
+                    詳細は以下をご覧ください。<br></br>
+                    CloudWorks：<br></br>
+                    Githubアカウント：<br></br>
+                </p>
             </div>
         </Fragment>
     );

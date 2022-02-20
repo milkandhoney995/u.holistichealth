@@ -10,8 +10,19 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Hero pageTitle="About Me" bgImageUrl='"/images/life/sunnyday.png"' />
             <div className="section">
+                <Image
+                    objectFit="cover"
+                    src="/images/site/570x570.png"
+                    width={500}
+                    height={500}
+                    alt="debug"
+                />
+                <h1>
+                    あなたの<br></br>セーフスペースに
+                </h1>
+            </div>
+            <div className="section section--reverse">
                 <Image
                     objectFit="cover"
                     src="/images/site/570x570.png"
@@ -38,11 +49,11 @@ export default function Profile() {
                 </div>
             </div>
             <div className="section section--gridReverse">
-                <h2 className="text--center">頑張りすぎた</h2>
+                <h2 className="text--center">頑張りすぎた私</h2>
                 <div className="grid__Reverseimage">
                     <Image
                         objectFit="cover"
-                        src="/images/life/meal.jpg"
+                        src="/images/site/570x570.png"
                         width={600}
                         height={600}
                         alt="debug"
@@ -67,8 +78,8 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
+            <h1 className="text--center">あなたに安心して話してほしい</h1>
             <div className="section section--grid">
-                <h2>あなたのセーフスペースになりたい</h2>
                 <div className="grid__image">
                     <Image
                         objectFit="cover"
