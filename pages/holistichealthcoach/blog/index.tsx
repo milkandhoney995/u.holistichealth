@@ -19,10 +19,10 @@ export default function Blog({ blog }) {
             <div className="margin--top">
                 <h1 className="margin--top">Blog</h1>
                 <div>
-                    <div className="section">
-                        <ul className="center grid--three">
+                    <div>
+                        <ul className="grid--three">
                             {blog.map((blog) => (
-                                <li key={blog.id} className="latestBlog__item">
+                                <li key={blog.id}>
                                     <Image
                                         objectFit="cover"
                                         src={blog.image.url}

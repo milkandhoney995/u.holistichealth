@@ -1,5 +1,5 @@
 .button {
-    width: 250px;
+    width: clamp(200px, 40%, 1000px);
     text-align: center;
     margin: 0 auto;
     margin-top: 1rem;

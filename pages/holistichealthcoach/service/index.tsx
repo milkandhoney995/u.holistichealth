@@ -61,7 +61,7 @@ export default function Service() {
                 </div>
             </div>
             <h1 className="margin--top">My Offering</h1>
-            <div className="section--grid section">
+            <div className="section--grid section grid">
                 <h2>1:1 90 Minute Session</h2>
                 <div className="grid__image">
                     <Image
@@ -89,7 +89,7 @@ export default function Service() {
                     <Button href='"/"' label="Book" />
                 </div>
             </div>
-            <div className="section--gridReverse section">
+            <div className="grid section--gridReverse section">
                 <h2>6 month program</h2>
                 <div className="grid__Reverseimage">
                     <Image

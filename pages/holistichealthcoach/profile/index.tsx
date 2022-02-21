@@ -53,7 +53,7 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section section--grid">
+            <div className="section section--grid grid">
                 <h2>頑張りすぎた私</h2>
                 <div className="grid__image">
                     <Image
@@ -83,7 +83,7 @@ export default function Profile() {
                 </div>
             </div>
             <h1 className="margin--top">あなたに安心して話してほしい</h1>
-            <div className="section  section--gridReverse">
+            <div className="section grid section--gridReverse">
                 <div className="grid__Reverseimage">
                     <Image
                         objectFit="cover"
