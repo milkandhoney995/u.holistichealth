@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/hero/hero";
 // import Scroll from "../../components/scroll/scroll";
-import Button from "../../components/button/button";
+// import Button from "../../components/button/button";
 import { client } from "../../libs/client";
 import { Fragment } from "react";
 import dayjs from "dayjs";
@@ -21,7 +21,7 @@ export default function Home({ blog }) {
             </Head>
             <Hero bgImageUrl='"/images/life/sunnyday.png"' />
             <div className="section">
-                <div>
+                <div className="section__text">
                     <h2>
                         誰かのための自分から、
                         <br></br>自分のための自分に戻ろう
@@ -65,8 +65,10 @@ export default function Home({ blog }) {
                 </p>
             </div>
             <div className="section section--reverse">
-                <div>
-                    <h2>食の軌跡は、人生の軌跡</h2>
+                <div className="section__text">
+                    <h2>
+                        食の軌跡は、<br></br>人生の軌跡
+                    </h2>
                     <p className="container__text">
                         あなたは、あなたの食べるものでできています<br></br>
                         <br></br>
@@ -86,29 +88,34 @@ export default function Home({ blog }) {
                     alt="debug"
                 />
             </div>
-            <h1 className="margin--top">Blog</h1>
-
-            <div className="margin--top">
-                <ul className="grid--square">
-                    {blog.map((blog) => (
-                        <li key={blog.id}>
-                            <Image
-                                objectFit="cover"
-                                src={blog.image.url}
-                                width={400}
-                                height={400}
-                                alt="debug"
-                            />
-                            <p className="caption">
-                                {dayjs.utc(blog.publishedAt).tz("Asia/Tokyo").format("YYYY-MM-DD")}
-                            </p>
-                            <Link href={`holistichealthcoach/blog/${blog.id}`}>
-                                <a className="sentence">{blog.title}</a>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+            <div className="text--emphasized">
+                <h1>Blog</h1>
+                <div>
+                    <ul className="grid--three1">
+                        {blog.map((blog) => (
+                            <li key={blog.id} className="card">
+                                <Image
+                                    objectFit="cover"
+                                    src={blog.image.url}
+                                    width={400}
+                                    height={400}
+                                    alt="debug"
+                                />
+                                <p className="caption">
+                                    {dayjs
+                                        .utc(blog.publishedAt)
+                                        .tz("Asia/Tokyo")
+                                        .format("YYYY-MM-DD")}
+                                </p>
+                                <Link href={`holistichealthcoach/blog/${blog.id}`}>
+                                    <a className="sentence">{blog.title}</a>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
+
             <div className="margin--top">
                 <h1>Webサイト制作のご依頼はこちら</h1>
                 <p className="container__text">

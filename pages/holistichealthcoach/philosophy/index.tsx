@@ -48,7 +48,7 @@ export default function Philosophy() {
                         height={300}
                         alt="debug"
                     />
-                    <div className="container__sentence">
+                    <div>
                         <p className="container__text">
                             近年、「健康」という言葉は。病気や怪我がないだけでなく、人間関係やワークライフバランス、運動やスピリチュアルなど多元的な要素のバランスが取れた状態とと定義されつつあります。そのため、近年のヘルス分野では、目に見える症状ではなく、根本的な原因を特定し、解決することに重点が置かれています。
                             <br></br>
@@ -71,7 +71,7 @@ export default function Philosophy() {
                         height={300}
                         alt="debug"
                     />
-                    <div className="container__sentence">
+                    <div>
                         <h2>ヘルスコーチングで偏りを見つける</h2>
                         <p className="container__text">
                             ヘルスコーチとは、クライアントが悩みの根本に向き合うサポートをする仕事です。
@@ -95,7 +95,7 @@ export default function Philosophy() {
                         height={300}
                         alt="debug"
                     />
-                    <div className="container__sentence">
+                    <div>
                         <p className="container__text">
                             あなたは、子供のころどんな夢を持っていましたか<br></br>
                             <br></br>

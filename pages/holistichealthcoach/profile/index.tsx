@@ -30,7 +30,7 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <div className="container__sentence">
+                <div>
                     <div>
                         <h2>Utano Harada</h2>
                         <h3 className="title--small">
@@ -59,12 +59,12 @@ export default function Profile() {
                     <Image
                         objectFit="cover"
                         src="/images/site/570x570.png"
-                        width={600}
+                        width={500}
                         height={600}
                         alt="debug"
                     />
                 </div>
-                <div className="container__sentence">
+                <div>
                     <p className="container__text">
                         私は、ストレスと極端な食事制限のせいで心身のバランスを壊したことがあります。
                         <br></br>
@@ -93,7 +93,7 @@ export default function Profile() {
                         alt="debug"
                     />
                 </div>
-                <div className="container__sentence">
+                <div>
                     <p className="container__text">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
                         <br></br>

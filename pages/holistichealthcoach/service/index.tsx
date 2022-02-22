@@ -22,7 +22,7 @@ export default function Service() {
                         height={300}
                         alt="debug"
                     />
-                    <div className="container__sentence">
+                    <div>
                         <h2>変化を習慣化する</h2>
                         <p className="container__text">
                             食事、マインドセット、人間関係など、<br></br>
@@ -46,7 +46,7 @@ export default function Service() {
                         height={300}
                         alt="debug"
                     />
-                    <div className="container__sentence">
+                    <div>
                         <h2>あなたのお気に入りの場所で</h2>
                         <p className="container__text">
                             セッションは対面形式です。<br></br>
@@ -61,7 +61,7 @@ export default function Service() {
                 </div>
             </div>
             <h1 className="margin--top">My Offering</h1>
-            <div className="section--grid section grid">
+            <div className="section--grid grid">
                 <h2>1:1 90 Minute Session</h2>
                 <div className="grid__image">
                     <Image
@@ -73,7 +73,7 @@ export default function Service() {
                     />
                 </div>
 
-                <div className="container__sentence">
+                <div>
                     <p className="container__text">
                         セッションの前日までにワークシートを記入していただきます。
                         <br></br>
@@ -89,7 +89,7 @@ export default function Service() {
                     <Button href='"/"' label="Book" />
                 </div>
             </div>
-            <div className="grid section--gridReverse section">
+            <div className="grid section--gridReverse">
                 <h2>6 month program</h2>
                 <div className="grid__Reverseimage">
                     <Image
@@ -100,7 +100,7 @@ export default function Service() {
                         alt="debug"
                     />
                 </div>
-                <div className="container__sentence">
+                <div>
                     <p className="container__text">
                         もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
                         <br></br>

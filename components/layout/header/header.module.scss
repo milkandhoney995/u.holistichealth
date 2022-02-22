@@ -10,9 +10,6 @@
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     z-index: 2;
 }
-.header a {
-    font-size: 0.875rem;
-}
 
 .header a:hover,
 .header a:active,
@@ -23,9 +20,5 @@
 @media (min-width: 768px) {
     .header ul {
         gap: 0.5rem;
-    }
-
-    .header a {
-        font-size: 0.875rem;
     }
 }

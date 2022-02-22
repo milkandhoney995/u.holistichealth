@@ -5,7 +5,7 @@
     margin: 0;
 }
 html {
-    background-color: #fff;
+    background-color: #faeee7;
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
@@ -57,7 +57,7 @@ ul {
 }
 .margin {
     &--top {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 }
 // 最初のページ
@@ -92,7 +92,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10rem auto 0;
+    margin: 6rem auto 0;
+    &__text {
+        background: #fffffe;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 3px;
+    }
     &--top {
         display: flex;
         align-items: center;
@@ -106,7 +112,6 @@ ul {
     &__sentence {
         display: flex;
         flex-direction: column;
-        // align-items: center;
     }
     &__text {
         margin: 0 auto;
@@ -121,7 +126,9 @@ ul {
 .grid {
     display: grid;
     justify-items: center;
+    margin-top: 2rem;
     &--three,
+    &--three1,
     &--square {
         display: grid;
         justify-items: center;
@@ -141,6 +148,10 @@ ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .grid--three1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .grid--square {
         grid-template-columns: 1fr 1fr;
@@ -170,8 +181,10 @@ ul {
     }
     &--emphasized {
         text-align: center;
-        margin: 12rem auto;
-        line-height: 2.8;
+        margin: 6rem auto;
+        padding: 5rem 0;
+        line-height: 2.5;
+        background: #fffffe;
     }
 }
 // title
@@ -179,6 +192,25 @@ ul {
     &--small {
         font-size: 1rem;
         color: #b2b2a2;
+    }
+}
+.card,
+.card--white {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 3px;
+    transition: transform 200ms cubic-bezier(0.561, -0.163, 0.246, 1.27),
+        -webkit-transform 200ms cubic-bezier(0.561, -0.163, 0.246, 1.27);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 5px 15px -10px #000;
+        transform: translate(0px, -4px);
+    }
+}
+.card {
+    background-color: #faeee7;
+    &--white {
+        background-color: #fffffe;
     }
 }
 

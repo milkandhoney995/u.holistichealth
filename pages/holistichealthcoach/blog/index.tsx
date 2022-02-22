@@ -22,7 +22,7 @@ export default function Blog({ blog }) {
                     <div>
                         <ul className="grid--three">
                             {blog.map((blog) => (
-                                <li key={blog.id}>
+                                <li key={blog.id} className="card--white">
                                     <Image
                                         objectFit="cover"
                                         src={blog.image.url}

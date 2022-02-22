@@ -9,6 +9,7 @@ export default function Hamburger({ isOpen }) {
         { id: 4, href: "/holistichealthcoach/blog", title: "Blog" },
         { id: 5, href: "/holistichealthcoach/service", title: "Service" },
     ];
+
     return (
         <>
             <div className="hamburger">
@@ -30,18 +31,18 @@ export default function Hamburger({ isOpen }) {
                     .menu-items {
                         display: flex;
                         flex-direction: column;
+                        justify-content: center;
                         text-align: center;
                         height: 100vh;
                         margin-left: -40px;
-                        padding-top: 8rem;
                         background: #fff;
                         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
                         transform: translate(-150%);
                         transition: transform 0.5s ease-in-out;
                     }
-                    .menu-items li {
+                    .menu-item {
                         margin-bottom: 1.2rem;
-                        font-size: 1.5rem;
+                        font-size: 2rem;
                         font-weight: 500;
                     }
                     .hamburger {

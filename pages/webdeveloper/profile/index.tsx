@@ -18,7 +18,7 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <div className="container__sentence">
+                <div>
                     <h2>Utano Harada</h2>
                     <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
                     <p className="container__text">
