@@ -256,12 +256,17 @@ ul {
 
 .post {
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
     padding: 2rem;
+    width: clamp(350px, 80%, 900px);
+    margin: 0 auto;
     &__container {
         position: relative;
         margin-top: 5rem;
+    }
+    &__title {
+        text-align: left;
     }
     &__image {
         margin-top: 1.5rem;
@@ -283,9 +288,23 @@ ul {
     border: 1px solid #ccc;
     border-radius: 1rem;
     margin: 0 auto;
-    &__sns {
+    &__sns,
+    &__title {
         margin: 0.5rem;
     }
+    &__title {
+        text-align: center;
+    }
+    &__text,
+    &__category {
+        width: 300px;
+        margin-top: 2rem;
+    }
+}
+.buttonCheckboxs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
 }
 @media screen and (min-width: 1100px) {
     .sidemenu {

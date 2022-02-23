@@ -1,9 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
+import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 
 export default function PostId({ data }) {
+    const tags = [
+        { tag: "health" },
+        { tag: "news" },
+        { tag: "self love" },
+        { tag: "mindfulness" },
+        { tag: "food" },
+    ];
     return (
         <Fragment>
             <Head>
@@ -12,7 +20,7 @@ export default function PostId({ data }) {
             </Head>
             <div className="post__container">
                 <div className="post">
-                    <h1>{data.title}</h1>
+                    <h1 className="post__title">{data.title}</h1>
                     <Image
                         className="post__image"
                         src={data.image.url}
@@ -44,7 +52,14 @@ export default function PostId({ data }) {
                     <div className="sidemenu__sns">
                         <Image
                             objectFit="cover"
-                            src="/images/site/570x570.png"
+                            src="/images/site/facebook.svg"
+                            width={25}
+                            height={25}
+                            alt="debug"
+                        />
+                        <Image
+                            objectFit="cover"
+                            src="/images/site/instagram.svg"
                             width={25}
                             height={25}
                             alt="debug"
@@ -56,13 +71,23 @@ export default function PostId({ data }) {
                             height={25}
                             alt="debug"
                         />
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
+                    </div>
+                    <p className="sidemenu__text">
+                        食べること、歌うこと、勉強すること、話すことが好きです。
+                        <br></br>
+                        <br></br>
+                        ヘルスコーチング、Web制作の依頼は以下メールアドレスから。<br></br>
+                        email: uta.holistichealthandweb@gmail.com
+                    </p>
+                    <div className="sidemenu__category">
+                        <h3 className="sidemenu__title">Category</h3>
+                        <ul className="buttonCheckboxs">
+                            {tags.map((tags) => (
+                                <li key={tags.tag}>
+                                    <Tag tag={tags.tag} />
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             </div>
