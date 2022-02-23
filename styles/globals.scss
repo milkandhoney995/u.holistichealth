@@ -300,8 +300,13 @@ ul {
         width: 300px;
         margin-top: 2rem;
     }
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+    }
 }
-.buttonCheckboxs {
+.category {
     display: flex;
     flex-wrap: wrap;
     width: 300px;

@@ -5,13 +5,6 @@ import { client } from "../../../libs/client";
 import { Fragment } from "react";
 
 export default function PostId({ data }) {
-    const tags = [
-        { tag: "health" },
-        { tag: "news" },
-        { tag: "self love" },
-        { tag: "mindfulness" },
-        { tag: "food" },
-    ];
     return (
         <Fragment>
             <Head>
@@ -81,13 +74,9 @@ export default function PostId({ data }) {
                     </p>
                     <div className="sidemenu__category">
                         <h3 className="sidemenu__title">Category</h3>
-                        <ul className="buttonCheckboxs">
-                            {tags.map((tags) => (
-                                <li key={tags.tag}>
-                                    <Tag tag={tags.tag} />
-                                </li>
-                            ))}
-                        </ul>
+                        <div className="sidemenu__tags">
+                            <Tag />
+                        </div>
                     </div>
                 </div>
             </div>

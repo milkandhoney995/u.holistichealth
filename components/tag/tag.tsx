@@ -2,14 +2,26 @@ import { useRouter } from "next/router";
 import classes from "./tag.module.scss";
 
 export default function Tag(props) {
+    const tags = [
+        { tag: "health" },
+        { tag: "news" },
+        { tag: "self love" },
+        { tag: "mindfulness" },
+        { tag: "food" },
+    ];
     return (
         <>
-            <div className={classes.buttonLikeCheckbox}>
-                <input className="input" type="checkbox" name={props.tag} id={props.tag} />
-                <label htmlFor={props.tag} className="label">
-                    {props.tag}
-                </label>
-            </div>
+            <ul className={classes.buttonLikeCheckbox}>
+                {tags.map((tags) => (
+                    <li key={tags.tag}>
+                        <input className="input" type="checkbox" name={tags.tag} id={tags.tag} />
+                        <label htmlFor={tags.tag} className="label">
+                            {tags.tag}
+                        </label>
+                    </li>
+                ))}
+            </ul>
+
             <style jsx>
                 {`
                     .input {

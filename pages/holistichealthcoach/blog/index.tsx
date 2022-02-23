@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 import dayjs from "dayjs";
@@ -18,6 +19,9 @@ export default function Blog({ blog }) {
             </Head>
             <div className="margin--top">
                 <h1 className="margin--top">Blog</h1>
+                <div className="category">
+                    <Tag />
+                </div>
                 <div>
                     <div>
                         <ul className="grid--three">
