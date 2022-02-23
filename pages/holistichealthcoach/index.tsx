@@ -40,7 +40,7 @@ export default function Home({ blog }) {
                     </p>
                 </div>
                 <Image
-                    src="/images/site/570x570.png"
+                    src="/images/life/hana.jpg"
                     width={500}
                     height={400}
                     objectFit="cover"
