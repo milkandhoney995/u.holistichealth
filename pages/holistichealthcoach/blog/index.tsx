@@ -41,7 +41,7 @@ export default function Blog({ blog }) {
                                             .format("YYYY-MM-DD")}
                                     </p>
                                     <Link href={`/holistichealthcoach/blog/${blog.id}`}>
-                                        <a className="sentence">{blog.title}</a>
+                                        <p className="sentence">{blog.title}</p>
                                     </Link>
                                 </li>
                             ))}
