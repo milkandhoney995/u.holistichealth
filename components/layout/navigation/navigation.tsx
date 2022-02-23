@@ -34,10 +34,8 @@ export default function Navigation() {
                         </div>
                         <ul className={classes.menu}>
                             {menuList.map((menu) => (
-                                <li className={classes.menuItem}>
-                                    <Link key={menu.id} href={menu.href}>
-                                        {menu.title}
-                                    </Link>
+                                <li key={menu.id} className={classes.menuItem}>
+                                    <Link href={menu.href}>{menu.title}</Link>
                                 </li>
                             ))}
                         </ul>
