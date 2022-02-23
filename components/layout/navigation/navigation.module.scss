@@ -47,5 +47,26 @@
     }
 }
 .menuItem {
+    display: inline-block;
+    position: relative;
     margin: 0 1rem;
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        margin: -5px 0;
+        background-color: #ff8ba7;
+        // visibility: hidden;
+        // transform: scaleX(0);
+        transition: all 0.4s ease-in 0s;
+    }
+    &:hover:after {
+        // visibility: visible;
+        // transform: scaleX(1);
+        width: 100%;
+    }
 }
