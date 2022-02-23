@@ -127,6 +127,7 @@ ul {
     display: grid;
     justify-items: center;
     margin-top: 2rem;
+    &----twoColumns,
     &--three,
     &--three1,
     &--square {
@@ -134,6 +135,10 @@ ul {
         justify-items: center;
         padding: 0;
     }
+}
+.grid--twoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 @media screen and (min-width: 1000px) {
     .section--grid {
@@ -285,9 +290,9 @@ ul {
     padding: 2rem;
     width: clamp(350px, 50%, 360px);
     background: #fff;
-    border: 1px solid #ccc;
     border-radius: 1rem;
     margin: 0 auto;
+    box-shadow: 0 5px 15px -10px #000;
     &__sns,
     &__title {
         margin: 0.5rem;
@@ -299,11 +304,13 @@ ul {
     &__category {
         width: 300px;
         margin-top: 2rem;
+        border-left: 1px solid #c3f0ca;
+        border-top: 1px solid #c3f0ca;
     }
     &__tags {
         display: flex;
         flex-wrap: wrap;
-        width: 300px;
+        width: 500px;
     }
 }
 .category {
