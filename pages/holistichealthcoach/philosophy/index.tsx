@@ -29,7 +29,7 @@ export default function Philosophy() {
                 </div>
                 <Image
                     objectFit="cover"
-                    src="/images/site/570x570.png"
+                    src="/images/site/selflove.jpg"
                     width={400}
                     height={400}
                     alt="debug"

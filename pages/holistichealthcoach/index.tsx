@@ -19,13 +19,15 @@ export default function Home({ blog }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Hero bgImageUrl='"/images/life/sunnyday.png"' />
-            <div className="section">
-                <div className="section__text">
-                    <h2>
+            <Hero
+                bgImageUrl='"/images/site/freedom.jpg"'
+                heroBody="<h2>
                         誰かのための自分から、
                         <br></br>自分のための自分に戻ろう
-                    </h2>
+                    </h2>"
+            />
+            <div className="section">
+                <div className="section__text">
                     <p className="container__text">
                         一生懸命に生きて、いつの間にか
                         <br></br>
