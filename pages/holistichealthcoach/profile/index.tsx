@@ -18,26 +18,25 @@ export default function Profile() {
                     height={500}
                     alt="debug"
                 />
-                <h1 className="text--left">
+                {/* <h1 className="text--left">
                     あなたの<br></br>セーフスペースに
-                </h1>
+                </h1> */}
             </div>
-            <div className="section section--reverse">
-                <Image
-                    objectFit="cover"
-                    src="/images/site/570x570.png"
-                    width={500}
-                    height={500}
-                    alt="debug"
-                />
+            <div className="grid--three1 margin--top">
                 <div>
-                    <div>
-                        <h2>Utano Harada</h2>
-                        <h3 className="title--small">
-                            Holistic Health Coach & Web Frontend Engineer
-                        </h3>
-                    </div>
-
+                    <h2>Utano Harada</h2>
+                    <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
+                </div>
+                <div className="grid__image">
+                    <Image
+                        objectFit="cover"
+                        src="/images/life/salada.jpg"
+                        width={400}
+                        height={400}
+                        alt="debug"
+                    />
+                </div>
+                <div>
                     <p className="container__text">
                         皆さん、こんにちは。Utanoです。<br></br>
                         サイトに足を運んでくださって、ありがとうございます。
@@ -53,12 +52,12 @@ export default function Profile() {
                     </p>
                 </div>
             </div>
-            <div className="section section--grid grid">
+            <div className="grid--three1 margin--top">
                 <h2>頑張りすぎた私</h2>
                 <div className="grid__image">
                     <Image
                         objectFit="cover"
-                        src="/images/site/570x570.png"
+                        src="/images/life/salada.jpg"
                         width={500}
                         height={600}
                         alt="debug"
@@ -84,15 +83,6 @@ export default function Profile() {
             </div>
             <h1 className="margin--top">あなたに安心して話してほしい</h1>
             <div className="section grid section--gridReverse">
-                <div className="grid__Reverseimage">
-                    <Image
-                        objectFit="cover"
-                        src="/images/site/570x570.png"
-                        width={600}
-                        height={600}
-                        alt="debug"
-                    />
-                </div>
                 <div>
                     <p className="container__text">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
@@ -104,6 +94,15 @@ export default function Profile() {
                         深呼吸して、あなたの背負っているものを置いて、<br></br>
                         あなたのことについて話しませんか。
                     </p>
+                </div>
+                <div className="grid__Reverseimage">
+                    <Image
+                        objectFit="cover"
+                        src="/images/site/570x570.png"
+                        width={600}
+                        height={600}
+                        alt="debug"
+                    />
                 </div>
             </div>
         </Fragment>

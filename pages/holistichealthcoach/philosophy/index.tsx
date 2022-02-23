@@ -40,10 +40,10 @@ export default function Philosophy() {
                     あなたの生活は、<br></br>
                     何かに偏っていませんか？
                 </h2>
-                <div className="section">
+                <div className="grid--twoColumns">
                     <Image
                         objectFit="cover"
-                        src="/images/site/570x570.png"
+                        src="/images/life/cafe.jpg"
                         width={300}
                         height={300}
                         alt="debug"
@@ -63,14 +63,7 @@ export default function Philosophy() {
                 </div>
             </div>
             <div className="margin--top">
-                <div className="section section--reverse">
-                    <Image
-                        objectFit="cover"
-                        src="/images/site/570x570.png"
-                        width={300}
-                        height={300}
-                        alt="debug"
-                    />
+                <div className="grid--twoColumns">
                     <div>
                         <h2>ヘルスコーチングで偏りを見つける</h2>
                         <p className="container__text">
@@ -80,6 +73,13 @@ export default function Philosophy() {
                             Nutritionのホリスティックヘルスに基づき、過去に経験した環境の変化や仕事、人間関係、食生活などからあなたのルーツをたどります。
                         </p>
                     </div>
+                    <Image
+                        objectFit="cover"
+                        src="/images/site/570x570.png"
+                        width={300}
+                        height={300}
+                        alt="debug"
+                    />
                 </div>
             </div>
             <h1 className="margin--top">
@@ -87,11 +87,11 @@ export default function Philosophy() {
                 あなたの話をしませんか
             </h1>
             <div className="margin--top">
-                <div className="section">
+                <div className="grid--twoColumns">
                     <Image
                         objectFit="cover"
                         src="/images/site/570x570.png"
-                        width={400}
+                        width={300}
                         height={300}
                         alt="debug"
                     />
