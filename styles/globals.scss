@@ -92,7 +92,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6rem auto 0;
+    margin: 3rem auto 0;
+    &__wrap {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
     &__text {
         background: #fffffe;
         margin: 1rem;
@@ -127,7 +132,7 @@ ul {
     display: grid;
     justify-items: center;
     margin-top: 2rem;
-    &----twoColumns,
+    &--twoColumns,
     &--three,
     &--three1,
     &--square {
@@ -135,10 +140,6 @@ ul {
         justify-items: center;
         padding: 0;
     }
-}
-.grid--twoColumns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 @media screen and (min-width: 1000px) {
     .section--grid {
@@ -148,6 +149,11 @@ ul {
     .section--gridReverse {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr;
+    }
+    .grid--twoColumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
     .grid--three {
         display: grid;
