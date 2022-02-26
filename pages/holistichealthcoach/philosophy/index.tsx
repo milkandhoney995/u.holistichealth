@@ -12,13 +12,12 @@ export default function Philosophy() {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' />
-            <h2 className="text--center">内側の答えを見つける、原因がわかる</h2>
             <div className="section">
                 <p className="container__text">
                     情報が国境を越える社会
                     <br></br>
                     <br></br>
-                    ヘルスケアにおいても、さまざまな食事法・健康法があり、<br></br>
+                    ヘルスケアにおいても、さまざまな食事法があり、<br></br>
                     まず何をすればいいのか、迷子になってはいませんか？<br></br>
                     <br></br>
                     今のあなたに必要なことは、体と心が知っています<br></br>
@@ -72,18 +71,9 @@ export default function Philosophy() {
                     alt="debug"
                 />
             </div>
-            <h1 className="margin--top">
-                あなたの好きな場所で、<br></br>
-                あなたの話をしませんか
-            </h1>
-            <div className="section">
-                <Image
-                    objectFit="cover"
-                    src="/images/site/570x570.png"
-                    width={300}
-                    height={300}
-                    alt="debug"
-                />
+
+            <div className="section--emphasized">
+                <h1>あなたの話をしませんか</h1>
                 <p className="container__text">
                     あなたは、子供のころどんな夢を持っていましたか<br></br>
                     <br></br>

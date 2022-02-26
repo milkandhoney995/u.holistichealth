@@ -11,19 +11,21 @@ export default function PostId({ data }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="post__container">
-                <div className="post">
-                    <h1 className="post__title">{data.title}</h1>
-                    <Image
-                        className="post__image"
-                        src={data.image.url}
-                        width={680}
-                        height={500}
-                        objectFit="cover"
-                        alt="debug"
-                    />
+            <div className=" page__container">
+                <div className=" page">
+                    <h1 className="page__title">{data.title}</h1>
+                    <div className="page__image">
+                        <Image
+                            src={data.image.url}
+                            width={680}
+                            height={500}
+                            objectFit="cover"
+                            alt="debug"
+                        />
+                    </div>
+
                     <div
-                        className="post__sentence"
+                        className="page__sentence"
                         dangerouslySetInnerHTML={{ __html: data.body }}
                     ></div>
                 </div>
@@ -74,9 +76,8 @@ export default function PostId({ data }) {
                     </p>
                     <div className="sidemenu__category">
                         <h3 className="sidemenu__title">Category</h3>
-                        <div className="sidemenu__tags">
-                            <Tag />
-                        </div>
+
+                        <Tag />
                     </div>
                 </div>
             </div>

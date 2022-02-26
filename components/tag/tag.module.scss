@@ -1,6 +1,8 @@
 .buttonLikeCheckbox {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    padding-left: 0;
 }
 // .input {
 //     position: absolute;

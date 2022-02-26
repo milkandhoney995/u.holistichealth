@@ -47,7 +47,7 @@ export default function Home({ blog }) {
                     alt="debug"
                 />
             </div>
-            <div className="text--emphasized">
+            <div className="section--emphasized">
                 <h1>あなたが、あなたを変える</h1>
                 <p>
                     どんな悩みを持っていても<br></br>
@@ -90,7 +90,7 @@ export default function Home({ blog }) {
                     alt="debug"
                 />
             </div>
-            <div className="text--emphasized">
+            <div className="section--emphasized">
                 <h1>Blog</h1>
                 <div>
                     <ul className="grid--three1">
@@ -116,16 +116,6 @@ export default function Home({ blog }) {
                         ))}
                     </ul>
                 </div>
-            </div>
-
-            <div className="margin--top">
-                <h1>Webサイト制作のご依頼はこちら</h1>
-                <p className="container__text">
-                    Webサイト制作のご依頼も受け付けております。<br></br>
-                    詳細は以下をご覧ください。<br></br>
-                    CloudWorks：<br></br>
-                    Githubアカウント：<br></br>
-                </p>
             </div>
         </Fragment>
     );
