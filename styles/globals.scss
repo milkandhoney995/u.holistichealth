@@ -18,6 +18,9 @@ body {
     --caption: #b2b2a2;
     --title-border: #c3f0ca;
 
+    div {
+        line-height: 2;
+    }
     h1,
     h2,
     h3 {
@@ -112,9 +115,10 @@ body {
             margin-top: 4rem;
         }
         &__text {
-            background: var(--secondary-background);
+            width: clamp(350px, 80%, 500px);
             margin: 1rem;
             padding: 2rem;
+            background: var(--secondary-background);
             border-radius: 3px;
         }
         &--top {
@@ -316,11 +320,6 @@ body {
         //     display: flex;
         //     flex-wrap: wrap;
         // }
-    }
-    .category {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
     }
     @media screen and (min-width: 1100px) {
         .sidemenu {

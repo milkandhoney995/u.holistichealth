@@ -13,7 +13,7 @@ export default function Philosophy() {
             </Head>
             <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' />
             <div className="section">
-                <p className="container__text">
+                <p className="section__text">
                     情報が国境を越える社会
                     <br></br>
                     <br></br>
@@ -44,7 +44,7 @@ export default function Philosophy() {
                     height={300}
                     alt="debug"
                 />
-                <p className="container__text">
+                <p className="section__text">
                     近年、「健康」という言葉は。病気や怪我がないだけでなく、人間関係やワークライフバランス、運動やスピリチュアルなど多元的な要素のバランスが取れた状態とと定義されつつあります。そのため、近年のヘルス分野では、目に見える症状ではなく、根本的な原因を特定し、解決することに重点が置かれています。
                     <br></br>
                     この考えは、アメリカをはじめとする先進国で Holistic Health（Holistic：全体的な）
@@ -57,7 +57,7 @@ export default function Philosophy() {
             </div>
             <h2 className="text--center">ヘルスコーチングで偏りを見つける</h2>
             <div className="section">
-                <p className="container__text">
+                <p className="section__text">
                     ヘルスコーチとは、クライアントが悩みの根本に向き合うサポートをする仕事です。
                     <br></br>
                     私のヘルスコーチングでは、NY拠点の栄養学校 Institute for Integrative

@@ -28,7 +28,7 @@ export default function Home({ blog }) {
             />
             <div className="section">
                 <div className="section__text">
-                    <p className="container__text">
+                    <p>
                         一生懸命に生きて、いつの間にか
                         <br></br>
                         あなたは誰かのために生きていませんか<br></br>
@@ -68,14 +68,11 @@ export default function Home({ blog }) {
             </div>
             <div className="section section--reverse">
                 <div className="section__text">
-                    <h2>
-                        食の軌跡は、<br></br>人生の軌跡
-                    </h2>
-                    <p className="container__text">
+                    <p>
                         あなたは、あなたの食べるものでできています<br></br>
-                        <br></br>
                         あなたの心は、あなたの食べるものに現れます<br></br>
                         <br></br>
+                        食の軌跡は、人生の軌跡<br></br>
                         大事な人と食べる喜び<br></br>
                         食材ひとつひとつを味わい感謝する<br></br>
                         <br></br>

@@ -19,9 +19,8 @@ export default function Blog({ blog }) {
             </Head>
             <div className="margin--top">
                 <h1 className="margin--top">Blog</h1>
-                <div className="category">
-                    <Tag />
-                </div>
+
+                <Tag />
                 <div>
                     <div>
                         <ul className="grid--three">
