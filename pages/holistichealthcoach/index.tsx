@@ -93,22 +93,26 @@ export default function Home({ blog }) {
                     <ul className="grid--three1">
                         {blog.map((blog) => (
                             <li key={blog.id} className="card">
-                                <Image
-                                    objectFit="cover"
-                                    src={blog.image.url}
-                                    width={400}
-                                    height={400}
-                                    alt="debug"
-                                />
-                                <p className="caption">
-                                    {dayjs
-                                        .utc(blog.publishedAt)
-                                        .tz("Asia/Tokyo")
-                                        .format("YYYY-MM-DD")}
-                                </p>
-                                <Link href={`holistichealthcoach/blog/${blog.id}`}>
-                                    <a className="sentence">{blog.title}</a>
-                                </Link>
+                                <div className="card__image">
+                                    <Image
+                                        objectFit="cover"
+                                        src={blog.image.url}
+                                        width={400}
+                                        height={400}
+                                        alt="debug"
+                                    />
+                                </div>
+                                <div className="padding">
+                                    <p className="caption">
+                                        {dayjs
+                                            .utc(blog.publishedAt)
+                                            .tz("Asia/Tokyo")
+                                            .format("YYYY-MM-DD")}
+                                    </p>
+                                    <Link href={`holistichealthcoach/blog/${blog.id}`}>
+                                        <a className="sentence">{blog.title}</a>
+                                    </Link>
+                                </div>
                             </li>
                         ))}
                     </ul>

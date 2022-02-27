@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     position: relative;
     padding-left: 0;
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
 }
 // .input {
 //     position: absolute;

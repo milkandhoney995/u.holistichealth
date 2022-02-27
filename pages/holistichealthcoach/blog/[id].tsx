@@ -11,7 +11,7 @@ export default function PostId({ data }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className=" page__container">
+            <div className="page__container">
                 <div className=" page">
                     <h1 className="page__title">{data.title}</h1>
                     <div className="page__image">
@@ -35,8 +35,8 @@ export default function PostId({ data }) {
                         <Image
                             objectFit="cover"
                             src="/images/site/570x570.png"
-                            width={70}
-                            height={70}
+                            width={60}
+                            height={60}
                             alt="debug"
                         />
                     </div>

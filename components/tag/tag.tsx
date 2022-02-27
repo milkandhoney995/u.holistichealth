@@ -39,7 +39,9 @@ export default function Tag(props) {
                         cursor: pointer;
                     }
                     .input:checked + .label {
-                        background: ${props.backgroundColor ? props.backgroundColor : "#c3f0ca"};
+                        background: ${props.backgroundColor
+                            ? props.backgroundColor
+                            : "rgb(103, 145, 134)"};
                         color: ${props.color ? props.color : "#fffffe"};
                     }
                 `}

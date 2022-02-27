@@ -80,7 +80,10 @@ export default function Service() {
                             <br></br>1セッション50分<br></br>
                             初回無料、2回目以降3,000円。
                         </p>
-                        <Button href='"/"' label="Book" />
+                        <Button
+                            href='"https://docs.google.com/forms/d/e/1FAIpQLScyrg7yJQIIZQMpuZ8c8KTpPQd_GBY-nubF-uorsB8Vj8-2jw/viewform?usp=sf_link"'
+                            label="アンケートに答える"
+                        />
                     </div>
                 </div>
             </div>

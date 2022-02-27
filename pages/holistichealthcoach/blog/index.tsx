@@ -20,12 +20,12 @@ export default function Blog({ blog }) {
             <div className="margin--top">
                 <h1 className="margin--top">Blog</h1>
 
-                <Tag />
-                <div>
-                    <div>
-                        <ul className="grid--three">
-                            {blog.map((blog) => (
-                                <li key={blog.id} className="card--white">
+                <div className="margin--top">
+                    <Tag />
+                    <ul className="grid--three">
+                        {blog.map((blog) => (
+                            <li key={blog.id} className="card">
+                                <div className="card__image">
                                     <Image
                                         objectFit="cover"
                                         src={blog.image.url}
@@ -33,6 +33,8 @@ export default function Blog({ blog }) {
                                         height={400}
                                         alt="debug"
                                     />
+                                </div>
+                                <div className="padding">
                                     <p className="caption">
                                         {dayjs
                                             .utc(blog.publishedAt)
@@ -42,10 +44,10 @@ export default function Blog({ blog }) {
                                     <Link href={`/holistichealthcoach/blog/${blog.id}`}>
                                         <p className="sentence">{blog.title}</p>
                                     </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </Fragment>
