@@ -2,14 +2,9 @@ import Link from "next/link";
 import classes from "./navigation.module.scss";
 import Hamburger from "../hamburger/hamburger";
 import Logo from "../logo/logo";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Navigation() {
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-    const toggleHamburger = () => {
-        setHamburgerOpen(!hamburgerOpen);
-    };
     const menuList = [
         { id: 1, href: "/holistichealthcoach", title: "home" },
         { id: 2, href: "/holistichealthcoach/philosophy", title: "Holistic Health" },
@@ -22,8 +17,8 @@ export default function Navigation() {
             <nav>
                 <div className={classes.navbar}>
                     <div className={classes.navContainer}>
-                        <div className={classes.burger} onClick={toggleHamburger}>
-                            <Hamburger isOpen={hamburgerOpen} />
+                        <div className={classes.burger}>
+                            <Hamburger />
                         </div>
                         <div className={classes.logo}>
                             <Link href="/">
