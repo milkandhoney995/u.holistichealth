@@ -1,7 +1,13 @@
 import classes from "./hamburger.module.scss";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function Hamburger({ isOpen }) {
+export default function Hamburger() {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    };
     const menuList = [
         { id: 1, href: "/holistichealthcoach", title: "home" },
         { id: 2, href: "/holistichealthcoach/philosophy", title: "Holistic Health" },
@@ -12,7 +18,7 @@ export default function Hamburger({ isOpen }) {
 
     return (
         <>
-            <div className="hamburger">
+            <div className="hamburger" onClick={toggleHamburger}>
                 <span className="line line1"></span>
                 <span className="line line2"></span>
                 <span className="line line3"></span>
@@ -78,19 +84,19 @@ export default function Hamburger({ isOpen }) {
                         transition: transform 0.4s ease-in-out;
                     }
                     .menu-items {
-                        transform: ${isOpen ? "translateX(0)" : "translate(-150%)"};
+                        transform: ${hamburgerOpen ? "translateX(0)" : "translate(-150%)"};
                     }
 
                     .hamburger .line1 {
-                        transform: ${isOpen ? "rotate(45deg)" : "rotate(0)"};
+                        transform: ${hamburgerOpen ? "rotate(45deg)" : "rotate(0)"};
                     }
 
                     .hamburger .line2 {
-                        transform: ${isOpen ? "scaleY(0)" : "scaleY(1)"};
+                        transform: ${hamburgerOpen ? "scaleY(0)" : "scaleY(1)"};
                     }
 
                     .hamburger .line3 {
-                        transform: ${isOpen ? "rotate(-45deg)" : "rotate(0)"};
+                        transform: ${hamburgerOpen ? "rotate(-45deg)" : "rotate(0)"};
                     }
                 `}
             </style>
