@@ -11,73 +11,75 @@ export default function PostId({ data }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="page__container">
-                <div className=" page">
-                    <h1 className="page__title">{data.title}</h1>
-                    <div className="page__image">
-                        <Image
-                            src={data.image.url}
-                            width={680}
-                            height={500}
-                            objectFit="cover"
-                            alt="debug"
-                        />
+            <div className="main">
+                <div className="page__container">
+                    <div className="page">
+                        <h1 className="page__title">{data.title}</h1>
+                        <div className="page__image">
+                            <Image
+                                src={data.image.url}
+                                width={680}
+                                height={500}
+                                objectFit="cover"
+                                alt="debug"
+                            />
+                        </div>
+
+                        <div
+                            className="page__sentence"
+                            dangerouslySetInnerHTML={{ __html: data.body }}
+                        ></div>
                     </div>
 
-                    <div
-                        className="page__sentence"
-                        dangerouslySetInnerHTML={{ __html: data.body }}
-                    ></div>
-                </div>
+                    <div className="sidemenu">
+                        <div className="sidemenu__profile">
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/570x570.png"
+                                width={60}
+                                height={60}
+                                alt="debug"
+                            />
+                        </div>
+                        <div className="sentence sidemenu__info">Utano Harada</div>
+                        <div className="caption sidemenu__info">
+                            Holistic Health Coach & Web Front Engineer
+                        </div>
+                        <div className="sidemenu__sns">
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/facebook.svg"
+                                width={25}
+                                height={25}
+                                alt="debug"
+                            />
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/instagram.svg"
+                                width={25}
+                                height={25}
+                                alt="debug"
+                            />
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/570x570.png"
+                                width={25}
+                                height={25}
+                                alt="debug"
+                            />
+                        </div>
+                        <p className="sidemenu__text">
+                            食べること、歌うこと、勉強すること、話すことが好きです。
+                            <br></br>
+                            <br></br>
+                            ヘルスコーチング、Web制作の依頼は以下メールアドレスから。<br></br>
+                            email: uta.holistichealthandweb@gmail.com
+                        </p>
+                        <div className="sidemenu__category">
+                            <h3 className="sidemenu__title">Category</h3>
 
-                <div className="sidemenu">
-                    <div className="sidemenu__profile">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={60}
-                            height={60}
-                            alt="debug"
-                        />
-                    </div>
-                    <div className="sentence sidemenu__info">Utano Harada</div>
-                    <div className="caption sidemenu__info">
-                        Holistic Health Coach & Web Front Engineer
-                    </div>
-                    <div className="sidemenu__sns">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/facebook.svg"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/instagram.svg"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={25}
-                            height={25}
-                            alt="debug"
-                        />
-                    </div>
-                    <p className="sidemenu__text">
-                        食べること、歌うこと、勉強すること、話すことが好きです。
-                        <br></br>
-                        <br></br>
-                        ヘルスコーチング、Web制作の依頼は以下メールアドレスから。<br></br>
-                        email: uta.holistichealthandweb@gmail.com
-                    </p>
-                    <div className="sidemenu__category">
-                        <h3 className="sidemenu__title">Category</h3>
-
-                        <Tag />
+                            <Tag />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -17,37 +17,51 @@ export default function Blog({ blog }) {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <div className="margin--top">
-                <h1 className="margin--top">Blog</h1>
+            <div className="main">
+                <div className="">
+                    <h1 className="text--center">Blog</h1>
+                    <div className="margin--top">
+                        <div className="container">
+                            <Tag />
+                        </div>
 
-                <div className="margin--top">
-                    <Tag />
-                    <ul className="grid--three">
-                        {blog.map((blog) => (
-                            <li key={blog.id} className="card">
-                                <div className="card__image">
-                                    <Image
-                                        objectFit="cover"
-                                        src={blog.image.url}
-                                        width={400}
-                                        height={400}
-                                        alt="debug"
-                                    />
-                                </div>
-                                <div className="padding">
-                                    <p className="caption">
-                                        {dayjs
-                                            .utc(blog.publishedAt)
-                                            .tz("Asia/Tokyo")
-                                            .format("YYYY-MM-DD")}
-                                    </p>
-                                    <Link href={`/holistichealthcoach/blog/${blog.id}`}>
-                                        <p className="sentence">{blog.title}</p>
-                                    </Link>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                        <div className="container">
+                            <ul className="cardWrap">
+                                {blog.map((blog) => (
+                                    <li key={blog.id} className="card">
+                                        <div className="card__container">
+                                            <div className="card__image">
+                                                <Image
+                                                    objectFit="cover"
+                                                    src={blog.image.url}
+                                                    width={400}
+                                                    height={400}
+                                                    alt="debug"
+                                                />
+                                            </div>
+                                            <div className="card__body">
+                                                <p className="card__secondary">
+                                                    {dayjs
+                                                        .utc(blog.publishedAt)
+                                                        .tz("Asia/Tokyo")
+                                                        .format("YYYY-MM-DD")}
+                                                </p>
+                                                <div className="">
+                                                    <Link
+                                                        href={`/holistichealthcoach/blog/${blog.id}`}
+                                                    >
+                                                        <div className="card__primary">
+                                                            {blog.title}
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Fragment>

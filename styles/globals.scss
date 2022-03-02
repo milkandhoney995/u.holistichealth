@@ -36,7 +36,7 @@ body {
         }
     }
     h1 {
-        text-align: center;
+        // text-align: center;
         font-size: 2.5rem;
         @media screen and (max-width: 450px) {
             font-size: 1.6rem;
@@ -76,6 +76,7 @@ body {
             flex-direction: column;
         }
     }
+    // 余白
     .margin {
         &--top {
             margin-top: 4rem;
@@ -98,7 +99,10 @@ body {
             margin-top: 5rem;
         }
     }
-
+    // 内容部分共通
+    .main {
+        margin: 7rem auto;
+    }
     // block要素関連
     @media screen and (max-width: 880px) {
         .section,
@@ -107,20 +111,16 @@ body {
             flex-wrap: wrap;
         }
     }
-    @media screen and (min-width: 880px) {
-        .section {
-            padding: 0 5rem;
-        }
-    }
     .section {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 3rem auto 0;
         &__wrap {
             width: 80%;
             margin: 0 auto;
-            margin-top: 4rem;
+            &:nth-of-type(n + 2) {
+                margin-top: 4rem;
+            }
         }
         &__text {
             width: clamp(350px, 80%, 500px);
@@ -146,6 +146,7 @@ body {
         }
     }
     .container {
+        padding: 1rem;
         &__sentence {
             display: flex;
             flex-direction: column;
@@ -162,8 +163,6 @@ body {
     // grid
     .grid {
         &--twoColumns,
-        &--three,
-        &--three1,
         &--square {
             display: grid;
             justify-items: center;
@@ -175,15 +174,6 @@ body {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
-        }
-        .grid--three {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-        .grid--three1 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
         }
         .grid--square {
             grid-template-columns: 1fr 1fr;
@@ -205,7 +195,6 @@ body {
             margin: 0 auto;
         }
         &--center {
-            margin-top: 5rem;
             text-align: center;
         }
     }
@@ -216,8 +205,26 @@ body {
             color: var(--caption);
         }
     }
+    // card
+    .cardWrap,
+    .cardWrap--3cols {
+        display: grid;
+        justify-items: center;
+        padding: 0;
+        gap: 1.5rem;
+    }
+    @media screen and (min-width: 1000px) {
+        .cardWrap {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .cardWrap--3cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
     .card {
-        margin: 1rem;
         border-radius: 3px;
         box-shadow: 0 5px 15px -10px #000;
         border-radius: 20px;
@@ -232,6 +239,19 @@ body {
         &__image {
             border-radius: 20px 20px 0 0;
             overflow: hidden;
+        }
+        &__body {
+            padding: 1rem;
+        }
+        &__primary {
+            font-size: 1.5rem;
+            color: var(--sentence);
+            word-break: break-word;
+            text-align: left;
+        }
+        &__secondary {
+            font-size: 0.625rem;
+            color: var(--caption);
         }
     }
 
@@ -278,12 +298,11 @@ body {
     .page {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        //padding: 2rem;
         width: clamp(350px, 80%, 900px);
         margin: 0 auto;
         &__container {
             position: relative;
-            margin-top: 5rem;
         }
         &__title {
             width: fit-content;
