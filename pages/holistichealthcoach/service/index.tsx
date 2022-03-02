@@ -13,7 +13,7 @@ export default function Service() {
             </Head>
             <Hero pageTitle="Service" bgImageUrl='"/images/life/hill.jpg"' />
             <div className="main">
-                <div className="section__wrap">
+                <div className="sectionWrap">
                     <h2 className="text--center">変化を習慣化する</h2>
                     <div className="section section--reverse">
                         <Image
@@ -35,7 +35,7 @@ export default function Service() {
                         </p>
                     </div>
                 </div>
-                <div className="section__wrap">
+                <div className="sectionWrap">
                     <h2 className="text--center">詳細</h2>
                     <div className="section">
                         <Image
@@ -57,7 +57,7 @@ export default function Service() {
                         </p>
                     </div>
                 </div>
-                <div className="section__wrap">
+                <div className="sectionWrap">
                     <h2 className="text--center">1:1 90 Minute Session</h2>
                     <div className="grid--twoColumns">
                         <Image

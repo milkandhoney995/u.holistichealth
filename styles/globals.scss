@@ -111,17 +111,17 @@ body {
             flex-wrap: wrap;
         }
     }
+    .sectionWrap {
+        width: 80%;
+        margin: 0 auto;
+        &:nth-of-type(n + 2) {
+            margin-top: 4rem;
+        }
+    }
     .section {
         display: flex;
         align-items: center;
         justify-content: center;
-        &__wrap {
-            width: 80%;
-            margin: 0 auto;
-            &:nth-of-type(n + 2) {
-                margin-top: 4rem;
-            }
-        }
         &__text {
             width: clamp(350px, 80%, 500px);
             margin: 1rem;
@@ -139,7 +139,6 @@ body {
         }
         &--emphasized {
             text-align: center;
-            margin: 6rem auto;
             padding: 5rem 0;
             line-height: 2.5;
             // background: var(--secondary-background);
