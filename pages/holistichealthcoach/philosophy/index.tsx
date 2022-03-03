@@ -15,7 +15,7 @@ export default function Philosophy() {
             <div className="main">
                 <div className="sectionWrap">
                     <div className="section">
-                        <p className="section__text">
+                        <div className="section__body">
                             情報が国境を越える社会
                             <br></br>
                             <br></br>
@@ -25,63 +25,72 @@ export default function Philosophy() {
                             今のあなたに必要なことは、体と心が知っています<br></br>
                             あなたに影響を与えるものを、一つ一つ探ることで、<br></br>
                             あなたが抱える問題をとく手がかりが見つかります
-                        </p>
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/selflove.jpg"
-                            width={400}
-                            height={400}
-                            alt="debug"
-                        />
+                        </div>
+                        <div className="section__image">
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/selflove.jpg"
+                                width={400}
+                                height={400}
+                                alt="debug"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
-                    <h2 className="text--center">
-                        あなたの生活は、<br></br>
-                        何かに偏っていませんか？
-                    </h2>
                     <div className="section">
-                        <Image
-                            objectFit="cover"
-                            src="/images/life/cafe.jpg"
-                            width={300}
-                            height={300}
-                            alt="debug"
-                        />
-                        <p className="section__text">
-                            近年、「健康」という言葉は。病気や怪我がないだけでなく、人間関係やワークライフバランス、運動やスピリチュアルなど多元的な要素のバランスが取れた状態とと定義されつつあります。そのため、近年のヘルス分野では、目に見える症状ではなく、根本的な原因を特定し、解決することに重点が置かれています。
-                            <br></br>
-                            この考えは、アメリカをはじめとする先進国で Holistic
-                            Health（Holistic：全体的な） として広まっています。
-                            <br></br>
-                            <br></br>
-                            ですが、日本でHolistic Healthはまだまだ浸透しておらず、
-                            仕事など生活の重点が一要素に偏ってしまう人が少なくありません。
-                        </p>
+                        <div className="section__image">
+                            <Image
+                                objectFit="cover"
+                                src="/images/life/cafe.jpg"
+                                width={300}
+                                height={300}
+                                alt="debug"
+                            />
+                        </div>
+                        <div className="section__body">
+                            <h2 className="section__title">
+                                あなたの生活は、<br></br>
+                                何かに偏っていませんか？
+                            </h2>
+                            <div className="section__sentence">
+                                近年、「健康」という言葉は。病気や怪我がないだけでなく、人間関係やワークライフバランス、運動やスピリチュアルなど多元的な要素のバランスが取れた状態とと定義されつつあります。そのため、近年のヘルス分野では、目に見える症状ではなく、根本的な原因を特定し、解決することに重点が置かれています。
+                                <br></br>
+                                この考えは、アメリカをはじめとする先進国で Holistic
+                                Health（Holistic：全体的な） として広まっています。
+                                <br></br>
+                                <br></br>
+                                ですが、日本でHolistic Healthはまだまだ浸透しておらず、
+                                仕事など生活の重点が一要素に偏ってしまう人が少なくありません。
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
-                    <h2 className="text--center">ヘルスコーチングで偏りを見つける</h2>
-                    <div className="section">
-                        <p className="section__text">
-                            ヘルスコーチとは、クライアントが悩みの根本に向き合うサポートをする仕事です。
-                            <br></br>
-                            私のヘルスコーチングでは、NY拠点の栄養学校 Institute for Integrative
-                            Nutritionのホリスティックヘルスに基づき、過去に経験した環境の変化や仕事、人間関係、食生活などからあなたのルーツをたどります。
-                        </p>
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={300}
-                            height={300}
-                            alt="debug"
-                        />
+                    <div className="section section--reverse">
+                        <div className="section__image">
+                            <Image
+                                objectFit="cover"
+                                src="/images/site/570x570.png"
+                                width={300}
+                                height={300}
+                                alt="debug"
+                            />
+                        </div>
+                        <div className="section__body">
+                            <div className="section__sentence">
+                                ヘルスコーチとは、クライアントが悩みの根本に向き合うサポートをする仕事です。
+                                <br></br>
+                                私のヘルスコーチングでは、NY拠点の栄養学校 Institute for Integrative
+                                Nutritionのホリスティックヘルスに基づき、過去に経験した環境の変化や仕事、人間関係、食生活などからあなたのルーツをたどります。
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
                     <div className="section--emphasized">
-                        <h1>あなたの話をしませんか</h1>
-                        <p className="container__text">
+                        <h1 className="section__title">あなたの話をしませんか</h1>
+                        <div className="container__text">
                             あなたは、子供のころどんな夢を持っていましたか<br></br>
                             <br></br>
                             今、抱えている不安や悩みはありますか<br></br>
@@ -91,7 +100,7 @@ export default function Philosophy() {
                             あなたは、どう生きていきたいですか<br></br>
                             <br></br>
                             あなたの落ち着く場所で、少しお話ししませんか
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

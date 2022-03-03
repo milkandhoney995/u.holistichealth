@@ -5,14 +5,22 @@
     margin: 0;
 }
 html {
-    background-color: rgba(255, 223, 223);
+    background-color: rgba(252, 236, 236, 1);
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
+    font-family: "Noto Sans JP", BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
         HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 :root {
-    --background: rgba(255, 223, 223, 1);
+    --background: rgba(252, 236, 236, 1);
     --secondary-background: #fffffe;
     --white: #fffffe;
     --footer: rgb(38, 78, 112);
@@ -36,7 +44,6 @@ body {
         }
     }
     h1 {
-        // text-align: center;
         font-size: 2.5rem;
         @media screen and (max-width: 450px) {
             font-size: 1.6rem;
@@ -121,13 +128,19 @@ body {
     .section {
         display: flex;
         align-items: center;
-        justify-content: center;
-        &__text {
+        justify-content: space-evenly;
+        &__body {
             width: clamp(350px, 80%, 500px);
-            margin: 1rem;
-            padding: 2rem;
+            padding: 1.5rem;
             // background: var(--secondary-background);
             border-radius: 3px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__sentence {
+        }
+        &__image {
         }
         &--top {
             display: flex;
@@ -135,7 +148,9 @@ body {
             margin: 5rem auto 0;
         }
         &--reverse {
-            flex-direction: row-reverse;
+            @media screen and (min-width: 880px) {
+                flex-direction: row-reverse;
+            }
         }
         &--emphasized {
             text-align: center;
@@ -293,16 +308,14 @@ body {
             }
         }
     }
-
+    .pageWrap {
+        position: relative;
+    }
     .page {
         display: flex;
         flex-direction: column;
-        //padding: 2rem;
         width: clamp(350px, 80%, 900px);
         margin: 0 auto;
-        &__container {
-            position: relative;
-        }
         &__title {
             width: fit-content;
             text-align: left;
@@ -340,6 +353,10 @@ body {
             width: fit-content;
             border-bottom: 3px solid var(--title-border);
         }
+        &__sns {
+            display: flex;
+            flex-direction: row;
+        }
         &__text,
         &__category {
             width: 300px;
@@ -355,7 +372,7 @@ body {
             position: fixed;
             right: 0;
         }
-        .page__container {
+        .pageWrap {
             display: grid;
             grid-template-columns: 3fr 1fr;
         }

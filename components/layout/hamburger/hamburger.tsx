@@ -41,7 +41,7 @@ export default function Hamburger() {
                         text-align: center;
                         height: 100vh;
                         margin-left: -40px;
-                        background-color: var(--white);
+                        background-color: var(--background);
                         box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
                         transform: translate(-150%);
                         transition: transform 0.5s ease-in-out;

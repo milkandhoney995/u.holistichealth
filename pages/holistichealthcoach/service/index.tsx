@@ -23,7 +23,7 @@ export default function Service() {
                             height={300}
                             alt="debug"
                         />
-                        <p className="section__text">
+                        <p className="section__body">
                             食事、マインドセット、人間関係など、<br></br>
                             何事も新しいことを定着させるには、時間がかかります。<br></br>
                             <br></br>
@@ -46,7 +46,7 @@ export default function Service() {
                             alt="debug"
                         />
 
-                        <p className="section__text">
+                        <p className="section__body">
                             セッションは対面形式です。<br></br>
                             ＊オンライン希望の場合、ご相談ください。<br></br>
                             <br></br>
@@ -69,7 +69,7 @@ export default function Service() {
                         />
 
                         <div>
-                            <p className="section__text">
+                            <p className="section__body">
                                 セッションの前日までにワークシートを記入していただきます。
                                 <br></br>
                                 <br></br>
@@ -100,7 +100,7 @@ export default function Service() {
                     alt="debug"
                 />
                 <div>
-                    <p className="section__text">
+                    <p className="section__body">
                         もっと健康になりたい、もっと幸せになりたい人のためのプログラムです。
                         <br></br>
                         <br></br>

@@ -12,7 +12,7 @@ export default function PostId({ data }) {
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
             <div className="main">
-                <div className="page__container">
+                <div className="pageWrap">
                     <div className="page">
                         <h1 className="page__title">{data.title}</h1>
                         <div className="page__image">
@@ -24,7 +24,6 @@ export default function PostId({ data }) {
                                 alt="debug"
                             />
                         </div>
-
                         <div
                             className="page__sentence"
                             dangerouslySetInnerHTML={{ __html: data.body }}
@@ -41,43 +40,51 @@ export default function PostId({ data }) {
                                 alt="debug"
                             />
                         </div>
-                        <div className="sentence sidemenu__info">Utano Harada</div>
-                        <div className="caption sidemenu__info">
+                        <div className="sidemenu__sentence">
+                            <div className="sentence sidemenu__info">Utano Harada</div>
+                            <div className="caption sidemenu__info"></div>
                             Holistic Health Coach & Web Front Engineer
                         </div>
                         <div className="sidemenu__sns">
-                            <Image
-                                objectFit="cover"
-                                src="/images/site/facebook.svg"
-                                width={25}
-                                height={25}
-                                alt="debug"
-                            />
-                            <Image
-                                objectFit="cover"
-                                src="/images/site/instagram.svg"
-                                width={25}
-                                height={25}
-                                alt="debug"
-                            />
-                            <Image
-                                objectFit="cover"
-                                src="/images/site/570x570.png"
-                                width={25}
-                                height={25}
-                                alt="debug"
-                            />
+                            <div className="sns">
+                                <Image
+                                    objectFit="cover"
+                                    src="/images/site/facebook.svg"
+                                    width={25}
+                                    height={25}
+                                    alt="debug"
+                                />
+                            </div>
+                            <div className="sns">
+                                <Image
+                                    objectFit="cover"
+                                    src="/images/site/instagram.svg"
+                                    width={25}
+                                    height={25}
+                                    alt="debug"
+                                />
+                            </div>
+                            <div className="sns">
+                                <Image
+                                    objectFit="cover"
+                                    src="/images/site/facebook.svg"
+                                    width={25}
+                                    height={25}
+                                    alt="debug"
+                                />
+                            </div>
                         </div>
-                        <p className="sidemenu__text">
-                            食べること、歌うこと、勉強すること、話すことが好きです。
-                            <br></br>
-                            <br></br>
-                            ヘルスコーチング、Web制作の依頼は以下メールアドレスから。<br></br>
-                            email: uta.holistichealthandweb@gmail.com
-                        </p>
+                        <div className="sidemenu__body">
+                            <div className="sidemenu__text">
+                                食べること、歌うこと、勉強すること、話すことが好きです。
+                                <br></br>
+                                <br></br>
+                                ヘルスコーチング、Web制作の依頼は以下メールアドレスから。<br></br>
+                                email: uta.holistichealthandweb@gmail.com
+                            </div>
+                        </div>
                         <div className="sidemenu__category">
                             <h3 className="sidemenu__title">Category</h3>
-
                             <Tag />
                         </div>
                     </div>

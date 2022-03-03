@@ -24,7 +24,7 @@ export default function Profile() {
                         height={400}
                         alt="debug"
                     />
-                    <p className="section__text">
+                    <p className="section__body">
                         皆さん、こんにちは。Utanoです。<br></br>
                         サイトに足を運んでくださって、ありがとうございます。
                         <br></br>
@@ -39,7 +39,7 @@ export default function Profile() {
                     </p>
                 </div>
                 <div className="section">
-                    <p className="section__text">
+                    <p className="section__body">
                         私は、ストレスと極端な食事制限のせいで心身のバランスを壊したことがあります。
                         <br></br>
                         卒業研究も就職活動もうまく行かず、<br></br>
@@ -64,7 +64,7 @@ export default function Profile() {
                 </div>
                 <h1 className="margin--top">あなたに安心して話してほしい</h1>
                 <div className="section">
-                    <p className="section__text">
+                    <p className="section__body">
                         私たちの食事は、心の状態、人間関係、ストレスと密に影響しあっています。
                         <br></br>
                         だけれど、生き急いで、ゆっくり食事について考える時間がない人が多いなあ、という気がしています。

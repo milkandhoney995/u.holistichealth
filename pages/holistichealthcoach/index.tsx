@@ -29,8 +29,8 @@ export default function Home({ blog }) {
             <div className="main">
                 <div className="sectionWrap">
                     <div className="section">
-                        <div className="section__text">
-                            <p>
+                        <div className="section__body">
+                            <div className="section__sentence">
                                 一生懸命に生きて、いつの間にか
                                 <br></br>
                                 あなたは誰かのために生きていませんか<br></br>
@@ -39,21 +39,23 @@ export default function Home({ blog }) {
                                 <br></br>
                                 期待され評価されるあなたの重荷を置いて<br></br>
                                 体と心のサインに目を向けましょう。
-                            </p>
+                            </div>
                         </div>
-                        <Image
-                            src="/images/life/hana.jpg"
-                            width={500}
-                            height={400}
-                            objectFit="cover"
-                            alt="debug"
-                        />
+                        <div className="section__image">
+                            <Image
+                                src="/images/life/hana.jpg"
+                                width={500}
+                                height={400}
+                                objectFit="cover"
+                                alt="debug"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
                     <div className="section--emphasized">
                         <h1>あなたが、あなたを変える</h1>
-                        <p>
+                        <div>
                             どんな悩みを持っていても<br></br>
                             どんな理想があっても<br></br>
                             あなたは、すでに答えを持っています<br></br>
@@ -68,13 +70,14 @@ export default function Home({ blog }) {
                             あなた自身を愛してほしい<br></br>
                             <br></br>
                             あなたが持っている答えを一緒に見つけませんか
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
                     <div className="section section--reverse">
-                        <div className="section__text">
-                            <p>
+                        <div className="section__body">
+                            <h1>食の軌跡は、人生の軌跡</h1>
+                            <div className="section__sentence">
                                 あなたは、あなたの食べるものでできています<br></br>
                                 あなたの心は、あなたの食べるものに現れます<br></br>
                                 <br></br>
@@ -83,20 +86,22 @@ export default function Home({ blog }) {
                                 食材ひとつひとつを味わい感謝する<br></br>
                                 <br></br>
                                 深呼吸して、人間らしい時間を思い出しませんか。
-                            </p>
+                            </div>
                         </div>
-                        <Image
-                            src="/images/life/veg.jpg"
-                            width={500}
-                            height={500}
-                            objectFit="cover"
-                            alt="debug"
-                        />
+                        <div className="section__image">
+                            <Image
+                                src="/images/life/veg.jpg"
+                                width={500}
+                                height={500}
+                                objectFit="cover"
+                                alt="debug"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className="sectionWrap">
                     <div className="section--emphasized">
-                        <h1>Blog</h1>
+                        <h1 className="section__tilte">Blog</h1>
                         <div className="container">
                             <ul className="cardWrap--3cols">
                                 {blog.map((blog) => (
@@ -111,17 +116,15 @@ export default function Home({ blog }) {
                                             />
                                         </div>
                                         <div className="card__body">
-                                            <p className="card__secondary">
+                                            <div className="card__secondary">
                                                 {dayjs
                                                     .utc(blog.publishedAt)
                                                     .tz("Asia/Tokyo")
                                                     .format("YYYY-MM-DD")}
-                                            </p>
-                                            <div>
+                                            </div>
+                                            <div className="card__primary">
                                                 <Link href={`holistichealthcoach/blog/${blog.id}`}>
-                                                    <div className="card__primary">
-                                                        {blog.title}
-                                                    </div>
+                                                    {blog.title}
                                                 </Link>
                                             </div>
                                         </div>

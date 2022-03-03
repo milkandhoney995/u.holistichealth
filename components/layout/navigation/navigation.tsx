@@ -21,10 +21,8 @@ export default function Navigation() {
                             <Hamburger />
                         </div>
                         <div className={classes.logo}>
-                            <Link href="/">
-                                <a>
-                                    <Logo />
-                                </a>
+                            <Link href="/holistichealthcoach">
+                                <Logo />
                             </Link>
                         </div>
                         <ul className={classes.menu}>
