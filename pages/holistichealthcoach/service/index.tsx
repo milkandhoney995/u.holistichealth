@@ -59,7 +59,7 @@ export default function Service() {
                 </div>
                 <div className="sectionWrap">
                     <h2 className="text--center">1:1 90 Minute Session</h2>
-                    <div className="grid--twoColumns">
+                    <div className="twoColumns_container1">
                         <Image
                             objectFit="cover"
                             src="/images/life/veg1.jpg"
@@ -91,7 +91,7 @@ export default function Service() {
             </div>
 
             {/* <h2 className="text--center">6 month program</h2> */}
-            {/* <div className="grid--twoColumns">
+            {/* <div className="twoColumns_container1">
                 <Image
                     objectFit="cover"
                     src="/images/life/veg1.jpg"

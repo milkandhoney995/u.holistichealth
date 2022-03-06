@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import classes from "./tag.module.scss";
+import Link from "next/link";
+import { client } from "../../libs/client";
 
 export default function Tag(props) {
     const tags = [
@@ -11,6 +13,25 @@ export default function Tag(props) {
     ];
     return (
         <>
+            {/* <div className="">
+                <ul className={classes.buttonLikeCheckbox}>
+                    {category.map((category) => (
+                        <li key={category.name}>
+                            <Link href={`holistichealthcoach/category/${category.name}`}>
+                                <input
+                                    className="input"
+                                    type="checkbox"
+                                    name={category.name}
+                                    id={category.name}
+                                />
+                                <label htmlFor={category.name} className="label">
+                                    {category.name}
+                                </label>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div> */}
             <ul className={classes.buttonLikeCheckbox}>
                 {tags.map((tags) => (
                     <li key={tags.tag}>
@@ -49,3 +70,13 @@ export default function Tag(props) {
         </>
     );
 }
+// export const getStaticProps = async () => {
+//     const data = await client.get({ endpoint: "blog" });
+//     const categoryData = await client.get({ endpoint: "category" });
+//     return {
+//         props: {
+//             blog: data.contents,
+//             category: categoryData.contents,
+//         },
+//     };
+// };

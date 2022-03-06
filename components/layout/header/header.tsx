@@ -5,7 +5,7 @@ import Navigation from "../navigation/navigation";
 
 function Header() {
     return (
-        <header className={classes.header}>
+        <header id="header" className={classes.header}>
             <Navigation />
         </header>
     );

@@ -9,7 +9,7 @@ export default function Hamburger() {
         setHamburgerOpen(!hamburgerOpen);
     };
     const menuList = [
-        { id: 1, href: "/holistichealthcoach", title: "home" },
+        { id: 1, href: "/holistichealthcoach", title: "Home" },
         { id: 2, href: "/holistichealthcoach/philosophy", title: "Holistic Health" },
         { id: 3, href: "/holistichealthcoach/profile", title: "About Me" },
         { id: 4, href: "/holistichealthcoach/blog", title: "Blog" },

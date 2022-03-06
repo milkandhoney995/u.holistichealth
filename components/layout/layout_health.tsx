@@ -3,10 +3,26 @@ import Header from "../../components/layout/header/header";
 import Footer from "./footer/footer";
 
 function LayoutHealth(props) {
+    if (typeof window === "object") {
+        const main = document.getElementById("main");
+        const header = document.getElementById("header");
+
+        main.addEventListener("scroll", function () {
+            const scrollPosition = main.scrollTop;
+            if (scrollPosition > 100) {
+                header.classList.add("scrollAnimation");
+                console.log(scrollPosition);
+            } else {
+                header.classList.remove("scrollAnimation");
+            }
+        });
+    }
     return (
         <Fragment>
             <Header></Header>
-            <main>{props.children}</main>
+            <main>
+                <div id="main">{props.children}</div>
+            </main>
             <Footer></Footer>
         </Fragment>
     );

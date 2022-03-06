@@ -103,7 +103,7 @@ export default function Home({ blog }) {
                     <div className="section--emphasized">
                         <h1 className="section__tilte">Blog</h1>
                         <div className="container">
-                            <ul className="cardWrap--3cols">
+                            <ul className="cardWrap">
                                 {blog.map((blog) => (
                                     <li key={blog.id} className="card">
                                         <div className="card__image">

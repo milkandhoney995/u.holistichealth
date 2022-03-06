@@ -20,7 +20,7 @@ export default function Blog({ blog }) {
             <div className="main">
                 <div className="">
                     <h1 className="text--center">Blog</h1>
-                    <div className="margin--top">
+                    <div className="singleColumn_container">
                         <div className="container">
                             <Tag />
                         </div>
@@ -29,32 +29,28 @@ export default function Blog({ blog }) {
                             <ul className="cardWrap">
                                 {blog.map((blog) => (
                                     <li key={blog.id} className="card">
-                                        <div className="card__container">
-                                            <div className="card__image">
-                                                <Image
-                                                    objectFit="cover"
-                                                    src={blog.image.url}
-                                                    width={400}
-                                                    height={400}
-                                                    alt="debug"
-                                                />
+                                        <div className="card__image">
+                                            <Image
+                                                objectFit="cover"
+                                                src={blog.image.url}
+                                                width={350}
+                                                height={300}
+                                                alt="debug"
+                                            />
+                                        </div>
+                                        <div className="card__body">
+                                            <div className="card__secondary">
+                                                {dayjs
+                                                    .utc(blog.publishedAt)
+                                                    .tz("Asia/Tokyo")
+                                                    .format("YYYY-MM-DD")}
                                             </div>
-                                            <div className="card__body">
-                                                <p className="card__secondary">
-                                                    {dayjs
-                                                        .utc(blog.publishedAt)
-                                                        .tz("Asia/Tokyo")
-                                                        .format("YYYY-MM-DD")}
-                                                </p>
-                                                <div className="">
-                                                    <Link
-                                                        href={`/holistichealthcoach/blog/${blog.id}`}
-                                                    >
-                                                        <div className="card__primary">
-                                                            {blog.title}
-                                                        </div>
-                                                    </Link>
-                                                </div>
+                                            <div className="">
+                                                <Link href={`/holistichealthcoach/blog/${blog.id}`}>
+                                                    <div className="card__primary">
+                                                        {blog.title}
+                                                    </div>
+                                                </Link>
                                             </div>
                                         </div>
                                     </li>
