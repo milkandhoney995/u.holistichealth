@@ -16,16 +16,16 @@ export default function Profile() {
                     <Image
                         objectFit="cover"
                         src="/images/profile.jpg"
-                        width={600}
-                        height={800}
+                        width={500}
+                        height={700}
                         alt="debug"
                     />
-                    <div className="section__text">
-                        <div className="section__body">
-                            <h1>Utano Harada</h1>
-                            <h2 className="title--small">
-                                Holistic Health Coach & Web Frontend Engineer
-                            </h2>
+                    <div className="section__body">
+                        <h1>Utano Harada</h1>
+                        <h2 className="title--small">
+                            Holistic Health Coach & Web Frontend Engineer
+                        </h2>
+                        <p className="section__text mg-t-2">
                             皆さん、こんにちは。Utanoです。<br></br>
                             サイトに足を運んでくださって、ありがとうございます。
                             <br></br>
@@ -37,7 +37,7 @@ export default function Profile() {
                             <br></br>
                             幼い頃誕生日にもらった野菜の本がきっかけで、栄養や健康について考えるのが大好きになり、「もっと自分を愛したい・認めてあげたい」の想いから、NY拠点の栄養学校
                             Institute for Integrative Nutritionでホリスティック栄養学を学びました。
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <div className="section">

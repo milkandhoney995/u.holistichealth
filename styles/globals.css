@@ -150,9 +150,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 4rem;
 }
 :root .section__body {
-  width: clamp(350px, 80%, 500px);
+  width: clamp(350px, 80%, 600px);
   padding: 1.5rem;
   border-radius: 3px;
 }
@@ -173,6 +174,9 @@ main {
   text-align: center;
   padding: 5rem 0;
   line-height: 2.5;
+}
+:root .mg-t-2 {
+  margin-top: 2rem;
 }
 :root .container {
   padding: 1rem;

@@ -144,8 +144,12 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        margin-top: 4rem;
+        // &:nth-of-type(n + 2) {
+        //     margin-top: 4rem;
+        // }
         &__body {
-            width: clamp(350px, 80%, 500px);
+            width: clamp(350px, 80%, 600px);
             padding: 1.5rem;
             // background: var(--secondary-background);
             border-radius: 3px;
@@ -173,6 +177,9 @@ main {
             line-height: 2.5;
             // background: var(--secondary-background);
         }
+    }
+    .mg-t-2 {
+        margin-top: 2rem;
     }
     .container {
         padding: 1rem;

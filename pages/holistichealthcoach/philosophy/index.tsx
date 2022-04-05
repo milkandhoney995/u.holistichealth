@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Hero from "../../../components/hero/hero";
+// import Hero from "../../../components/hero/hero";
 import Button from "../../../components/button/button";
 import { Fragment } from "react";
 
@@ -11,9 +11,9 @@ export default function Philosophy() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' />
+            {/* <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' /> */}
             <div className="main">
-                <div className="sectionWrap">
+                {/* <div className="sectionWrap">
                     <div className="section">
                         <div className="section__body">
                             情報が国境を越える社会
@@ -36,15 +36,15 @@ export default function Philosophy() {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="sectionWrap">
                     <div className="section">
                         <div className="section__image">
                             <Image
                                 objectFit="cover"
-                                src="/images/life/cafe.jpg"
-                                width={300}
-                                height={300}
+                                src="/images/site/selflove.jpg"
+                                width={400}
+                                height={400}
                                 alt="debug"
                             />
                         </div>
@@ -71,9 +71,9 @@ export default function Philosophy() {
                         <div className="section__image">
                             <Image
                                 objectFit="cover"
-                                src="/images/site/570x570.png"
-                                width={300}
-                                height={300}
+                                src="/images/philosophy1.jpg"
+                                width={400}
+                                height={500}
                                 alt="debug"
                             />
                         </div>

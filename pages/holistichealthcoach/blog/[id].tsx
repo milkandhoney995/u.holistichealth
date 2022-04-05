@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Tag from "../../../components/tag/tag";
+// import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 
@@ -20,9 +20,9 @@ export default function PostId({ data }) {
                                     <div className="sidemenu__profile image">
                                         <Image
                                             objectFit="cover"
-                                            src="/images/site/570x570.png"
-                                            width={60}
-                                            height={60}
+                                            src="/images/profile.jpg"
+                                            width={100}
+                                            height={100}
                                             alt="debug"
                                         />
                                     </div>
@@ -31,7 +31,7 @@ export default function PostId({ data }) {
                                         <div className="caption sidemenu__info"></div>
                                         Holistic Health Coach & Web Front Engineer
                                     </div>
-                                    <div className="sidemenu__sns">
+                                    {/* <div className="sidemenu__sns">
                                         <div className="sns image">
                                             <Image
                                                 objectFit="cover"
@@ -59,7 +59,7 @@ export default function PostId({ data }) {
                                                 alt="debug"
                                             />
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="sidemenu__body">
                                         <div className="sidemenu__text">
                                             食べること、歌うこと、勉強すること、話すことが好きです。
@@ -136,10 +136,10 @@ export default function PostId({ data }) {
                                                 </div> */}
                                         </div>
                                     </div>
-                                    <div className="sidemenu__category">
+                                    {/* <div className="sidemenu__category">
                                         <h3 className="sidemenu__title">Category</h3>
                                         <Tag />
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </aside>
