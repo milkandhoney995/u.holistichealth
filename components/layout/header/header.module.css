@@ -1,0 +1,27 @@
+.header {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transition: 0.5s;
+}
+@media (min-width: 800px) {
+  .header {
+    padding: 1rem;
+  }
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .header ul {
+    gap: 0.5rem;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

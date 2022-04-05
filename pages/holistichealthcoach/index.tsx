@@ -29,27 +29,14 @@ export default function Home({ blog }) {
             <div className="main">
                 <div className="sectionWrap">
                     <div className="section">
-                        <div className="section__body">
-                            <div className="section__sentence">
-                                一生懸命に生きて、いつの間にか
-                                <br></br>
-                                あなたは誰かのために生きていませんか<br></br>
-                                <br></br>
-                                生き急ぐ日々<br></br>
-                                <br></br>
-                                期待され評価されるあなたの重荷を置いて<br></br>
-                                体と心のサインに目を向けましょう。
-                            </div>
-                        </div>
-                        <div className="section__image">
-                            <Image
-                                src="/images/life/hana.jpg"
-                                width={500}
-                                height={400}
-                                objectFit="cover"
-                                alt="debug"
-                            />
-                        </div>
+                        一生懸命に生きて、いつの間にか
+                        <br></br>
+                        あなたは誰かのために生きていませんか<br></br>
+                        <br></br>
+                        生き急ぐ日々<br></br>
+                        <br></br>
+                        期待され評価されるあなたの重荷を置いて<br></br>
+                        体と心のサインに目を向けましょう。
                     </div>
                 </div>
                 <div className="sectionWrap">
@@ -73,7 +60,7 @@ export default function Home({ blog }) {
                         </div>
                     </div>
                 </div>
-                <div className="sectionWrap">
+                {/* <div className="sectionWrap">
                     <div className="section section--reverse">
                         <div className="section__body">
                             <h1>食の軌跡は、人生の軌跡</h1>
@@ -98,7 +85,7 @@ export default function Home({ blog }) {
                             />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="sectionWrap">
                     <div className="section--emphasized">
                         <h1 className="section__tilte">Blog</h1>

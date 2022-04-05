@@ -84,17 +84,20 @@ main {
         }
     }
     // 内容部分共通
-    #main {
-        height: 100vh;
-        overflow: scroll;
+    @media only screen and (min-width: 768px) {
+        #main {
+            height: 100vh;
+            overflow: scroll;
+        }
     }
     .main {
-        margin: 7rem auto;
+        padding: 4rem 0;
         min-height: calc(100vh - 7rem);
     }
     .scrollAnimation {
-        padding: 2rem;
-        font-size: 1rem;
+        border: 0px;
+        background: none;
+        box-shadow: none;
     }
     .image > span {
         display: block !important;
@@ -224,10 +227,14 @@ main {
             grid-template-columns: 400px minmax(280px, 1fr);
             padding: 40px;
         }
+        .twoColumns_container__main {
+            min-width: calc(100% - 400px - 1rem);
+        }
         .twoColumns_container.reverse {
             grid-template-columns: minmax(280px, 1fr) 400px;
         }
         .twoColumns_container.reverse .twoColumns_container__side {
+            position: sticky;
             order: 2;
         }
         .twoColumns_container.reverse .twoColumns_container__main {
@@ -235,9 +242,10 @@ main {
         }
         .twoColumns_container--scroll {
             position: fixed;
-            top: 0;
-            padding-top: 13rem;
+            top: calc(1rem + 100px);
+            //padding-top: 13rem;
             // width: 300px;
+            //height: calc(100vh - 100px);
             height: 100%;
             z-index: 5;
             overflow-y: auto;
