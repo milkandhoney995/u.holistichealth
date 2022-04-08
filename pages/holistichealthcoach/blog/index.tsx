@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Tag from "../../../components/tag/tag";
+// import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 import dayjs from "dayjs";
@@ -21,9 +21,9 @@ export default function Blog({ blog }) {
                 <div className="">
                     <h1 className="text--center">Blog</h1>
                     <div className="singleColumn_container">
-                        <div className="container">
+                        {/* <div className="container">
                             <Tag />
-                        </div>
+                        </div> */}
 
                         <div className="container">
                             <ul className="cardWrap">

@@ -21,15 +21,16 @@ export default function PostId({ data }) {
                                         <Image
                                             objectFit="cover"
                                             src="/images/profile.jpg"
-                                            width={100}
-                                            height={100}
+                                            width={150}
+                                            height={150}
                                             alt="debug"
                                         />
                                     </div>
-                                    <div className="sidemenu__sentence">
+                                    <div className="container">
                                         <div className="sentence sidemenu__info">Utano Harada</div>
-                                        <div className="caption sidemenu__info"></div>
-                                        Holistic Health Coach & Web Front Engineer
+                                        <div className="caption sidemenu__info">
+                                            Holistic Health Coach & Web Front Engineer
+                                        </div>
                                     </div>
                                     {/* <div className="sidemenu__sns">
                                         <div className="sns image">

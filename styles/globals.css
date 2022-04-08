@@ -95,12 +95,6 @@ main {
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 768px) {
-  :root #main {
-    height: 100vh;
-    overflow: scroll;
-  }
-}
 :root .main {
   padding: 4rem 0;
   min-height: calc(100vh - 7rem);
@@ -144,7 +138,7 @@ main {
   margin: 0 auto;
 }
 :root .sectionWrap:nth-of-type(n + 2) {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 :root .section {
   display: flex;
@@ -402,6 +396,9 @@ main {
   overflow: hidden;
   border-radius: 50%;
 }
+:root .sidemenu__info {
+  text-align: center;
+}
 :root .sidemenu__sns, :root .sidemenu__title {
   margin: 0.5rem;
 }
@@ -416,6 +413,9 @@ main {
   flex-direction: row;
 }
 :root .sidemenu__text, :root .sidemenu__category {
+  width: 300px;
+}
+:root .sidemenu__category {
   width: 300px;
   margin-top: 2rem;
 }

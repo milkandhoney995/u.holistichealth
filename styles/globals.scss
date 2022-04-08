@@ -84,12 +84,6 @@ main {
         }
     }
     // 内容部分共通
-    @media only screen and (min-width: 768px) {
-        #main {
-            height: 100vh;
-            overflow: scroll;
-        }
-    }
     .main {
         padding: 4rem 0;
         min-height: calc(100vh - 7rem);
@@ -137,7 +131,7 @@ main {
         width: 80%;
         margin: 0 auto;
         &:nth-of-type(n + 2) {
-            margin-top: 4rem;
+            margin-top: 5rem;
         }
     }
     .section {
@@ -432,6 +426,9 @@ main {
             overflow: hidden;
             border-radius: 50%;
         }
+        &__info {
+            text-align: center;
+        }
         &__sns,
         &__title {
             margin: 0.5rem;
@@ -445,6 +442,9 @@ main {
             flex-direction: row;
         }
         &__text,
+        &__category {
+            width: 300px;
+        }
         &__category {
             width: 300px;
             margin-top: 2rem;

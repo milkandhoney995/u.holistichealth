@@ -43,17 +43,17 @@ export default function Philosophy() {
                             <Image
                                 objectFit="cover"
                                 src="/images/site/selflove.jpg"
-                                width={400}
-                                height={400}
+                                width={600}
+                                height={500}
                                 alt="debug"
                             />
                         </div>
                         <div className="section__body">
-                            <h2 className="section__title">
+                            <h2 className="">
                                 あなたの生活は、<br></br>
                                 何かに偏っていませんか？
                             </h2>
-                            <div className="section__sentence">
+                            <div className="section__sentence mg-t-2">
                                 近年、「健康」という言葉は。病気や怪我がないだけでなく、人間関係やワークライフバランス、運動やスピリチュアルなど多元的な要素のバランスが取れた状態とと定義されつつあります。そのため、近年のヘルス分野では、目に見える症状ではなく、根本的な原因を特定し、解決することに重点が置かれています。
                                 <br></br>
                                 この考えは、アメリカをはじめとする先進国で Holistic
@@ -63,6 +63,22 @@ export default function Philosophy() {
                                 ですが、日本でHolistic Healthはまだまだ浸透しておらず、
                                 仕事など生活の重点が一要素に偏ってしまう人が少なくありません。
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="sectionWrap">
+                    <div className="section--emphasized">
+                        <h1 className="section__title">あなたの話をしませんか</h1>
+                        <div className="container__text">
+                            あなたは、子供のころどんな夢を持っていましたか<br></br>
+                            <br></br>
+                            今、抱えている不安や悩みはありますか<br></br>
+                            <br></br>
+                            あなたは、どんな時に幸せと感じますか<br></br>
+                            <br></br>
+                            あなたは、どう生きていきたいですか<br></br>
+                            <br></br>
+                            あなたの落ち着く場所で、少しお話ししませんか
                         </div>
                     </div>
                 </div>
@@ -84,22 +100,6 @@ export default function Philosophy() {
                                 私のヘルスコーチングでは、NY拠点の栄養学校 Institute for Integrative
                                 Nutritionのホリスティックヘルスに基づき、過去に経験した環境の変化や仕事、人間関係、食生活などからあなたのルーツをたどります。
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="sectionWrap">
-                    <div className="section--emphasized">
-                        <h1 className="section__title">あなたの話をしませんか</h1>
-                        <div className="container__text">
-                            あなたは、子供のころどんな夢を持っていましたか<br></br>
-                            <br></br>
-                            今、抱えている不安や悩みはありますか<br></br>
-                            <br></br>
-                            あなたは、どんな時に幸せと感じますか<br></br>
-                            <br></br>
-                            あなたは、どう生きていきたいですか<br></br>
-                            <br></br>
-                            あなたの落ち着く場所で、少しお話ししませんか
                         </div>
                     </div>
                 </div>
