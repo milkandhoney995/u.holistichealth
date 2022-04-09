@@ -4,7 +4,9 @@ import Link from "next/link";
 function Button(props) {
     return (
         <div className={classes.button}>
-            <Link href={props.href}>{props.label}</Link>
+            <Link href={props.href}>
+                <a>{props.label}</a>
+            </Link>
         </div>
     );
 }

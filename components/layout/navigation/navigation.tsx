@@ -22,13 +22,17 @@ export default function Navigation() {
                         </div>
                         <div className={classes.logo}>
                             <Link href="/holistichealthcoach">
-                                <Logo />
+                                <a>
+                                    <Logo />
+                                </a>
                             </Link>
                         </div>
                         <ul className={classes.menu}>
                             {menuList.map((menu) => (
                                 <li key={menu.id} className={classes.menuItem}>
-                                    <Link href={menu.href}>{menu.title}</Link>
+                                    <Link href={menu.href}>
+                                        <a>{menu.title}</a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

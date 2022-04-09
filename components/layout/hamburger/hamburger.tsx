@@ -27,7 +27,7 @@ export default function Hamburger() {
                 {menuList.map((menu) => (
                     <li className="menu-item">
                         <Link key={menu.id} href={menu.href}>
-                            {menu.title}
+                            <a>{menu.title}</a>
                         </Link>
                     </li>
                 ))}

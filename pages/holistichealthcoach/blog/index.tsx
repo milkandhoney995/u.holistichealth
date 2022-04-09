@@ -48,7 +48,7 @@ export default function Blog({ blog }) {
                                             <div className="">
                                                 <Link href={`/holistichealthcoach/blog/${blog.id}`}>
                                                     <div className="card__primary">
-                                                        {blog.title}
+                                                        <a>{blog.title}</a>
                                                     </div>
                                                 </Link>
                                             </div>

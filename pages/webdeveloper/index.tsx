@@ -52,7 +52,9 @@ export default function Home() {
                     </li>
                 </ul>
                 <div className="button button--green">
-                    <Link href="/webdeveloper/blog">Blog</Link>
+                    <Link href="/webdeveloper/blog">
+                        <a>Blog</a>
+                    </Link>
                 </div>
             </div>
         </Fragment>

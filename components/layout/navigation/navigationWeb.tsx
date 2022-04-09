@@ -31,7 +31,7 @@ function NavigationWeb() {
                             {menuList.map((menu) => (
                                 <li className={classes.menuItem}>
                                     <Link key={menu.id} href={menu.href}>
-                                        {menu.title}
+                                        <a>{menu.title}</a>
                                     </Link>
                                 </li>
                             ))}

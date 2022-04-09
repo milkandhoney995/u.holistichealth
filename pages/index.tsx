@@ -15,8 +15,12 @@ export default function Home() {
                     as…
                 </h1>
                 <div className="firstPage__button">
-                    <Link href="/webdeveloper">Web Developer</Link>
-                    <Link href="/holistichealthcoach">Holistic Health Coach</Link>
+                    <Link href="/webdeveloper">
+                        <a>Web Developer</a>
+                    </Link>
+                    <Link href="/holistichealthcoach">
+                        <a>Holistic Health Coach</a>
+                    </Link>
                 </div>
             </div>
         </Fragment>

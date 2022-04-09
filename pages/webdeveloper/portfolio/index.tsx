@@ -33,7 +33,10 @@ export default function Portofolio() {
                         <br></br>
                         <br></br>
                         ヘルスコーチとしての活動は、
-                        <Link href="/holistichealthcoach">こちら</Link>をご参照ください。
+                        <Link href="/holistichealthcoach">
+                            <a>こちら</a>
+                        </Link>
+                        をご参照ください。
                         <br></br>
                     </p>
                 </div>

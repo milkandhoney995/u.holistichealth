@@ -85,7 +85,7 @@ export default function Home({ blog }) {
                                             </div>
                                             <div className="card__primary">
                                                 <Link href={`holistichealthcoach/blog/${blog.id}`}>
-                                                    {blog.title}
+                                                    <a>{blog.title}</a>
                                                 </Link>
                                             </div>
                                         </div>
