@@ -84,7 +84,7 @@ export default function Home({ blog }) {
                                                     .format("YYYY-MM-DD")}
                                             </div>
                                             <div className="card__primary">
-                                                <Link href={`holistichealthcoach/blog/${blog.id}`}>
+                                                <Link href={`/holistichealthcoach/blog/${blog.id}`}>
                                                     <a>{blog.title}</a>
                                                 </Link>
                                             </div>
