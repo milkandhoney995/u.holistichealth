@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-// import Hero from "../../../components/hero/hero";
 import { Fragment } from "react";
 
 export default function Profile() {
@@ -10,7 +9,6 @@ export default function Profile() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            {/* <Hero bgImageUrl='"/images/site/freedom.jpg"' /> */}
             <div className="main">
                 <div className="section">
                     <Image

@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-// import Hero from "../../../components/hero/hero";
-import Button from "../../../components/button/button";
 import { Fragment } from "react";
 
 export default function Philosophy() {
@@ -13,30 +11,6 @@ export default function Philosophy() {
             </Head>
             {/* <Hero pageTitle="Love yourself, manage yourself" bgImageUrl='"/images/life/sky.png"' /> */}
             <div className="main">
-                {/* <div className="sectionWrap">
-                    <div className="section">
-                        <div className="section__body">
-                            情報が国境を越える社会
-                            <br></br>
-                            <br></br>
-                            ヘルスケアにおいても、さまざまな食事法があり、<br></br>
-                            まず何をすればいいのか、迷子になってはいませんか？<br></br>
-                            <br></br>
-                            今のあなたに必要なことは、体と心が知っています<br></br>
-                            あなたに影響を与えるものを、一つ一つ探ることで、<br></br>
-                            あなたが抱える問題をとく手がかりが見つかります
-                        </div>
-                        <div className="section__image">
-                            <Image
-                                objectFit="cover"
-                                src="/images/site/selflove.jpg"
-                                width={400}
-                                height={400}
-                                alt="debug"
-                            />
-                        </div>
-                    </div>
-                </div> */}
                 <div className="sectionWrap">
                     <div className="section">
                         <div className="section__image">

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Button from "../../../components/button/button";
-// import Hero from "../../../components/hero/hero";
 import { Fragment } from "react";
 
 export default function Service() {
@@ -11,7 +10,6 @@ export default function Service() {
                 <title>u.holistichealth</title>
                 <meta name="description" content="this is u.holistichealth's website." />
             </Head>
-            {/* <Hero pageTitle="Service" bgImageUrl='"/images/life/hill.jpg"' /> */}
             <div className="main">
                 <div className="sectionWrap">
                     <h2 className="text--center">変化を習慣化する</h2>
