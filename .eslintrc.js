@@ -4,7 +4,7 @@ module.exports = {
         es2020: true,
         node: true,
     },
-    parser: "@typescript-eslint/parser", // ESLintにTypeScriptを適応
+    parser: ".eslintrc.js", // ESLintにTypeScriptを適応
     parserOptions: {
         project: "tsconfig.json",
         tsconfigRootDir: __dirname,
@@ -16,7 +16,6 @@ module.exports = {
         "eslint:recommended", //ESLintのJavaScriptルールを適用
         "plugin:@typescript-eslint/recommended", // 型チェックが不要なルールを適用
         "prettier",
-        "prettier/@typescript-eslint",
     ],
 
     rules: {},
