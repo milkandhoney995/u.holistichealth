@@ -4,9 +4,9 @@ module.exports = {
         es2020: true,
         node: true,
     },
-    parser: ".eslintrc.js", // ESLintにTypeScriptを適応
+    parser: "@typescript-eslint/parser", // ESLintにTypeScriptを適応
     parserOptions: {
-        project: "tsconfig.json",
+        // project: "tsconfig.json",
         tsconfigRootDir: __dirname,
         sourceType: "module",
     },
