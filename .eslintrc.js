@@ -13,7 +13,7 @@ module.exports = {
     },
     plugins: ["@typescript-eslint"], // TypeScriptプラグインのルールを適用
 
-    extends: ["some-other-config-you-use", "prettier"],
+    extends: ["prettier"],
 
     rules: {},
 };
