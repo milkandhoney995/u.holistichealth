@@ -22,7 +22,7 @@ function NavigationWeb() {
                 <div className={classes.navbar}>
                     <div className={classes.navContainer}>
                         <div className={classes.burger} onClick={toggleHamburger}>
-                            <Hamburger isOpen={hamburgerOpen} />
+                            <Hamburger />
                         </div>
                         <div className={classes.logo}>
                             <h1>Utano Harada</h1>
