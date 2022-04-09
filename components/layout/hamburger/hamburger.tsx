@@ -13,7 +13,7 @@ export default function Hamburger() {
         { id: 2, href: "/holistichealthcoach/philosophy", title: "Holistic Health" },
         { id: 3, href: "/holistichealthcoach/profile", title: "About Me" },
         { id: 4, href: "/holistichealthcoach/blog", title: "Blog" },
-        { id: 5, href: "/holistichealthcoach/service", title: "Service" },
+        // { id: 5, href: "/holistichealthcoach/service", title: "Service" },
     ];
 
     return (
