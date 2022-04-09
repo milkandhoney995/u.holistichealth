@@ -23,7 +23,7 @@ export default function Hamburger() {
                 <span className="line line2"></span>
                 <span className="line line3"></span>
             </div>
-            <ul className="menu-items">
+            <ul className={hamburgerOpen ? "menu-items" : "hidden"}>
                 {menuList.map((menu) => (
                     <li className="menu-item">
                         <Link key={menu.id} href={menu.href}>
@@ -34,6 +34,9 @@ export default function Hamburger() {
             </ul>
             <style jsx>
                 {`
+                    .hidden {
+                        display: none;
+                    }
                     .menu-items {
                         display: flex;
                         flex-direction: column;
