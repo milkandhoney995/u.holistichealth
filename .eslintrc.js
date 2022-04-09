@@ -13,7 +13,12 @@ module.exports = {
     },
     plugins: ["@typescript-eslint"], // TypeScriptプラグインのルールを適用
 
-    extends: ["prettier"],
+    extends: [
+        "eslint:recommended", //ESLintのJavaScriptルールを適用
+        "plugin:@typescript-eslint/recommended", // 型チェックが不要なルールを適用
+        "prettier",
+        "prettier/@typescript-eslint",
+    ],
 
     rules: {},
 };
