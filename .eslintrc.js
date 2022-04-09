@@ -16,7 +16,7 @@ module.exports = {
         "eslint:recommended", //ESLintのJavaScriptルールを適用
         "plugin:@typescript-eslint/recommended", // 型チェックが不要なルールを適用
         "prettier",
-        "prettieer/@typescript-eslint",
+        "prettier/@typescript-eslint",
     ],
 
     rules: {},
