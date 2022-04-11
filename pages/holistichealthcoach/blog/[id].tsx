@@ -36,7 +36,7 @@ export default function PostId({ data }) {
                                         <div className="sns image">
                                             <Image
                                                 objectFit="cover"
-                                                src="/images/site/facebook.svg"
+                                                src="/images/icon/facebook.svg"
                                                 width={25}
                                                 height={25}
                                                 alt="debug"
@@ -45,7 +45,7 @@ export default function PostId({ data }) {
                                         <div className="sns">
                                             <Image
                                                 objectFit="cover"
-                                                src="/images/site/instagram.svg"
+                                                src="/images/icon/instagram.svg"
                                                 width={25}
                                                 height={25}
                                                 alt="debug"
@@ -54,7 +54,7 @@ export default function PostId({ data }) {
                                         <div className="sns">
                                             <Image
                                                 objectFit="cover"
-                                                src="/images/site/facebook.svg"
+                                                src="/images/icon/facebook.svg"
                                                 width={25}
                                                 height={25}
                                                 alt="debug"
