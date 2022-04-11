@@ -424,4 +424,7 @@ main {
     position: sticky;
   }
 }
+:root .sns:nth-of-type(n + 2) {
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=globals.css.map */

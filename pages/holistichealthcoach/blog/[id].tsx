@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+
 // import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
@@ -32,35 +34,40 @@ export default function PostId({ data }) {
                                             Holistic Health Coach & Web Front Engineer
                                         </div>
                                     </div>
-                                    {/* <div className="sidemenu__sns">
-                                        <div className="sns image">
-                                            <Image
-                                                objectFit="cover"
-                                                src="/images/icon/facebook.svg"
-                                                width={25}
-                                                height={25}
-                                                alt="debug"
-                                            />
+                                    <div className="sidemenu__sns">
+                                        <div className="sns">
+                                            <Link
+                                                href="https://www.facebook.com/profile.php?id=100011900596430"
+                                                passHref
+                                            >
+                                                <a target="_blank" rel="noopener">
+                                                    <Image
+                                                        objectFit="cover"
+                                                        src="/images/icon/facebook.png"
+                                                        width={25}
+                                                        height={25}
+                                                        alt="Facebook"
+                                                    />
+                                                </a>
+                                            </Link>
                                         </div>
                                         <div className="sns">
-                                            <Image
-                                                objectFit="cover"
-                                                src="/images/icon/instagram.svg"
-                                                width={25}
-                                                height={25}
-                                                alt="debug"
-                                            />
+                                            <Link
+                                                href="https://www.instagram.com/uta.healthcoach_webdeveloper/"
+                                                passHref
+                                            >
+                                                <a target="_blank" rel="noopener">
+                                                    <Image
+                                                        objectFit="cover"
+                                                        src="/images/icon/Instagram.png"
+                                                        width={25}
+                                                        height={25}
+                                                        alt="Instagram"
+                                                    />
+                                                </a>
+                                            </Link>
                                         </div>
-                                        <div className="sns">
-                                            <Image
-                                                objectFit="cover"
-                                                src="/images/icon/facebook.svg"
-                                                width={25}
-                                                height={25}
-                                                alt="debug"
-                                            />
-                                        </div>
-                                    </div> */}
+                                    </div>
                                     <div className="sidemenu__body">
                                         <div className="sidemenu__text">
                                             食べること、歌うこと、勉強すること、話すことが好きです。

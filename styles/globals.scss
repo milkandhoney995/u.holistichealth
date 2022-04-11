@@ -453,4 +453,10 @@ main {
             position: sticky;
         }
     }
+    // SNSアイコン
+    .sns {
+        &:nth-of-type(n + 2) {
+            margin-left: 1rem;
+        }
+    }
 }
