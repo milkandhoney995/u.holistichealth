@@ -81,6 +81,9 @@ main {
 :root ul {
   list-style: none;
 }
+:root .flex {
+  display: flex;
+}
 :root .border {
   border: 1px solid #ccc;
   border-radius: 1rem;
