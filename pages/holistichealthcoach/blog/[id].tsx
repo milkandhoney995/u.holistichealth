@@ -34,7 +34,7 @@ export default function PostId({ data }) {
                                             Holistic Health Coach & Web Front Engineer
                                         </div>
                                     </div>
-                                    <div className="sidemenu__sns">
+                                    <div className="sidemenu__sns flex">
                                         <div className="sns">
                                             <Link
                                                 href="https://www.facebook.com/profile.php?id=100011900596430"
