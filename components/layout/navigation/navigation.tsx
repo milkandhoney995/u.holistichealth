@@ -39,7 +39,7 @@ export default function Navigation() {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="iconWrap">
+                            {/* <div className="iconWrap">
                                 <div className="sns">
                                     <Link
                                         href="https://www.facebook.com/profile.php?id=100011900596430"
@@ -72,7 +72,7 @@ export default function Navigation() {
                                         </a>
                                     </Link>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
