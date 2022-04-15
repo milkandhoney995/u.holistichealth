@@ -98,8 +98,6 @@ main {
 :root .main {
   padding: 4rem 0;
   min-height: calc(100vh - 7rem);
-  max-width: 1200px;
-  margin: 0 auto;
 }
 :root .scrollAnimation {
   border: 0px;
