@@ -398,7 +398,7 @@ main {
 :root .sidemenu__info {
   text-align: center;
 }
-:root .sidemenu__sns, :root .sidemenu__title {
+:root .sidemenu__title {
   margin: 0.5rem;
 }
 :root .sidemenu__title {
@@ -406,10 +406,6 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 3px solid var(--title-border);
-}
-:root .sidemenu__sns {
-  display: flex;
-  flex-direction: row;
 }
 :root .sidemenu__text, :root .sidemenu__category {
   width: 300px;
@@ -424,7 +420,16 @@ main {
     position: sticky;
   }
 }
+:root .iconWrap {
+  display: flex;
+  flex-direction: row;
+}
 :root .sns:nth-of-type(n + 2) {
   margin-left: 1rem;
+}
+@media (max-width: 800px) {
+  :root .iconWrap {
+    display: none;
+  }
 }
 /*# sourceMappingURL=globals.css.map */

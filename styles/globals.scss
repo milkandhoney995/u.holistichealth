@@ -423,17 +423,12 @@ main {
         &__info {
             text-align: center;
         }
-        &__sns,
         &__title {
             margin: 0.5rem;
         }
         &__title {
             width: fit-content;
             border-bottom: 3px solid var(--title-border);
-        }
-        &__sns {
-            display: flex;
-            flex-direction: row;
         }
         &__text,
         &__category {
@@ -454,9 +449,18 @@ main {
         }
     }
     // SNSアイコン
+    .iconWrap {
+        display: flex;
+        flex-direction: row;
+    }
     .sns {
         &:nth-of-type(n + 2) {
             margin-left: 1rem;
+        }
+    }
+    @media (max-width: 800px) {
+        .iconWrap {
+            display: none;
         }
     }
 }
