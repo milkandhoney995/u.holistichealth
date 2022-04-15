@@ -26,8 +26,8 @@ export default function Hamburger() {
             </div>
             <ul className={hamburgerOpen ? "menu-items" : "hidden"}>
                 {menuList.map((menu) => (
-                    <li className="menu-item">
-                        <Link key={menu.id} href={menu.href}>
+                    <li key={menu.id} className="menu-item">
+                        <Link href={menu.href}>
                             <a onClick={toggleHamburger}>{menu.title}</a>
                         </Link>
                     </li>

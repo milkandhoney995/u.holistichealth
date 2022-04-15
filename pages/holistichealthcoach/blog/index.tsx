@@ -28,32 +28,37 @@ export default function Blog({ blog }) {
                         <div className="container">
                             <ul className="cardWrap">
                                 {blog.map((blog) => (
-                                    <li key={blog.id} className="card">
-                                        <div className="card__image">
-                                            <Image
-                                                objectFit="cover"
-                                                src={blog.image.url}
-                                                width={350}
-                                                height={300}
-                                                alt="debug"
-                                            />
-                                        </div>
-                                        <div className="card__body">
-                                            <div className="card__secondary">
-                                                {dayjs
-                                                    .utc(blog.publishedAt)
-                                                    .tz("Asia/Tokyo")
-                                                    .format("YYYY-MM-DD")}
-                                            </div>
-                                            <div className="">
-                                                <Link href={`/holistichealthcoach/blog/${blog.id}`}>
-                                                    <div className="card__primary">
-                                                        <a>{blog.title}</a>
+                                    <Link
+                                        key={blog.id}
+                                        href={`/holistichealthcoach/blog/${blog.id}`}
+                                    >
+                                        <a>
+                                            <li className="card">
+                                                <div className="card__image">
+                                                    <Image
+                                                        objectFit="cover"
+                                                        src={blog.image.url}
+                                                        width={350}
+                                                        height={300}
+                                                        alt="debug"
+                                                    />
+                                                </div>
+                                                <div className="card__body">
+                                                    <div className="card__secondary">
+                                                        {dayjs
+                                                            .utc(blog.publishedAt)
+                                                            .tz("Asia/Tokyo")
+                                                            .format("YYYY-MM-DD")}
                                                     </div>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </li>
+                                                    <div className="">
+                                                        <div className="card__primary">
+                                                            {blog.title}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </a>
+                                    </Link>
                                 ))}
                             </ul>
                         </div>
