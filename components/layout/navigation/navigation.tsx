@@ -2,6 +2,8 @@ import Link from "next/link";
 import classes from "./navigation.module.scss";
 import Hamburger from "../hamburger/hamburger";
 import Logo from "../logo/logo";
+import Image from "next/image";
+
 // import { useState } from "react";
 
 export default function Navigation() {
@@ -27,15 +29,51 @@ export default function Navigation() {
                                 </a>
                             </Link>
                         </div>
-                        <ul className={classes.menu}>
-                            {menuList.map((menu) => (
-                                <li key={menu.id} className={classes.menuItem}>
-                                    <Link href={menu.href}>
-                                        <a>{menu.title}</a>
+                        <div className={classes.menuWrap}>
+                            <ul className={classes.menu}>
+                                {menuList.map((menu) => (
+                                    <li key={menu.id} className={classes.menuItem}>
+                                        <Link href={menu.href}>
+                                            <a>{menu.title}</a>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className="iconWrap">
+                                <div className="sns">
+                                    <Link
+                                        href="https://www.facebook.com/profile.php?id=100011900596430"
+                                        passHref
+                                    >
+                                        <a target="_blank" rel="noopener">
+                                            <Image
+                                                objectFit="cover"
+                                                src="/images/icon/facebook.png"
+                                                width={25}
+                                                height={25}
+                                                alt="Facebook"
+                                            />
+                                        </a>
                                     </Link>
-                                </li>
-                            ))}
-                        </ul>
+                                </div>
+                                <div className="sns">
+                                    <Link
+                                        href="https://www.instagram.com/uta.healthcoach_webdeveloper/"
+                                        passHref
+                                    >
+                                        <a target="_blank" rel="noopener">
+                                            <Image
+                                                objectFit="cover"
+                                                src="/images/icon/Instagram.png"
+                                                width={25}
+                                                height={25}
+                                                alt="Instagram"
+                                            />
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>

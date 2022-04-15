@@ -31,7 +31,7 @@ function NavigationWeb() {
                             {menuList.map((menu) => (
                                 <li className={classes.menuItem}>
                                     <Link key={menu.id} href={menu.href}>
-                                        <a>{menu.title}</a>
+                                        <a onClick={toggleHamburger}>{menu.title}</a>
                                     </Link>
                                 </li>
                             ))}
