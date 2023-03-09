@@ -7,7 +7,7 @@ function LayoutWeb(props) {
         <Fragment>
             <Header></Header>
             <main>{props.children}</main>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </Fragment>
     );
 }
