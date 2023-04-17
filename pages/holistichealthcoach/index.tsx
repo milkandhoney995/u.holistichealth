@@ -2,8 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "../../components/hero/hero";
-// import Scroll from "../../components/scroll/scroll";
-// import Button from "../../components/button/button";
+import CardGroup from "../../components/cardGroup/cardGroup";
 import { client } from "../../libs/client";
 import { Fragment } from "react";
 import dayjs from "dayjs";
@@ -64,34 +63,9 @@ export default function Home({ blog }) {
                     <div className="section--emphasized">
                         <h2 className="section__tilte">Blog</h2>
                         <div className="container">
-                            <ul className="cardWrap">
-                                {blog.map((blog) => (
-                                    <li key={blog.id} className="card">
-                                        <div className="card__image">
-                                            <Image
-                                                objectFit="cover"
-                                                src={blog.image.url}
-                                                width={400}
-                                                height={400}
-                                                alt="debug"
-                                            />
-                                        </div>
-                                        <div className="card__body">
-                                            <div className="card__secondary">
-                                                {dayjs
-                                                    .utc(blog.publishedAt)
-                                                    .tz("Asia/Tokyo")
-                                                    .format("YYYY-MM-DD")}
-                                            </div>
-                                            <div className="card__primary">
-                                                <Link href={`/holistichealthcoach/blog/${blog.id}`}>
-                                                    <a>{blog.title}</a>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
+                            <CardGroup
+                                blogs={blog}
+                            />
                         </div>
                     </div>
                 </div>

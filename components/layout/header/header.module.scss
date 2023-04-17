@@ -1,3 +1,5 @@
+@use "../../../styles/variables/variables" as v;
+
 .header {
     justify-content: space-between;
     align-items: center;
@@ -6,6 +8,7 @@
     width: 100%;
     z-index: 2;
     transition: 0.5s;
+    background: v.$white;
 
     @media (min-width: 800px) {
         padding: 1rem;
