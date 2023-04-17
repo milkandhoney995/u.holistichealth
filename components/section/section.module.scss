@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  &__body {
+    width: clamp(350px, 80%, 600px);
+    padding: 1.5rem;
+    // background: var(--secondary-background);
+    border-radius: 3px;
+  }
+  &--center {
+    flex-direction: column;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__sentence {
+  }
+  &__image {
+  }
+  &--top {
+    display: flex;
+    align-items: center;
+    margin: 5rem auto 0;
+  }
+  &--reverse {
+    @media screen and (min-width: 880px) {
+      flex-direction: row-reverse;
+    }
+  }
+  &--emphasized {
+    text-align: center;
+    line-height: 2.5;
+  }
+}
