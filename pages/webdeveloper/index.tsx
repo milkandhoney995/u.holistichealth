@@ -5,57 +5,21 @@ import Hero from "../../components/hero/hero";
 import { Fragment } from "react";
 
 export default function Home() {
-    return (
-        <Fragment>
-            <Head>
-                <title>u.holistichealth</title>
-                <meta name="description" content="this is u.holistichealth's website." />
-            </Head>
-            <Hero bgImageUrl='"/images/life/sunnyday.png"' />
-            {/* <div className="latestBlog margin--top">
-                <h2>Blog</h2>
-                <ul className="center latestBlog__list">
-                    <li className="latestBlog__item">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={400}
-                            height={400}
-                            alt="debug"
-                        />
-                        <p className="caption">YYYY.MM.DD</p>
-                        <p className="sentence">
-                            ニュースニュースニュースニュースニュースニュースニュースニュースニュース
-                        </p>
-                    </li>
-                    <li className="latestBlog__item">
-                        <Image
-                            objectFit="cover"
-                            src="/images/site/570x570.png"
-                            width={400}
-                            height={400}
-                            alt="debug"
-                        />
-                        <p className="caption">YYYY.MM.DD</p>
-                        <p className="sentence">
-                            ニュースニュースニュースニュースニュースニュースニュースニュースニュース
-                        </p>
-                    </li>
-                </ul>
-                <div className="button button--green">
-                    <Link href="/webdeveloper/blog">
-                        <a>Blog</a>
-                    </Link>
-                </div>
-            </div> */}
-        </Fragment>
-    );
+  return (
+    <Fragment>
+      <Head>
+        <title>u.holistichealth</title>
+        <meta name="description" content="this is u.holistichealth's website." />
+      </Head>
+      <Hero bgImageUrl='"/images/life/sunnyday.png"' />
+    </Fragment>
+  );
 }
 
 export async function getStaticProps() {
-    return {
-        props: {
-            layout: "web",
-        },
-    };
+  return {
+    props: {
+      layout: "web",
+    },
+  };
 }
