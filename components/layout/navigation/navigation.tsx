@@ -24,8 +24,8 @@ export default function Navigation(props) {
             </div>
             <div className={classes.menuWrap}>
                 <ul className={classes.menu}>
-                  {props.menus.map((menu) => (
-                    <li key={menu.id} className={classes.menuItem}>
+                  {props.menus.map((menu, index) => (
+                    <li key={index} className={classes.menuItem}>
                       <Link href={menu.href}>
                         <a>{menu.title}</a>
                       </Link>

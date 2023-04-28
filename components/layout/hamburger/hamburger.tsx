@@ -18,8 +18,8 @@ export default function Hamburger(props) {
         <span className="line line3"></span>
       </div>
       <ul className={hamburgerOpen ? "menu-items" : "hidden"}>
-        {props.menus.map((menu) => (
-          <li key={menu.id} className="menu-item">
+        {props.menus.map((menu, index) => (
+          <li key={index} className="menu-item">
             <Link href={menu.href}>
               <a onClick={toggleHamburger}>{menu.title}</a>
             </Link>
