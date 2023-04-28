@@ -1,3 +1,6 @@
 {
-    "eslint.workingDirectories": ["./.next"]
+    "eslint.workingDirectories": [
+        "./.next"
+    ],
+    "editor.tabSize": 2
 }
