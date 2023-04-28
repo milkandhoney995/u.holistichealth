@@ -4,11 +4,10 @@ import Footer from "./footer/footer";
 
 function LayoutWeb(props) {
   const menus = [
-    { href: "/webdeveloper", title: "home" },
-    { href: "/webdeveloper/philosophy", title: "Holistic Health" },
+    { href: "/webdeveloper", title: "Home" },
+    { href: "/webdeveloper/portfolio", title: "Portfolio" },
     { href: "/webdeveloper/profile", title: "About Me" },
     // { href: "/webdeveloper/blog", title: "Blog" },
-    { href: "/webdeveloper/service", title: "Service" },
   ];
     return (
       <Fragment>
