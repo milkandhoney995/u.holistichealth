@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Sidemenu from "../../../components/sidemenu/sidemenu"
 
 // import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
@@ -18,137 +19,7 @@ export default function PostId({ data }) {
           <div className="twoColumns_container reverse">
             <aside className="twoColumns_container__side">
               <div className="twoColumns_container--scroll">
-                  <div className="sidemenu">
-                      <div className="sidemenu__profile image">
-                        <Image
-                          objectFit="cover"
-                          src="/images/profile.jpg"
-                          width={150}
-                          height={150}
-                          alt="debug"
-                        />
-                      </div>
-                      <div className="container">
-                        <div className="sentence sidemenu__info">Utano Harada</div>
-                        <div className="caption sidemenu__info">
-                          Holistic Health Coach & Web Front Engineer
-                        </div>
-                      </div>
-                      <div className="sidemenu__sns flex">
-                        <div className="sns">
-                          <Link
-                            href="https://www.facebook.com/profile.php?id=100011900596430"
-                            passHref
-                          >
-                            <a target="_blank" rel="noopener">
-                              <Image
-                                objectFit="cover"
-                                src="/images/icon/facebook.png"
-                                width={25}
-                                height={25}
-                                alt="Facebook"
-                              />
-                            </a>
-                          </Link>
-                        </div>
-                        <div className="sns">
-                            <Link
-                                href="https://www.instagram.com/uta.healthcoach_webdeveloper/"
-                                passHref
-                            >
-                                <a target="_blank" rel="noopener">
-                                    <Image
-                                        objectFit="cover"
-                                        src="/images/icon/Instagram.png"
-                                        width={25}
-                                        height={25}
-                                        alt="Instagram"
-                                    />
-                                </a>
-                            </Link>
-                        </div>
-                      </div>
-                      <div className="sidemenu__body">
-                        <div className="sidemenu__text">
-                            食べること、歌うこと、勉強すること、話すことが好きです。
-                            <br></br>
-                            <br></br>
-                            ヘルスコーチング、Web制作の依頼は以下メールアドレスから。
-                            <br></br>
-                            email: uta.holistichealthandweb@gmail.com
-                            {/* <div id="sentence">
-                                    In my younger and more vulnerable years my
-                                    father gave me some advice that I've been
-                                    turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.' In my younger and more vulnerable
-                                    years my father gave me some advice that I've
-                                    been turning over in my mind ever since. <br />
-                                    <br />
-                                    'Whenever you feel like criticizing anyone,' he
-                                    told me, just remember that all the people in
-                                    this world haven't had the advantages that
-                                    you've had.'
-                                </div> */}
-                        </div>
-                      </div>
-                      {/* <div className="sidemenu__category">
-                          <h3 className="sidemenu__title">Category</h3>
-                          <Tag />
-                      </div> */}
-                  </div>
+                <Sidemenu />
               </div>
             </aside>
             <div className="twoColumns_container__main">

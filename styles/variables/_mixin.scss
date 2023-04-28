@@ -1,3 +1,4 @@
+@use './variables' as v;
 $breakpoint: (
   sp: 'screen and (max-width: 450px)',
   tab: 'screen and (max-width: 880px)',
@@ -8,4 +9,13 @@ $breakpoint: (
   @media #{map-get($breakpoint, $bp)} {
    @content;
   }
+}
+@mixin sentence() {
+  font-size: 1.5rem;
+  color: v.$sentence;
+  word-break: break-word;
+}
+@mixin caption() {
+  font-size: 0.625rem;
+  color: v.$caption;
 }

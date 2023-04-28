@@ -1,0 +1,44 @@
+@use "../../styles/variables/variables" as v;
+@use "../../styles/variables/mixin" as m;
+
+//sidemenu
+.sidemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: clamp(350px, 50%, 360px);
+  padding: 1rem;
+  background: v.$secondaryBackground;
+  border-radius: 1rem;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px -10px #000;
+  &__profile {
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  &__profile > span {
+    display: block !important;
+  }
+  &__info {
+    padding: 1rem;
+  }
+  &__title {
+    @include m.sentence();
+    text-align: center;
+  }
+  &__caption {
+    @include m.caption();
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+@include m.mq(pc) {
+  .sidemenu {
+    position: sticky;
+  }
+}

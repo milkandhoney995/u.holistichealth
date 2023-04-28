@@ -7,19 +7,19 @@
     margin: 0;
 }
 html {
-    background-color: rgba(252, 236, 236, 1);
+    background-color: v.$pageBg;
 }
 body {
-    font-family: "Noto Sans JP", "Cochin", BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
-        HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-family: "Noto Sans JP", "Cochin", BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
+      HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 }
 #__next {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 main {
-    flex: 1;
+  flex: 1;
 }
 :root {
   --background: rgba(252, 236, 236, 1);
@@ -307,7 +307,7 @@ main {
   }
   .caption {
       font-size: 0.625rem;
-      color: var(--caption);
+      color: v.$caption;
   }
   .sentence {
       font-size: 1.5rem;
@@ -360,62 +360,10 @@ main {
           width: clamp(200px, 100%, 650px);
       }
   }
-
-  //sidemenu
-  .sidemenu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      // width: clamp(350px, 50%, 360px);
-      padding: 1rem;
-      background: var(--secondary-background);
-      border-radius: 1rem;
-      margin: 0 auto;
-      box-shadow: 0 5px 15px -10px #000;
-      &__profile {
-          overflow: hidden;
-          border-radius: 50%;
-      }
-      &__info {
-          text-align: center;
-      }
-      &__title {
-          margin: 0.5rem;
-      }
-      &__title {
-          width: fit-content;
-          border-bottom: 3px solid var(--title-border);
-      }
-      &__text,
-      &__category {
-          width: 300px;
-      }
-      &__category {
-          width: 300px;
-          margin-top: 2rem;
-      }
-      &__sns {
-          display: flex;
-      }
-      // &__tags {
-      //     display: flex;
-      //     flex-wrap: wrap;
-      // }
-  }
-  @media screen and (min-width: 1100px) {
-      .sidemenu {
-          position: sticky;
-      }
-  }
   // SNSアイコン
   .iconWrap {
       display: flex;
       flex-direction: row;
-  }
-  .sns {
-      &:nth-of-type(n + 2) {
-          margin-left: 1rem;
-      }
   }
   @media (max-width: 800px) {
       .iconWrap {

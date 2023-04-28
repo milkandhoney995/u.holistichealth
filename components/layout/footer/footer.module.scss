@@ -1,7 +1,9 @@
+@use "../../../styles/variables/variables" as v;
+
 .footer {
     text-align: center;
     min-width: var(--min-width);
-    padding: 2rem;
+    padding: 0.5rem;
     color: #fffffe;
-    background-color: var(--footer);
+    background-color: v.$footerBg;
 }

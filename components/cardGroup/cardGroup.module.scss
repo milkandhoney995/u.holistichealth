@@ -1,3 +1,6 @@
+@use "../../styles/variables/variables" as v;
+@use "../../styles/variables/mixin" as m;
+
 .cardWrap {
   display: grid;
   justify-items: center;
@@ -28,19 +31,20 @@
       padding: 1rem;
   }
   &__primary {
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      font-size: 1.5rem;
-      color: var(--sentence);
-      word-break: break-word;
-      text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.5rem;
+    word-break: break-word;
+    text-align: left;
+    & a {
+        color: v.$card;
+    }
   }
   &__secondary {
-      text-align: left;
-      font-size: 0.625rem;
-      color: var(--caption);
+    text-align: left;
+    @include m.caption();
   }
   &:hover {
       box-shadow: 0 5px 15px -10px #000;
