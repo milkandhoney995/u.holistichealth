@@ -1,10 +1,10 @@
 import classes from "./header.module.scss";
 import Navigation from "../navigation/navigation";
 
-function Header() {
+function Header(props) {
   return (
     <header id="header" className={classes.header}>
-      <Navigation />
+      <Navigation menus={props.menus} />
     </header>
   );
 }
