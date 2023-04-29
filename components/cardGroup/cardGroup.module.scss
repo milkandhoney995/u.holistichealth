@@ -11,13 +11,7 @@
 
 .card {
   position: relative;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px -10px #000;
-  background-color: rgba(255, 255, 254, 0.6);
-  // box-shadow: -1.5px -1.5px 2px rgb(255 255 255 / 95%), 1px 1px 3px rgb(28 64 128 / 15%);
-  transition: transform 200ms cubic-bezier(0.561, -0.163, 0.246, 1.27),
-      -webkit-transform 200ms cubic-bezier(0.561, -0.163, 0.246, 1.27);
-  // transition: box-shadow 0.25s ease-out;
+  @include m.card();
   cursor: pointer;
   &__image {
     @include m.cardImg();

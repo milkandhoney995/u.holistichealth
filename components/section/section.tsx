@@ -13,6 +13,7 @@ export const Root: FC<{
   width?: number,
   height?: number
   reverse?: boolean
+  center?: boolean
 }> = (props) => {
 
   const title = getSlot(props.children, TitleSlot);
@@ -42,7 +43,9 @@ export const Root: FC<{
         <div
           className={
             `${classes.section__sentence}
-            ${props.grid ? "" : classes.section__gridContents}`}>
+            ${props.grid ? "" : classes.section__gridContents}
+            ${props.center ? classes.section__centerText : ""}
+            `}>
           {body}
         </div>
       </div>

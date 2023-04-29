@@ -15,7 +15,7 @@ function LayoutHealth(props) {
     <Fragment>
       <Header menus={menus}></Header>
       <main>
-          <div id="main">{props.children}</div>
+        <div id="main">{props.children}</div>
       </main>
       <Footer></Footer>
     </Fragment>

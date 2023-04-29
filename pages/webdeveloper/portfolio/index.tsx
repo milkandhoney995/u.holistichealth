@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import { Section } from "../../../components/section/section";
 
 export default function Portofolio() {
   return (
@@ -10,18 +11,17 @@ export default function Portofolio() {
         <title>u.holistichealth</title>
         <meta name="description" content="this is u.holistichealth's website." />
       </Head>
-      <div className="section">
-        <Image
-          style={{ objectFit: 'contain' }}
-          src="/images/life/cafe.jpg"
+      <div className="container">
+        <Section
+          img="/images/life/cafe.jpg"
           width={500}
           height={500}
-          alt="debug"
-        />
-        <div>
-          <h2>Utano Harada</h2>
-          <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
-          <p className="container__text">
+        >
+          <Section.Title>
+            <h2>Utano Harada</h2>
+            <h3 className="title--small">Holistic Health Coach & Web Frontend Engineer</h3>
+          </Section.Title>
+          <Section.Body>
             1997年千葉出身。<br></br>
             国際基督教大学教養学部化学メジャー卒。
             <br></br>
@@ -33,13 +33,9 @@ export default function Portofolio() {
             <br></br>
             <br></br>
             ヘルスコーチとしての活動は、
-            <Link href="/holistichealthcoach">
-              こちら
-            </Link>
-            をご参照ください。
-            <br></br>
-          </p>
-        </div>
+            <Link href="/holistichealthcoach">こちら</Link>をご参照ください。
+          </Section.Body>
+        </Section>
       </div>
     </Fragment>
   );

@@ -34,7 +34,9 @@ export default function Philosophy() {
               仕事など生活の重点が一要素に偏ってしまう人が少なくありません。
           </Section.Body>
         </Section>
-        <Section>
+        <Section
+          center={true}
+        >
           <Section.Title>あなたの話をしませんか</Section.Title>
           <Section.Body>
             あなたは、子供のころどんな夢を持っていましたか<br></br>

@@ -15,7 +15,6 @@
   }
   &__body {
     width: clamp(350px, 80%, 600px);
-    // padding: 1.5rem;
     margin-bottom: 2.5rem;
     border-radius: 3px;
   }
@@ -28,20 +27,30 @@
     margin-bottom: 2rem;
   }
   &__sentence {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  &__gridSection &__body &__sentence {
-    display: block;
+    @include m.mq(pc) {
+      margin-left: 2rem;
+    }
   }
   &__image {
     margin: 0;
   }
-  &__reverse {
-    flex-direction: row-reverse;
-    @include m.mq(sp) {
-      flex-direction: column-reverse;
+  &__centerText {
+    text-align: center;
+  }
+}
+
+.section__reverse {
+  flex-direction: row-reverse;
+  @include m.mq(sp) {
+    flex-direction: column-reverse;
+  }
+  & .section__sentence {
+    @include m.mq(pc) {
+      margin-left: 0;
+      margin-right: 2rem;
     }
+  }
+  & .section__gridSection .section__body .section__sentence {
+    display: block;
   }
 }

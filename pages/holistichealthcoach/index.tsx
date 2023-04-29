@@ -25,7 +25,9 @@ export default function Home({ blog }) {
         </h1>"
       />
       <div className="main">
-        <Section>
+        <Section
+          center={true}
+        >
           <Section.Body>
             一生懸命に生きて、いつの間にか
             <br></br>
@@ -37,7 +39,9 @@ export default function Home({ blog }) {
             体と心のサインに目を向けましょう。
           </Section.Body>
         </Section>
-        <Section>
+        <Section
+          center={true}
+        >
           <Section.Title>あなたが、あなたを変える</Section.Title>
           <Section.Body>
             どんな悩みを持っていても
