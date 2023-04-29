@@ -1,3 +1,11 @@
+.sectionWrap {
+  width: 80%;
+  margin: 0 auto;
+  &:nth-of-type(n + 2) {
+    margin-top: 5rem;
+  }
+}
+
 .section {
   display: flex;
   align-items: center;
@@ -8,11 +16,9 @@
     padding: 1.5rem;
     border-radius: 3px;
   }
-  &--center {
-    flex-direction: column;
-  }
   &__title {
     text-align: center;
+    margin-bottom: 1rem;
   }
   &__sentence {
   }
@@ -23,7 +29,7 @@
     align-items: center;
     margin: 5rem auto 0;
   }
-  &--reverse {
+  &__reverseRow {
     @media screen and (min-width: 880px) {
       flex-direction: row-reverse;
     }
