@@ -7,7 +7,7 @@ const TitleSlot = createSlotComponent();
 const BodySlot = createSlotComponent();
 
 export const Root: FC<{
-  children: ReactElement[],
+  children: ReactElement | ReactElement[],
   grid?: boolean,
   img?: string,
   width?: number,
