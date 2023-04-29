@@ -11,20 +11,6 @@ function LayoutHealth(props) {
     // { href: "/holistichealthcoach/service", title: "Service" },
   ]
 
-  if (typeof window === "object") {
-    const main = document.getElementById("main");
-    const header = document.getElementById("header");
-
-    main.addEventListener("scroll", function () {
-      const scrollPosition = main.scrollTop;
-      if (scrollPosition > 100) {
-        header.classList.add("scrollAnimation");
-        console.log(scrollPosition);
-      } else {
-        header.classList.remove("scrollAnimation");
-      }
-    });
-  }
   return (
     <Fragment>
       <Header menus={menus}></Header>

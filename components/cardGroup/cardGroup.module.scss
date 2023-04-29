@@ -20,9 +20,9 @@
   // transition: box-shadow 0.25s ease-out;
   cursor: pointer;
   &__image {
-      border-radius: 20px 20px 0 0;
-      overflow: hidden;
-      transition: box-shadow 0.25s ease-out;
+    @include m.cardImg();
+    overflow: hidden;
+    transition: box-shadow 0.25s ease-out;
   }
   &__image > span {
       display: block !important;
@@ -38,9 +38,7 @@
     font-size: 1.5rem;
     word-break: break-word;
     text-align: left;
-    & a {
-        color: v.$card;
-    }
+    color: v.$card;
   }
   &__secondary {
     text-align: left;

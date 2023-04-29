@@ -7,7 +7,7 @@ export default function Sidemenu() {
     <div className={classes.sidemenu}>
       <div className={classes.sidemenu__profile}>
         <Image
-          style={{ objectFit: 'contain' }}
+          style={{ objectFit: 'cover' }}
           src="/images/profile.jpg"
           width={150}
           height={150}
