@@ -108,10 +108,13 @@ main {
   // 最初のページ
   .singlePage {
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
+    place-content: center;
+    place-items: center;
+    // display: grid;
+    // align-items: center;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
+    // gap: 0px 0px;
     grid-template-areas:
       "Left Right";
     min-height: 100vh;
@@ -129,14 +132,20 @@ main {
     &__right {
       background: rgb(249, 237, 221);
       grid-area: Right;
+      margin-left: 2rem;
     }
-    &__bottom {
-      display: flex;
-      margin: 0 24px;
-      height: 50vh;
-    }
-    &__section {
-      
+    &__btn {
+      padding: 2rem;
+      @include m.btn();
+      & a {
+        color: #ffffff;
+      }
+      & a:hover, &:hover a {
+        color: v.$green;
+      }
+      &:hover {
+        background: v.$white;
+      }
     }
   }
   // block要素関連

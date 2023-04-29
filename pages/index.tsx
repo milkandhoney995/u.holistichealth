@@ -11,14 +11,18 @@ export default function Home() {
       </Head>
       <div className="singlePage">
         <div className="singlePage__left">
-          <Link href="/webdeveloper">
-            Web Developer
-          </Link>
+          <div className="singlePage__btn">
+            <Link href="/webdeveloper">
+              Web Developer
+            </Link>
+          </div>
         </div>
         <div className="singlePage__right">
-          <Link href="/holistichealthcoach">
-            Holistic Health Coach
-          </Link>
+          <div className="singlePage__btn">
+            <Link href="/holistichealthcoach">
+              Holistic Health Coach
+            </Link>
+          </div>
         </div>
       </div>
     </Fragment>
