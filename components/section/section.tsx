@@ -38,7 +38,7 @@ export const Root: FC<{
         </div>
       }
       <div className={classes.section__body}>
-        <h2 className={classes.section__title}>{title}</h2>
+        { title && <div className={classes.section__title}>{title}</div> }
         <div
           className={
             `${classes.section__sentence}
