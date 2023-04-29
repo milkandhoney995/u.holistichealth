@@ -51,12 +51,6 @@ main {
       font-size: 1.6rem;
     }
   }
-  h2 {
-    font-size: 2rem;
-    @include m.mq(tab) {
-      font-size: 1.4rem;
-    }
-  }
   a,
   a:hover {
     text-decoration: none;
@@ -156,11 +150,6 @@ main {
     &__sentence {
     }
     &__image {
-    }
-    &--top {
-      display: flex;
-      align-items: center;
-      margin: 5rem auto 0;
     }
     &--reverse {
       @media screen and (min-width: 880px) {

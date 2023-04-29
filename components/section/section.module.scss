@@ -1,37 +1,50 @@
-.sectionWrap {
-  width: 80%;
-  margin: 0 auto;
-  &:nth-of-type(n + 2) {
-    margin-top: 5rem;
-  }
-}
+@use "../../styles/variables/variables" as v;
+@use "../../styles/variables/mixin" as m;
 
 .section {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 4rem;
+  margin-bottom: 3rem;
+  &__gridSection {
+    display: block;
+  }
+  @include m.mq(sp) {
+    flex-direction: column;
+  }
   &__body {
     width: clamp(350px, 80%, 600px);
-    padding: 1.5rem;
+    // padding: 1.5rem;
+    margin-bottom: 2.5rem;
     border-radius: 3px;
   }
+  &__gridSection &__body {
+    width: auto;
+  }
   &__title {
+    @include m.sectionTitle();
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   &__sentence {
-  }
-  &__image {
-  }
-  &--top {
     display: flex;
     align-items: center;
-    margin: 5rem auto 0;
+    justify-content: space-evenly;
   }
-  &__reverseRow {
-    @media screen and (min-width: 880px) {
-      flex-direction: row-reverse;
+  &__gridSection &__body &__sentence {
+    display: block;
+  }
+  &__gridContents {
+
+  }
+  &__image {
+    margin: 0;
+  }
+  &__reverse {
+    flex-direction: row-reverse;
+    @include m.mq(sp) {
+      flex-direction: column-reverse;
     }
   }
   &--emphasized {

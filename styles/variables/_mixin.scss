@@ -19,3 +19,10 @@ $breakpoint: (
   font-size: 0.625rem;
   color: v.$caption;
 }
+
+@mixin sectionTitle() {
+  font-size: 2.5rem;
+    @include mq(tab) {
+      font-size: 2rem;
+    }
+}

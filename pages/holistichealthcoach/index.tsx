@@ -59,9 +59,11 @@ export default function Home({ blog }) {
         <Section grid={true}>
           <Section.Title>Blog</Section.Title>
           <Section.Body>
-            <CardGroup
-              blogs={blog}
-            />
+            <div className="container">
+              <CardGroup
+                blogs={blog}
+              />
+            </div>
           </Section.Body>
         </Section>
       </div>
