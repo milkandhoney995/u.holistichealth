@@ -29,7 +29,7 @@ export const Root: FC<{
         props.img &&
         <div className={classes.section__image}>
           <Image
-            style={{ objectFit: 'contain' }}
+            style={{ objectFit: 'cover' }}
             src={props.img}
             width={props.width}
             height={props.height}

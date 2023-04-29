@@ -9,18 +9,16 @@ export default function Home() {
         <title>Utano Harada</title>
         <meta name="description" content="this is Utano's website." />
       </Head>
-      <div className="firstPage">
-        <h1>
-          Utano Harada<br></br>
-          as…
-        </h1>
-        <div className="firstPage__button">
-            <Link href="/webdeveloper">
-                Web Developer
-            </Link>
-            <Link href="/holistichealthcoach">
-              Holistic Health Coach
-            </Link>
+      <div className="singlePage">
+        <div className="singlePage__left">
+          <Link href="/webdeveloper">
+            Web Developer
+          </Link>
+        </div>
+        <div className="singlePage__right">
+          <Link href="/holistichealthcoach">
+            Holistic Health Coach
+          </Link>
         </div>
       </div>
     </Fragment>
