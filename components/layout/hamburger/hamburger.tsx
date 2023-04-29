@@ -20,8 +20,8 @@ export default function Hamburger(props) {
       <ul className={hamburgerOpen ? "menu-items" : "hidden"}>
         {props.menus.map((menu, index) => (
           <li key={index} className="menu-item">
-            <Link href={menu.href}>
-              <a onClick={toggleHamburger}>{menu.title}</a>
+            <Link href={menu.href} onClick={toggleHamburger}>
+              {menu.title}
             </Link>
           </li>
         ))}
@@ -31,32 +31,30 @@ export default function Hamburger(props) {
               <Link
                 href="https://www.facebook.com/profile.php?id=100011900596430"
                 passHref
+                target="_blank" rel="noopener"
               >
-                <a target="_blank" rel="noopener">
-                  <Image
-                    objectFit="cover"
-                    src="/images/icon/facebook.png"
-                    width={25}
-                    height={25}
-                    alt="Facebook"
-                  />
-                </a>
+                <Image
+                  style={{ objectFit: 'contain' }}
+                  src="/images/icon/facebook.png"
+                  width={25}
+                  height={25}
+                  alt="Facebook"
+                />
               </Link>
             </div>
             <div className="sns">
               <Link
                 href="https://www.instagram.com/uta.healthcoach_webdeveloper/"
                 passHref
+                target="_blank" rel="noopener"
               >
-                <a target="_blank" rel="noopener">
-                  <Image
-                    objectFit="cover"
-                    src="/images/icon/Instagram.png"
-                    width={25}
-                    height={25}
-                    alt="Instagram"
-                  />
-                </a>
+                <Image
+                  style={{ objectFit: 'contain' }}
+                  src="/images/icon/Instagram.png"
+                  width={25}
+                  height={25}
+                  alt="Instagram"
+                />
               </Link>
             </div>
           </div>

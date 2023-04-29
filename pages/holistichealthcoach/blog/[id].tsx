@@ -30,7 +30,8 @@ export default function PostId({ data }) {
                     src={data.image.url}
                     width={680}
                     height={500}
-                    objectFit="cover"
+                    style={{ objectFit: 'contain' }}
+                    className="image"
                     alt="debug"
                   />
                 </div>

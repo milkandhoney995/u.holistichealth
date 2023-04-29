@@ -12,7 +12,7 @@ export default function Profile() {
             </Head>
             <div className="section">
                 <Image
-                    objectFit="cover"
+                    style={{ objectFit: 'contain' }}
                     src="/images/life/cafe.jpg"
                     width={500}
                     height={500}

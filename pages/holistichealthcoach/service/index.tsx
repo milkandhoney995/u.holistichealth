@@ -15,7 +15,7 @@ export default function Service() {
                     <h2 className="text--center">変化を習慣化する</h2>
                     <div className="section section--reverse">
                         <Image
-                            objectFit="cover"
+                            style={{ objectFit: 'contain' }}
                             src="/images/life/meal.jpg"
                             width={300}
                             height={300}
@@ -37,7 +37,7 @@ export default function Service() {
                     <h2 className="text--center">詳細</h2>
                     <div className="section">
                         <Image
-                            objectFit="cover"
+                            style={{ objectFit: 'contain' }}
                             src="/images/life/meal.jpg"
                             width={300}
                             height={300}
@@ -59,7 +59,7 @@ export default function Service() {
                     <h2 className="text--center">1:1 90 Minute Session</h2>
                     <div className="twoColumns_container1">
                         <Image
-                            objectFit="cover"
+                            style={{ objectFit: 'contain' }}
                             src="/images/life/veg1.jpg"
                             width={600}
                             height={600}
@@ -91,7 +91,7 @@ export default function Service() {
             {/* <h2 className="text--center">6 month program</h2> */}
             {/* <div className="twoColumns_container1">
                 <Image
-                    objectFit="cover"
+                    style={{ objectFit: 'contain' }}
                     src="/images/life/veg1.jpg"
                     width={600}
                     height={600}

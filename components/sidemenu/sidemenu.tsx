@@ -7,7 +7,7 @@ export default function Sidemenu() {
     <div className={classes.sidemenu}>
       <div className={classes.sidemenu__profile}>
         <Image
-          objectFit="cover"
+          style={{ objectFit: 'contain' }}
           src="/images/profile.jpg"
           width={150}
           height={150}
@@ -25,32 +25,30 @@ export default function Sidemenu() {
           <Link
             href="https://www.facebook.com/profile.php?id=100011900596430"
             passHref
+            target="_blank" rel="noopener"
           >
-            <a target="_blank" rel="noopener">
-              <Image
-                objectFit="cover"
-                src="/images/icon/facebook.png"
-                width={25}
-                height={25}
-                alt="Facebook"
-              />
-            </a>
+            <Image
+              style={{ objectFit: 'contain' }}
+              src="/images/icon/facebook.png"
+              width={25}
+              height={25}
+              alt="Facebook"
+            />
           </Link>
         </div>
         <div className={classes.sidemenu__item}>
           <Link
             href="https://www.instagram.com/uta.healthcoach_webdeveloper/"
             passHref
+            target="_blank" rel="noopener"
           >
-            <a target="_blank" rel="noopener">
-              <Image
-                objectFit="cover"
-                src="/images/icon/Instagram.png"
-                width={25}
-                height={25}
-                alt="Instagram"
-              />
-            </a>
+            <Image
+              style={{ objectFit: 'contain' }}
+              src="/images/icon/Instagram.png"
+              width={25}
+              height={25}
+              alt="Instagram"
+            />
           </Link>
         </div>
       </div>

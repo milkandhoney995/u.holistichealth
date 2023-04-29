@@ -92,8 +92,10 @@ main {
       background: none;
       box-shadow: none;
   }
-  .image > span {
-      display: block !important;
+  .image {
+    object-fit: cover;
+    position: relative;
+    width: auto;
   }
   // 余白
   .margin {
@@ -301,29 +303,6 @@ main {
   .shadow-drop-lr {
       -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  // 記事関連
-  .latestBlog {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &__list {
-          @media screen and (min-width: 450px) {
-              padding-left: 0;
-          }
-      }
-      &__item {
-          width: 400px;
-          margin: 2rem;
-          @media screen and (max-width: 880px) {
-              margin: 1rem;
-          }
-      }
-  }
-  .pageWrap {
-      position: relative;
-      padding: 2rem;
   }
   .page {
       display: flex;

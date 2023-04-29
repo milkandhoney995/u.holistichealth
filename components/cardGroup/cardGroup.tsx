@@ -14,28 +14,28 @@ export default function cardGroup(props) {
       <ul className={classes.cardWrap}>
         {blogs.map((blog) => (
           <li key={blog.id} className={classes.card}>
-            <div className={classes.card__image}>
-              <Image
-                objectFit="cover"
-                src={blog.image.url}
-                width={400}
-                height={400}
-                alt="debug"
-              />
-            </div>
-            <div className={classes.card__body}>
-              <div className={classes.card__secondary}>
-                {dayjs
-                  .utc(blog.publishedAt)
-                  .tz("Asia/Tokyo")
-                  .format("YYYY-MM-DD")}
+            <Link href={`/holistichealthcoach/blog/${blog.id}`}>
+              <div className={classes.card__image}>
+                <Image
+                  className="image"
+                  src={blog.image.url}
+                  width={400}
+                  height={400}
+                  alt="debug"
+                />
               </div>
-              <div className={classes.card__primary}>
-                <Link href={`/holistichealthcoach/blog/${blog.id}`}>
+              <div className={classes.card__body}>
+                <div className={classes.card__secondary}>
+                  {dayjs
+                    .utc(blog.publishedAt)
+                    .tz("Asia/Tokyo")
+                    .format("YYYY-MM-DD")}
+                </div>
+                <div className={classes.card__primary}>
                   {blog.title}
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           </li>
         ))}
     </ul>
