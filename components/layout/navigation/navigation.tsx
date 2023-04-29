@@ -2,9 +2,6 @@ import Link from "next/link";
 import classes from "./navigation.module.scss";
 import Hamburger from "../hamburger/hamburger";
 import Logo from "../logo/logo";
-import Image from "next/image";
-
-// import { useState } from "react";
 
 export default function Navigation(props) {
   return (
@@ -17,9 +14,7 @@ export default function Navigation(props) {
             </div>
             <div className={classes.logo}>
               <Link href="/holistichealthcoach">
-                <a>
-                  <Logo />
-                </a>
+                <Logo />
               </Link>
             </div>
             <div className={classes.menuWrap}>
@@ -27,7 +22,7 @@ export default function Navigation(props) {
                   {props.menus.map((menu, index) => (
                     <li key={index} className={classes.menuItem}>
                       <Link href={menu.href}>
-                        <a>{menu.title}</a>
+                        {menu.title}
                       </Link>
                     </li>
                   ))}

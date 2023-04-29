@@ -32,7 +32,7 @@ export default function cardGroup(props) {
               </div>
               <div className={classes.card__primary}>
                 <Link href={`/holistichealthcoach/blog/${blog.id}`}>
-                  <a>{blog.title}</a>
+                  {blog.title}
                 </Link>
               </div>
             </div>

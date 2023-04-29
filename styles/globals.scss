@@ -156,28 +156,21 @@ main {
         flex-direction: row-reverse;
       }
     }
-    &--emphasized {
-      text-align: center;
-      line-height: 2.5;
-    }
-  }
-  .mg-t-2 {
-    margin-top: 2rem;
   }
   .container {
-      padding: 1rem;
-      &__sentence {
-        display: flex;
-        flex-direction: column;
+    padding: 1rem;
+    &__sentence {
+      display: flex;
+      flex-direction: column;
+    }
+    &__text {
+      margin: 0 auto;
+      width: clamp(350px, 80%, 400px);
+      line-height: 2;
+      @media screen and (max-width: 880px) {
+        padding: 1.5rem;
       }
-      &__text {
-        margin: 0 auto;
-        width: clamp(350px, 80%, 400px);
-        line-height: 2;
-        @media screen and (max-width: 880px) {
-          padding: 1.5rem;
-        }
-      }
+    }
   }
   // 1列レイアウト
   .singleColumn_container {

@@ -34,7 +34,7 @@ export default function Portofolio() {
             <br></br>
             ヘルスコーチとしての活動は、
             <Link href="/holistichealthcoach">
-                <a>こちら</a>
+              こちら
             </Link>
             をご参照ください。
             <br></br>

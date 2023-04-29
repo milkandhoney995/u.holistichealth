@@ -16,10 +16,10 @@ export default function Home() {
         </h1>
         <div className="firstPage__button">
             <Link href="/webdeveloper">
-                <a>Web Developer</a>
+                Web Developer
             </Link>
             <Link href="/holistichealthcoach">
-                <a>Holistic Health Coach</a>
+              Holistic Health Coach
             </Link>
         </div>
       </div>

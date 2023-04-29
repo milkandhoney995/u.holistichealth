@@ -35,9 +35,6 @@
   &__gridSection &__body &__sentence {
     display: block;
   }
-  &__gridContents {
-
-  }
   &__image {
     margin: 0;
   }
@@ -46,9 +43,5 @@
     @include m.mq(sp) {
       flex-direction: column-reverse;
     }
-  }
-  &--emphasized {
-    text-align: center;
-    line-height: 2.5;
   }
 }
