@@ -65,22 +65,6 @@ main {
   li, ul {
     list-style: none;
   }
-  .flex {
-      display: flex;
-  }
-  .border {
-    border: 1px solid v.$border;
-    border-radius: 1rem;
-  }
-
-  .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include m.mq(tab) {
-      flex-direction: column;
-    }
-  }
   // 内容部分共通
   .main {
     padding: 6rem 0;
@@ -90,15 +74,6 @@ main {
   .image {
     object-fit: cover;
     position: relative;
-  }
-  // 余白
-  .margin {
-      &--top {
-        margin-top: 4rem;
-      }
-  }
-  .padding {
-      padding: 1rem;
   }
   // 最初のページ
   .singlePage {
@@ -138,45 +113,6 @@ main {
       }
     }
   }
-  // block要素関連
-  @include m.mq(tab) {
-    .section,
-    .section--top {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-  }
-  .sectionWrap {
-    width: 80%;
-    margin: 0 auto;
-    &:nth-of-type(n + 2) {
-      margin-top: 5rem;
-    }
-  }
-  .section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 4rem;
-    &__body {
-      width: clamp(350px, 80%, 600px);
-      padding: 1.5rem;
-      // background: var(--secondary-background);
-      border-radius: 3px;
-    }
-    &__title {
-      text-align: center;
-    }
-    &__sentence {
-    }
-    &__image {
-    }
-    &--reverse {
-      @media screen and (min-width: 880px) {
-        flex-direction: row-reverse;
-      }
-    }
-  }
   .container {
     padding: 1rem;
     &__sentence {
@@ -208,20 +144,6 @@ main {
     }
     &__side {
       padding: 1rem;
-    }
-  }
-  // TODO:名前変える
-  .twoColumns_container1 {
-    display: grid;
-    justify-items: center;
-    padding: 0;
-  }
-  // grid
-  .grid {
-    &--square {
-      display: grid;
-      justify-items: center;
-      padding: 0;
     }
   }
   @media only screen and (min-width: 768px) {
@@ -286,67 +208,44 @@ main {
   // // 文字関連 // //
   // text
   .text {
-      &--left {
-          text-align: left;
-          margin: 0 auto;
-      }
-      &--center {
-          text-align: center;
-      }
+    &--left {
+      text-align: left;
+      margin: 0 auto;
+    }
+    &--center {
+      text-align: center;
+    }
   }
   // title
   .title {
-      &--small {
-          font-size: 1rem;
-          color: var(--caption);
-      }
-  }
-
-  // caption and sentence
-  .caption,
-  .sentence {
-      text-align: left;
-  }
-  .caption {
-      font-size: 0.625rem;
-      color: v.$caption;
-  }
-  .sentence {
-      font-size: 1.5rem;
-      color: var(--sentence);
-      word-break: break-word;
-  }
-  // // 文字関連終わり // //
-  // animation
-  .shadow-drop-lr {
-      -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    &--small {
+      font-size: 1rem;
+      color: var(--caption);
+    }
   }
   .page {
-      display: flex;
-      flex-direction: column;
-      width: clamp(350px, 100%, 900px);
-      &__title {
-          width: fit-content;
-          text-align: left;
-          border-bottom: 5px solid var(--title-border);
-      }
-      &__image {
-          margin-top: 1.5rem;
-      }
-      &__sentence {
-          margin-top: 2rem;
-          width: clamp(200px, 100%, 650px);
-      }
+    display: flex;
+    flex-direction: column;
+    width: clamp(350px, 100%, 900px);
+    &__title {
+      width: fit-content;
+      text-align: left;
+      border-bottom: 5px solid var(--title-border);
+    }
+    &__image {
+      margin-top: 1.5rem;
+    }
+    &__sentence {
+      margin-top: 2rem;
+      width: clamp(200px, 100%, 650px);
+    }
   }
   // SNSアイコン
   .iconWrap {
-      display: flex;
-      flex-direction: row;
-  }
-  @media (max-width: 800px) {
-      .iconWrap {
-          display: none;
-      }
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
