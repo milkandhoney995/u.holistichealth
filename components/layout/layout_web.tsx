@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Header from "../../components/layout/header/header";
-import Footer from "./footer/footer";
+// import Footer from "./footer/footer";
 
 function LayoutWeb(props) {
   const menus = [
