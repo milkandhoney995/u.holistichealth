@@ -1,24 +1,29 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import classes from "./navigation.module.scss";
+import { FC, ReactElement } from "react";
+import { getSlot, createSlotComponent } from "../../libs/slot";
+import classes from "./modal.module.scss";
 
-function Modal() {
+const TitleSlot = createSlotComponent();
+const BodySlot = createSlotComponent();
+
+export const Root: FC<{
+  children: ReactElement | ReactElement[],
+  onClick: () => void,
+  isOpen: boolean
+}> = (props) => {
+  const title = getSlot(props.children, TitleSlot);
+  const body = getSlot(props.children, BodySlot);
+
   return (
-    <div id="{{$modal_id}}" className="modal_area modal_hidden">
-      <div className="modal_window">
-        <div className="modal_contents_wrapper">
-          <div className="modal_close_button border">閉じるアイコン</div>
-          <div className="modal_title border">テスト</div>
-          <div className="modal_contents">
-            テスト
-            <div className="modal_submit_button_area border">
-              <button
-                type="submit"
-                className="button form__button border modal_submit_button"
-              >
-                送信
-              </button>
-            </div>
+    <div className={`${classes.modal} ${props.isOpen && classes.modal__open}`}>
+      <div className={`${classes.modal__overlay} ${props.isOpen && classes.modal__open}`}></div>
+      <div className={classes.modal__container}>
+        <div className={classes.modal__body}>
+          { title && <h2 className={classes.modal__title}>{title}</h2> }
+          <div className={classes.modal__sentence}>
+            {body}
+          </div>
+          <div className={classes.modal__btnGroup}>
+            <button className={classes.modal__btn} onClick={props.onClick}>閉じる</button>
           </div>
         </div>
       </div>
@@ -26,4 +31,8 @@ function Modal() {
   );
 }
 
-export default Modal;
+
+export const Modal = Object.assign(Root, {
+  Title: TitleSlot,
+  Body: BodySlot,
+})

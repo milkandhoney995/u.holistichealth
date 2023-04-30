@@ -1,14 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { Section } from "../../../components/section/section";
+import { Modal } from "../../../components/modal/modal";
 import Button from "../../../components/button/button";
 
 export default function Profile() {
-  const handleClick = () => {
-    window.location.href="https://google.com"
-  }
+  const [open, setOpen] = useState(false);
+  const openModal = () => {
+    setOpen(!open);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Fragment>
       <Head>
@@ -41,7 +47,14 @@ export default function Profile() {
           </Section.Body>
         </Section>
       </div>
-      <Button label={'デバッグ'} onClick={handleClick} />
+      <Button label={'デバッグ'} onClick={openModal} />
+      <Modal
+        onClick={handleClose}
+        isOpen={open}
+      >
+        <Modal.Title>タイトル</Modal.Title>
+        <Modal.Body>どうも〜〜〜</Modal.Body>
+      </Modal>
     </Fragment>
   );
 }

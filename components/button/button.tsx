@@ -1,12 +1,14 @@
 import classes from "./button.module.scss";
-import Link from "next/link";
 
-function Button(props) {
+type Props = {
+  label: string,
+  onClick: () => void,
+}
+
+function Button(props: Props) {
   return (
-    <div className={classes.button}>
-      <Link href={props.href}>
-        {props.label}
-      </Link>
+    <div className={classes.button} onClick={props.onClick}>
+      {props.label}
     </div>
   );
 }
