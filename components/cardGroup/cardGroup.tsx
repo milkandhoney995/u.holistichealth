@@ -11,7 +11,7 @@ export default function cardGroup(props) {
   dayjs.extend(timezone);
   const blogs = props.blogs;
     return (
-      <ul className={classes.cardWrap}>
+      <ul className={classes.cardGroup}>
         {blogs.map((blog) => (
           <li key={blog.id} className={classes.card}>
             <Link href={`/holistichealthcoach/blog/${blog.id}`}>

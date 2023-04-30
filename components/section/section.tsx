@@ -23,8 +23,8 @@ export const Root: FC<{
     <div
       className={
         `${classes.section}
-        ${props.reverse ? classes.section__reverse : ""}
-        ${props.grid ? classes.section__gridSection : ""}`}>
+        ${props.reverse && classes.section__reverse}
+        ${props.grid && classes.section__gridSection}`}>
       {/* props.imgがあれば、画像を表示 */}
       {
         props.img &&
