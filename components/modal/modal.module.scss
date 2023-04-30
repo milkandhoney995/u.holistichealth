@@ -1,4 +1,5 @@
 @use "../../styles/variables/variables" as v;
+@use "../../styles/variables/mixin" as m;
 
 .modal {
   position: fixed;
@@ -6,12 +7,8 @@
   inset: 0px;
   visibility: hidden;
   &__overlay {
+    @include m.modalFlexCenter();
     position: fixed;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
     inset: 0px;
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-tap-highlight-color: transparent;
@@ -21,11 +18,7 @@
     visibility: hidden;
   }
   &__container {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
+    @include m.modalFlexCenter();
     height: 100%;
     outline: 0px;
     opacity: 1;
@@ -55,6 +48,9 @@
     padding: 16px 24px;
     flex: 0 0 auto;
   }
+  &__image {
+    
+  }
   &__sentence {
     flex: 1 1 auto;
     overflow-y: auto;
@@ -65,15 +61,12 @@
     flex: 0 0 auto;
     justify-content: flex-end;
     align-items: center;
-    -webkit-box-align: center;
     padding: 0.5rem;
     -webkit-box-pack: end;
   }
   &__btn {
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     position: relative;
     box-sizing: border-box;

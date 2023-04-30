@@ -51,3 +51,9 @@ $breakpoint: (
   border-radius: 2rem;
   @include btnShadow();
 }
+
+@mixin modalFlexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

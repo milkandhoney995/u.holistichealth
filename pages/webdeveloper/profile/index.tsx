@@ -51,9 +51,14 @@ export default function Profile() {
       <Modal
         onClick={handleClose}
         isOpen={open}
+        img={'/images/life/hana.jpg'}
       >
         <Modal.Title>タイトル</Modal.Title>
-        <Modal.Body>どうも〜〜〜</Modal.Body>
+        <Modal.Body>
+        どうも〜〜〜どうも〜〜〜どうも〜〜〜どうも〜〜〜どうも〜〜〜
+        <br />
+        どうも〜〜〜
+        </Modal.Body>
       </Modal>
     </Fragment>
   );
