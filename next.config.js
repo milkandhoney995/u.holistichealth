@@ -3,9 +3,9 @@ module.exports = {
   images: {
     domains: ["images.microcms-assets.io"],
   },
-  // sassOptions: {
-  //    includePaths: [path.join(__dirname, "styles")],
-  // },
+  sassOptions: {
+    fiber: false,
+  },
   // async redirects() {
   //   return [
   //     {
