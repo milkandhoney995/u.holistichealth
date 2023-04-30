@@ -1,7 +1,7 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import classes from "./tag.module.scss";
-import Link from "next/link";
-import { client } from "../../libs/client";
+// import Link from "next/link";
+// import { client } from "../../libs/client";
 
 export default function Tag(props) {
     const tags = [

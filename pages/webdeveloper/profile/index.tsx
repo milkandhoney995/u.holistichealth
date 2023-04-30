@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { Fragment, useState } from "react";
 import { Section } from "../../../components/section/section";
