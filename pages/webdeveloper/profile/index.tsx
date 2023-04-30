@@ -47,7 +47,17 @@ export default function Profile() {
           </Section.Body>
         </Section>
       </div>
-      <Button label={'デバッグ'} onClick={openModal} />
+      <Button onClick={openModal}>
+        {/* <Image
+          src={"/images/life/hana.jpg"}
+          width={680}
+          height={500}
+          style={{ objectFit: 'cover' }}
+          className="image"
+          alt="portofolio"
+        /> */}
+        ボタン
+      </Button>
       <Modal
         onClick={handleClose}
         isOpen={open}

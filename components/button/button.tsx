@@ -1,14 +1,15 @@
+import { ReactNode } from "react";
 import classes from "./button.module.scss";
 
 type Props = {
-  label: string,
+  children: ReactNode,
   onClick: () => void,
 }
 
 function Button(props: Props) {
   return (
     <div className={classes.button} onClick={props.onClick}>
-      {props.label}
+      {props.children}
     </div>
   );
 }
