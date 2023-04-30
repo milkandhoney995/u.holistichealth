@@ -19,7 +19,7 @@ export default function Portofolio() {
         <title>u.holistichealth</title>
         <meta name="description" content="this is u.holistichealth's website." />
       </Head>
-      <div className="container" style={{marginTop: "3rem"}}>
+      <div className="main">
         <Button onClick={openModal}>
           <Image
             src={"/images/life/hana.jpg"}

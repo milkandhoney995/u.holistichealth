@@ -11,7 +11,7 @@ export default function Profile() {
         <title>u.holistichealth</title>
         <meta name="description" content="this is u.holistichealth's website." />
       </Head>
-      <div className="container">
+      <div className="main">
         <Section
           img="/images/life/cafe.jpg"
           width={500}
