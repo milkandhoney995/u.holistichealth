@@ -1,31 +1,46 @@
 .hamburger {
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.hamburger .line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  &__line {
     display: block;
     height: 4px;
     width: 100%;
     border-radius: 10px;
     background: #0e2431;
-}
-.hamburger .line1 {
+  }
+  &__line:first-child {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
-}
-
-.hamburger .line2 {
+  }
+  &__line:nth-child(2) {
     transition: transform 0.2s ease-in-out;
-}
-.hamburger .line3 {
+  }
+  &__line:last-child {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
+  }
+  &__menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin-left: -40px;
+    background-color: var(--background);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+  }
+  &__item {
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }

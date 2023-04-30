@@ -1,7 +1,7 @@
-// import classes from "./hamburger.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import classes from "../hamburger/hamburger.module.scss";
 
 export default function Hamburger(props) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -12,20 +12,20 @@ export default function Hamburger(props) {
 
   return (
     <>
-      <div className="hamburger" onClick={toggleHamburger}>
-        <span className="line line1"></span>
-        <span className="line line2"></span>
-        <span className="line line3"></span>
+      <div className={classes.hamburger} onClick={toggleHamburger}>
+        <span className={classes.hamburger__line}></span>
+        <span className={classes.hamburger__line}></span>
+        <span className={classes.hamburger__line}></span>
       </div>
-      <ul className={hamburgerOpen ? "menu-items" : "hidden"}>
+      <ul className={hamburgerOpen ? classes.hamburger__menus : "hidden"}>
         {props.menus.map((menu, index) => (
-          <li key={index} className="menu-item">
+          <li key={index} className={classes.hamburger__item}>
             <Link href={menu.href} onClick={toggleHamburger}>
               {menu.title}
             </Link>
           </li>
         ))}
-        <li className="menu-item">
+        <li className={classes.hamburger__item}>
           <div className="iconWrap">
             <div className="sns">
               <Link
@@ -61,75 +61,23 @@ export default function Hamburger(props) {
         </li>
       </ul>
       <style jsx>
-          {`
-            .hidden {
-              display: none;
-            }
-            .menu-items {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              text-align: center;
-              height: 100vh;
-              margin-left: -40px;
-              background-color: var(--background);
-              box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-              transform: translate(-150%);
-              transition: transform 0.5s ease-in-out;
-            }
-            .menu-item {
-              margin-bottom: 1.2rem;
-              font-size: 2rem;
-              font-weight: 500;
-            }
-            .hamburger {
-              display: block;
-              height: 26px;
-              width: 32px;
-              position: absolute;
-              top: 15px;
-              left: 15px;
-              z-index: 2;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-
-            .hamburger .line {
-              display: block;
-              height: 4px;
-              width: 100%;
-              border-radius: 10px;
-              background: #0e2431;
-            }
-            .hamburger .line1 {
-              transform-origin: 0% 0%;
-              transition: transform 0.4s ease-in-out;
-            }
-
-            .hamburger .line2 {
-              transition: transform 0.2s ease-in-out;
-            }
-            .hamburger .line3 {
-              transform-origin: 0% 100%;
-              transition: transform 0.4s ease-in-out;
-            }
-            .menu-items {
-              transform: ${hamburgerOpen ? "translateX(0)" : "translate(-150%)"};
-            }
-
-            .hamburger .line1 {
-              transform: ${hamburgerOpen ? "rotate(45deg)" : "rotate(0)"};
-            }
-
-            .hamburger .line2 {
-              transform: ${hamburgerOpen ? "scaleY(0)" : "scaleY(1)"};
-            }
-
-            .hamburger .line3 {
-              transform: ${hamburgerOpen ? "rotate(-45deg)" : "rotate(0)"};
-            }
-          `}
+        {`
+          .hidden {
+            display: none;
+          }
+          .${classes.hamburger__menus} {
+            transform: ${hamburgerOpen ? "translateX(0)" : "translate(-150%)"};
+          }
+          .${classes.hamburger} .${classes.hamburger__line}:first-child {
+            transform: ${hamburgerOpen ? "rotate(45deg)" : "rotate(0)"};
+          }
+          .${classes.hamburger} .${classes.hamburger__line}:nth-child(2) {
+            transform: ${hamburgerOpen ? "scaleY(0)" : "scaleY(1)"};
+          }
+          .${classes.hamburger} .${classes.hamburger__line}:last-child {
+            transform: ${hamburgerOpen ? "rotate(-45deg)" : "rotate(0)"};
+          }
+        `}
       </style>
     </>
   );
