@@ -1,0 +1,66 @@
+@use "../../styles/variables/variables" as v;
+
+.glass {
+  display: flex;
+  background: v.$glass;
+  border-radius: v.$round;
+  backdrop-filter: blur(2rem);
+  &__leftSection, &__rightSection {
+    display: flex;
+    flex-direction: column;
+  }
+  &__leftSection {
+    text-align: center;
+    background: v.$glass;
+    border-radius: v.$round;
+  }
+  &__rightSection {
+    padding: 4rem;
+  }
+  &__top {
+    padding: 2rem 1rem;
+    & a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__section:nth-child(3) {
+    position: relative;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  &__menus {
+    padding: 1rem 3rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__title, &__profile, &__body {
+    color: v.$title;
+    font-weight: 600;
+    font-size: 2.5rem;
+    opacity: 0.8;
+  }
+  &__body {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  &__caption, &__linkTitle {
+    display: inline;
+    vertical-align: middle;
+    color: v.$title;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+  &__linkTitle {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../styles/variables/variables" as v;
+@use "../../styles/variables/mixin" as m;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(251,141,170,1) 35%, rgba(160,0,255,1) 90%);
+  &__glass {
+    width: 100%;
+    padding: 2rem 5rem;
+  }
+}

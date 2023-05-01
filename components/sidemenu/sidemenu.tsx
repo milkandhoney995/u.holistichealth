@@ -11,7 +11,7 @@ export default function Sidemenu() {
           src="/images/profile.jpg"
           width={150}
           height={150}
-          alt="debug"
+          alt="profile"
         />
       </div>
       <div className={classes.sidemenu__info}>
