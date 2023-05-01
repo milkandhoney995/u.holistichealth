@@ -7,43 +7,7 @@
   padding: 0;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.card {
-  position: relative;
-  @include m.card();
-  cursor: pointer;
-  &__image {
-    @include m.cardImg();
-    overflow: hidden;
-    transition: box-shadow 0.25s ease-out;
-  }
-  &__image > span {
-      display: block !important;
-  }
-  &__body {
-      padding: 1rem;
-  }
-  &__primary {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 1.5rem;
-    word-break: break-word;
-    text-align: left;
-    color: v.$card;
-  }
-  &__secondary {
-    text-align: left;
-    @include m.caption();
-  }
-  &:hover {
-      box-shadow: 0 5px 15px -10px #000;
-      // box-shadow: -5px -5px 8px #fff, 5px 5px 10px rgba(28, 64, 128, 0.15);
-      transform: translate(0px, -4px);
-  }
-  &:hover .card__image img {
-      opacity: 0.9;
+  & li:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }

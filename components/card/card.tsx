@@ -4,8 +4,12 @@ import classes from "./card.module.scss";
 import { getSlot, createSlotComponent } from "../../libs/slot"
 import { FC, ReactElement } from "react";
 
+// 記事のタイトル・日付表示用
 const secondaryBodySlot = createSlotComponent();
 const primaryBodySlot = createSlotComponent();
+// カード
+const titleSlot = createSlotComponent();
+const sentenceSlot = createSlotComponent();
 
 export const Root: FC<{
   children: ReactElement | ReactElement[],
@@ -17,26 +21,46 @@ export const Root: FC<{
 }> = (props) => {
   const secondaryBody = getSlot(props.children, secondaryBodySlot);
   const primaryBody = getSlot(props.children, primaryBodySlot);
+  const Title = getSlot(props.children, titleSlot);
+  const Sentence = getSlot(props.children, sentenceSlot);
 
   return (
-    <li className={classes.card}>
+    <li className={`${classes.card} ${ props.row && classes.card__listCard}`}>
       <Link href={props.href} className={`${props.row && classes.card__rowCard}`}>
         <div className={classes.card__image}>
           <Image
             className="image"
             src={props.img}
-            width={400}
-            height={400}
+            width={props.width}
+            height={props.height}
             alt="debug"
           />
         </div>
         <div className={classes.card__body}>
-          <div className={classes.card__secondary}>
-            {secondaryBody}
-          </div>
-          <div className={classes.card__primary}>
-            {primaryBody}
-          </div>
+          { secondaryBody
+            &&
+            <div className={classes.card__secondary}>
+              {secondaryBody}
+            </div>
+          }
+          { primaryBody
+            &&
+            <div className={classes.card__primary}>
+              {primaryBody}
+            </div>
+          }
+          { Title
+            &&
+            <div className={classes.card__title}>
+              {Title}
+            </div>
+          }
+          { Sentence
+            &&
+            <div className={classes.card__sentence}>
+              {Sentence}
+            </div>
+          }
         </div>
       </Link>
     </li>
@@ -46,4 +70,6 @@ export const Root: FC<{
 export const Card = Object.assign(Root, {
   secondaryBody: secondaryBodySlot,
   primaryBody: primaryBodySlot,
+  Title: titleSlot,
+  Sentence: sentenceSlot
 })

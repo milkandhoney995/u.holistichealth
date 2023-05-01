@@ -4,22 +4,27 @@ import { Card } from "../card/card";
 
 export default function cardGroup(props) {
 
-    return (
+  return (
       <ul className={classes.cardGroup}>
         {props.cardList.map((card, index) => (
           <Card
             key={index}
             href={card.href}
             img={card.img}
-            width={400}
-            height={400}
+            width={props.imgWidth}
+            height={props.imgHeight}
+            row={props.row}
           >
-            <Card.secondaryBody>
-              {card.caption}
-            </Card.secondaryBody>
-            <Card.primaryBody>
-              {card.title}
-            </Card.primaryBody>
+            { card.title &&
+              <Card.Title>
+                {card.title}
+              </Card.Title>
+            }
+            { card.sentence &&
+              <Card.Sentence>
+                {card.sentence}
+              </Card.Sentence>
+            }
           </Card>
         ))}
     </ul>
