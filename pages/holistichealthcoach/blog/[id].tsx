@@ -8,42 +8,54 @@ import { Fragment } from "react";
 
 export default function PostId({ data }) {
   return (
-    <Fragment>
-      <Head>
-        <title>u.holistichealth</title>
-        <meta name="description" content="this is u.holistichealth's website." />
-      </Head>
-      <div className="main">
-        <div className="">
-          <div className="twoColumns_container reverse">
-            <aside className="twoColumns_container__side">
-              <div className="twoColumns_container--scroll">
-                <Sidemenu />
-              </div>
-            </aside>
-            <div className="twoColumns_container__main">
-              <div className="page">
-                <h1 className="page__title">{data.title}</h1>
-                <div className="page__image">
-                  <Image
-                    src={data.image.url}
-                    width={680}
-                    height={500}
-                    style={{ objectFit: 'cover' }}
-                    className="image"
-                    alt="debug"
-                  />
+    <>
+      <Fragment>
+        <Head>
+          <title>u.holistichealth</title>
+          <meta name="description" content="this is u.holistichealth's website." />
+        </Head>
+        <div className="main">
+          <div className="">
+            <div className="twoColumns_container reverse">
+              <aside className="twoColumns_container__side">
+                <div className="twoColumns_container--scroll">
+                  <Sidemenu />
                 </div>
-                <div
-                  className="page__sentence"
-                  dangerouslySetInnerHTML={{ __html: data.body }}
-                ></div>
+              </aside>
+              <div className="twoColumns_container__main">
+                <div className="page">
+                  <h1 className="page__title">{data.title}</h1>
+                  <div className="page__image">
+                    <Image
+                      src={data.image.url}
+                      width={680}
+                      height={500}
+                      style={{ objectFit: 'cover' }}
+                      className="image"
+                      alt="debug"
+                    />
+                  </div>
+                  <div
+                    className="page__sentence"
+                    dangerouslySetInnerHTML={{ __html: data.body }}
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </Fragment>
+      </Fragment>
+      <style jsx>
+        {`
+        // 内容部分共通
+          .main {
+            padding: 6rem 0;
+            min-height: calc(100vh - 7rem);
+            margin: 0 auto;
+          }
+        `}
+      </style>
+    </>
   );
 }
 

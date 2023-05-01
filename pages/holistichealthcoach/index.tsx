@@ -10,6 +10,7 @@ export default function Home({ blog }) {
   const cardList = blog;
 
   return (
+    <>
     <Fragment>
       <Head>
         <title>u.holistichealth</title>
@@ -70,6 +71,17 @@ export default function Home({ blog }) {
         </Section>
       </div>
     </Fragment>
+    <style jsx>
+      {`
+      // 内容部分共通
+        .main {
+          padding: 6rem 0;
+          min-height: calc(100vh - 7rem);
+          margin: 0 auto;
+        }
+      `}
+    </style>
+    </>
   );
 }
 

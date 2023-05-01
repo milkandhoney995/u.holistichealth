@@ -66,11 +66,6 @@ main {
     list-style: none;
   }
   // 内容部分共通
-  .main {
-    padding: 6rem 0;
-    min-height: calc(100vh - 7rem);
-    margin: 0 auto;
-  }
   .image {
     object-fit: cover;
     position: relative;
