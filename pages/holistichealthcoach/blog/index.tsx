@@ -1,5 +1,5 @@
 import Head from "next/head";
-import CardGroup from "../../../components/cardGroup/cardGroup";
+import Blogs from "../../../components/Blogs/Blogs";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 import dayjs from "dayjs";
@@ -20,8 +20,8 @@ export default function Blog({ blog }) {
           <h1 className="text--center">Blog</h1>
           <div className="singleColumn_container">
             <div className="container">
-              <CardGroup
-                blogs={blog}
+              <Blogs
+                cardList={blog}
               />
             </div>
           </div>

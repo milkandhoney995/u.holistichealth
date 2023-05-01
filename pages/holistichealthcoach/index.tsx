@@ -1,16 +1,14 @@
 import Head from "next/head";
 import Hero from "../../components/hero/hero";
-import CardGroup from "../../components/cardGroup/cardGroup";
+import Blogs from "../../components/Blogs/Blogs";
 import { Section } from "../../components/section/section"
 import { client } from "../../libs/client";
 import { Fragment } from "react";
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
-import timezone from "dayjs/plugin/timezone";
 
 export default function Home({ blog }) {
-  dayjs.extend(utc);
-  dayjs.extend(timezone);
+
+  const cardList = blog;
+
   return (
     <Fragment>
       <Head>
@@ -64,8 +62,8 @@ export default function Home({ blog }) {
           <Section.Title>Blog</Section.Title>
           <Section.Body>
             <div className="container">
-              <CardGroup
-                blogs={blog}
+              <Blogs
+                cardList={cardList}
               />
             </div>
           </Section.Body>

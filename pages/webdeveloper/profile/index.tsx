@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 import { Fragment } from "react";
-import { Section } from "../../../components/section/section";
+// import { Section } from "../../../components/section/section";
 
 export default function Profile() {
 
@@ -12,7 +12,7 @@ export default function Profile() {
         <meta name="description" content="this is u.holistichealth's website." />
       </Head>
       <div className="main">
-        <Section
+        {/* <Section
           img="/images/life/cafe.jpg"
           width={500}
           height={500}
@@ -35,7 +35,7 @@ export default function Profile() {
             ヘルスコーチとしての活動は、
             <Link href="/holistichealthcoach">こちら</Link>をご参照ください。
           </Section.Body>
-        </Section>
+        </Section> */}
       </div>
     </Fragment>
   );

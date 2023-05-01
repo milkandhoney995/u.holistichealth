@@ -2,6 +2,7 @@
 
 .glass {
   display: flex;
+  height: 80vh; // debug
   background: v.$glass;
   border-radius: v.$round;
   backdrop-filter: blur(2rem);
@@ -15,6 +16,7 @@
     border-radius: v.$round;
   }
   &__rightSection {
+    flex: 1;
     padding: 4rem;
   }
   &__top {
@@ -52,6 +54,7 @@
   &__body {
     font-size: 1rem;
     font-weight: normal;
+    overflow: scroll;
   }
   &__caption, &__linkTitle {
     display: inline;
