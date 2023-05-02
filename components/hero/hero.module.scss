@@ -1,16 +1,25 @@
+@use "../../styles/variables/mixin" as m;
+
 .hero {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    min-width: var(--min-width);
-    min-height: 80vh;
-    padding-left: 2rem;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    // background: url("/images/life/veg.jpg") center / cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-width: var(--min-width);
+  min-height: 80vh;
+  padding-left: 2rem;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include m.healthFont();
+  h1 {
+    font-weight: normal;
+    font-family: "游ゴシック体 Pr6N", sans-serif;
+    @include m.mq(tab) {
+      text-align: center;
+    }
+  }
 }

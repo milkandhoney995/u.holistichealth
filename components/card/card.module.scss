@@ -10,7 +10,8 @@
     align-items: center;
   }
   &__listCard {
-    width: 100%
+    width: 100%;
+    padding: 0.5rem 1rem;
   }
   &__image {
     @include m.cardImg();
@@ -18,7 +19,7 @@
     transition: box-shadow 0.25s ease-out;
   }
   &__image > span {
-      display: block !important;
+    display: block !important;
   }
   &__body {
     padding: 1rem;
