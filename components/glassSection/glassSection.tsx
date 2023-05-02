@@ -24,7 +24,7 @@ export const Root: FC<{
   const menus = [
     { href: "/webdeveloper", title: "Home", icon: "/images/icon/home.svg" },
     { href: "/webdeveloper/portfolio", title: "Portfolio", icon: "/images/icon/work.svg" },
-    { href: "/webdeveloper/profile", title: "Skill & Career", icon: "/images/icon/laptop.svg" },
+    { href: "/webdeveloper/profile", title: "Skill", icon: "/images/icon/laptop.svg" },
   ];
 
   return(

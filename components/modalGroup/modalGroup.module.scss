@@ -1,6 +1,12 @@
+@use "../../styles/variables/mixin" as m;
+
 .modalGroup {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  @include m.mq(sp) {
+    grid-template-columns: 1fr;
+  }
   &__item {
     
   }

@@ -25,8 +25,8 @@ export const Root: FC<{
             <div className={classes.modal__image}>
               <Image
                 src={props.img}
-                width={680}
-                height={500}
+                width={380}
+                height={300}
                 style={{ objectFit: 'cover' }}
                 className="image"
                 alt="portofolio"

@@ -23,8 +23,8 @@ export default function ModalGroup(props) {
               onClick={() => openModal(item.cover)}>
               <Image
                 src={item.cover}
-                width={580}
-                height={500}
+                width={300}
+                height={300}
                 style={{ objectFit: 'cover' }}
                 className="image"
                 alt={item.alt}

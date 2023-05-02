@@ -3,10 +3,12 @@
 
 .glass {
   display: flex;
-  height: 80vh; // debug
   background: v.$glass;
   border-radius: v.$round;
   backdrop-filter: blur(2rem);
+  @include m.mq(sp) {
+    flex-direction: column;
+  }
   &__leftSection, &__rightSection {
     display: flex;
     flex-direction: column;
@@ -66,5 +68,26 @@
   }
   &__linkTitle {
     margin-left: 1rem;
+  }
+}
+
+@include m.mq(sp) {
+  .glass {
+    &__rightSection {
+      padding: 1rem;
+    }
+    &__leftSection {
+      padding: 0 2.5rem;
+    }
+    &__top {
+      padding: 1rem 0;
+    }
+    &__title, &__profile, &__body {
+      font-size: 1.5rem;
+    }
+    &__linkTitle {
+      font-size: 1.25rem;
+      margin-left: 0.5rem;
+    }
   }
 }

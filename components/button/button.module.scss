@@ -1,7 +1,6 @@
 @use "../../styles/variables/mixin" as m;
 
 .button {
-  width: clamp(200px, 40%, 1000px);
   text-align: center;
   margin: 0 auto;
   margin-top: 1rem;
@@ -14,14 +13,6 @@
   }
   &:hover {
     background-color: #ff8ba7;
-    color: #ffffff;
-  }
-  &--pink:hover {
-    background-color: #ff8ba7;
-    color: #ffffff;
-  }
-  &--green:hover {
-    background-color: #cbe87b;
     color: #ffffff;
   }
   &:hover > a {
