@@ -55,6 +55,9 @@
     font-size: 2.5rem;
     opacity: 0.8;
   }
+  &__title {
+    margin-bottom: 1rem;
+  }
   &__body {
     font-size: 1rem;
     font-weight: normal;
@@ -83,7 +86,27 @@
     &__top {
       padding: 1rem 0;
     }
-    &__title, &__profile, &__body {
+    &__title, &__profile {
+      font-size: 1.5rem;
+    }
+    &__linkTitle {
+      font-size: 1.25rem;
+      margin-left: 0.5rem;
+    }
+  }
+}
+@include m.mq(tab) {
+  .glass {
+    &__rightSection {
+      padding: 1rem;
+    }
+    &__leftSection {
+      padding: 0 2.5rem;
+    }
+    &__top {
+      padding: 1rem 0;
+    }
+    &__title, &__profile {
       font-size: 1.5rem;
     }
     &__linkTitle {
