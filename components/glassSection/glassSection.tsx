@@ -3,14 +3,13 @@ import { getSlot, createSlotComponent } from "../../libs/slot"
 import { FC, ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SvgHome, SvgLaptop, SvgWork } from "../icons/index";
-
 
 const TitleSlot = createSlotComponent();
 const BodySlot = createSlotComponent();
 
 export const Root: FC<{
   children: ReactElement | ReactElement[],
+  menus: { href: string, title: string, icon?: JSX.Element}[],
   grid?: boolean,
   img?: string,
   width?: number,
@@ -20,13 +19,6 @@ export const Root: FC<{
 }> = (props) => {
   const title = getSlot(props.children, TitleSlot);
   const body = getSlot(props.children, BodySlot);
-
-
-  const menus = [
-    { href: "/webdeveloper", title: "Home", icon: <SvgHome /> },
-    { href: "/webdeveloper/portfolio", title: "Portfolio", icon: <SvgWork /> },
-    { href: "/webdeveloper/profile", title: "Skill", icon: <SvgLaptop /> },
-  ];
 
   return(
     <div className={classes.glass}>
@@ -47,7 +39,7 @@ export const Root: FC<{
         </div>
         <div className={classes.glass__section}>
           <div className={classes.glass__menus}>
-            {menus.map((menu, index) => (
+            {props.menus?.map((menu, index) => (
               <Link href={menu.href} key={index} className={classes.glass__item}>
                 {menu.icon}
                 <h2 className={classes.glass__linkTitle}>{menu.title}</h2>
