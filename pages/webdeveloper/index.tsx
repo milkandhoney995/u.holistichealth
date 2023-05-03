@@ -18,7 +18,7 @@ export default function Home() {
           I have worked on several open source apps, and been in charge of <strong>ensuring reusablility and componentizing React/Vue apps.</strong>
           <br />
           <br />
-          I'm passionate about simplifying and optimizing the intricate and lengthy script. I also have implemented new function(authentication, etc),  in previous project.
+          I'm passionate about simplifying and optimizing the intricate and lengthy script. In previous project, I have both experience of implementing/refactoring existing app and of launching new app. I'm highly motivated to every single project!
           <br />
           <strong>I'm currently looking for the Web/Mobiledevelopment.</strong>
         </div>
