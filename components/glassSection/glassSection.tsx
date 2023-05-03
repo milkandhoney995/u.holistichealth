@@ -3,6 +3,7 @@ import { getSlot, createSlotComponent } from "../../libs/slot"
 import { FC, ReactElement } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { SvgHome, SvgLaptop, SvgWork } from "../icons/index";
 
 
 const TitleSlot = createSlotComponent();
@@ -22,9 +23,9 @@ export const Root: FC<{
 
 
   const menus = [
-    { href: "/webdeveloper", title: "Home", icon: "/images/icon/home.svg" },
-    { href: "/webdeveloper/portfolio", title: "Portfolio", icon: "/images/icon/work.svg" },
-    { href: "/webdeveloper/profile", title: "Skill", icon: "/images/icon/laptop.svg" },
+    { href: "/webdeveloper", title: "Home", icon: SvgHome },
+    { href: "/webdeveloper/portfolio", title: "Portfolio", icon: SvgWork },
+    { href: "/webdeveloper/profile", title: "Skill", icon: SvgLaptop },
   ];
 
   return(
@@ -48,12 +49,7 @@ export const Root: FC<{
           <div className={classes.glass__menus}>
             {menus.map((menu, index) => (
               <Link href={menu.href} key={index} className={classes.glass__item}>
-                <Image
-                  src={menu.icon}
-                  width={36}
-                  height={36}
-                  alt="icon"
-                />
+                {menu.icon}
                 <h2 className={classes.glass__linkTitle}>{menu.title}</h2>
               </Link>
             ))}

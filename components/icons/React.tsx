@@ -10,5 +10,3 @@ export const SvgReact = (props: SVGProps<SVGSVGElement>): JSX.Element => {
         </svg>
     );
 };
-
-export default SvgReact;

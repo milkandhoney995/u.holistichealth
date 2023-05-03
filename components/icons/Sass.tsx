@@ -12,5 +12,3 @@ export const SvgSass = (props: SVGProps<SVGSVGElement>): JSX.Element => {
         </svg>
     );
 };
-
-export default SvgSass;

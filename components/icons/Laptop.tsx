@@ -8,5 +8,3 @@ export const SvgLaptop = (props: SVGProps<SVGSVGElement>): JSX.Element => {
         </svg>
     );
 };
-
-export default SvgLaptop;

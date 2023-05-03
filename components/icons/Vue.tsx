@@ -24,5 +24,3 @@ export const SvgVue = (props: SVGProps<SVGSVGElement>): JSX.Element => {
         </svg>
     );
 };
-
-export default SvgVue;

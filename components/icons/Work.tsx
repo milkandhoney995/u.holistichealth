@@ -8,5 +8,3 @@ export const SvgWork = (props: SVGProps<SVGSVGElement>): JSX.Element => {
         </svg>
     );
 };
-
-export default SvgWork;

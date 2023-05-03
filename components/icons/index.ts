@@ -1,6 +1,6 @@
-export { default as Home } from "./Home";
-export { default as Laptop } from "./Laptop";
-export { default as React } from "./React";
-export { default as Sass } from "./Sass";
-export { default as Vue } from "./Vue";
-export { default as Work } from "./Work";
+export * from "./Home";
+export * from "./Laptop";
+export * from "./React";
+export * from "./Sass";
+export * from "./Vue";
+export * from "./Work";
