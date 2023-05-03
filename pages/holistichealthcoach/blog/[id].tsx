@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import Sidemenu from "../../../components/sidemenu/sidemenu"
-
-// import Tag from "../../../components/tag/tag";
 import { client } from "../../../libs/client";
 import { Fragment } from "react";
 
