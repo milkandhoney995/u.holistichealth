@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "icons": "npx @svgr/cli -d components/icons public/images/icon"
   },
   "dependencies": {
     "dayjs": "^1.10.7",
@@ -16,6 +17,7 @@
     "sass": "^1.49.7"
   },
   "devDependencies": {
+    "@svgr/cli": "^7.0.0",
     "@svgr/webpack": "^7.0.0",
     "@types/node": "^17.0.17",
     "@types/react": "^17.0.53",
