@@ -13,7 +13,7 @@ const sentenceSlot = createSlotComponent();
 
 export const Root: FC<{
   children: ReactElement | ReactElement[],
-  href: string,
+  href?: string,
   img?: string,
   width?: number,
   height?: number
@@ -24,47 +24,93 @@ export const Root: FC<{
   const Title = getSlot(props.children, titleSlot);
   const Sentence = getSlot(props.children, sentenceSlot);
 
-  return (
-    <li className={`${classes.card} ${ props.row && classes.card__listCard}`}>
-      <Link href={props.href} className={`${props.row && classes.card__rowCard}`}>
-        <div className={classes.card__image}>
-          <Image
-            className="image"
-            src={props.img}
-            width={props.width}
-            height={props.height}
-            alt="debug"
-          />
+  if (props.href) {
+    return (
+      <li className={`${classes.card} ${ props.row && classes.card__listCard}`}>
+        <Link href={props.href} className={`${props.row && classes.card__rowCard}`}>
+          <div className={classes.card__image}>
+            <Image
+              className="image"
+              src={props.img}
+              width={props.width}
+              height={props.height}
+              alt="debug"
+            />
+          </div>
+          <div className={classes.card__body}>
+            { secondaryBody
+              &&
+              <div className={classes.card__secondary}>
+                {secondaryBody}
+              </div>
+            }
+            { primaryBody
+              &&
+              <div className={classes.card__primary}>
+                {primaryBody}
+              </div>
+            }
+            { Title
+              &&
+              <div className={classes.card__title}>
+                {Title}
+              </div>
+            }
+            { Sentence
+              &&
+              <div className={classes.card__sentence}>
+                {Sentence}
+              </div>
+            }
+          </div>
+        </Link>
+      </li>
+    )
+  } else {
+    return (
+      <li className={`${ props.row && classes.card__listCard}`}>
+        <div className={`${props.row && classes.card__rowCard}`}>
+          <div className={classes.card__image}>
+            { props.img &&
+              <Image
+                className="image"
+                src={props.img}
+                width={props.width}
+                height={props.height}
+                alt="debug"
+              />
+            }
+          </div>
+          <div className={classes.card__body}>
+            { secondaryBody
+              &&
+              <div className={classes.card__secondary}>
+                {secondaryBody}
+              </div>
+            }
+            { primaryBody
+              &&
+              <div className={classes.card__primary}>
+                {primaryBody}
+              </div>
+            }
+            { Title
+              &&
+              <div className={classes.card__title}>
+                {Title}
+              </div>
+            }
+            { Sentence
+              &&
+              <div className={classes.card__sentence}>
+                {Sentence}
+              </div>
+            }
+          </div>
         </div>
-        <div className={classes.card__body}>
-          { secondaryBody
-            &&
-            <div className={classes.card__secondary}>
-              {secondaryBody}
-            </div>
-          }
-          { primaryBody
-            &&
-            <div className={classes.card__primary}>
-              {primaryBody}
-            </div>
-          }
-          { Title
-            &&
-            <div className={classes.card__title}>
-              {Title}
-            </div>
-          }
-          { Sentence
-            &&
-            <div className={classes.card__sentence}>
-              {Sentence}
-            </div>
-          }
-        </div>
-      </Link>
-    </li>
-  )
+      </li>
+    )
+  }
 }
 
 export const Card = Object.assign(Root, {

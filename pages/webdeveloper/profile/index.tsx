@@ -4,9 +4,9 @@ import CardGroup from "../../../components/cardGroup/cardGroup";
 
 export default function Profile() {
   const cardList = [
-    { href: "", img: "/images/icon/react.svg", title: "React / Next", sentence: "I ..." },
-    { href: "", img: "/images/icon/vue.svg", title: "Vue / Nuxt", sentence: "I've experienced 2 year Front-end develpment with Vue/Nuxt." },
-    { href: "", img: "/images/icon/sass.svg", title: "Sass", sentence: "gogo" },
+    { img: "/images/icon/react.svg", title: "React / Next", sentence: "I ..." },
+    { img: "/images/icon/vue.svg", title: "Vue / Nuxt", sentence: "I've experienced 2 year Front-end develpment with Vue/Nuxt." },
+    { img: "/images/icon/sass.svg", title: "Sass", sentence: "gogo" },
   ]
 
   return (
@@ -25,16 +25,6 @@ export default function Profile() {
           />
         </div>
       </Fragment>
-      <style jsx>
-        {`
-          h1 {
-            font-weight: normal;
-            @include m.mq(tab) {
-              text-align: center;
-            }
-          }
-        `}
-      </style>
     </>
   );
 }
