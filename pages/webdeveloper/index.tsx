@@ -14,17 +14,6 @@ export default function Home() {
           Hi! I'm <strong>Utano Harada</strong>, a Web Front-end Engineer.
         </div>
       </Fragment>
-      <style jsx>
-        {`
-          h1 {
-            font-weight: normal;
-            font-family: "游ゴシック体 Pr6N", sans-serif;
-            @include m.mq(tab) {
-              text-align: center;
-            }
-          }
-        `}
-      </style>
     </>
   );
 }

@@ -5,21 +5,20 @@
   position: relative;
   @include m.card();
   cursor: pointer;
+  &__listCard {
+    position: relative;
+    @include m.card();
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
   &__rowCard {
     display: flex;
     align-items: center;
-  }
-  &__listCard {
-    width: 100%;
-    padding: 0.5rem 1rem;
   }
   &__image {
     @include m.cardImg();
     overflow: hidden;
     transition: box-shadow 0.25s ease-out;
-  }
-  &__image > span {
-    display: block !important;
   }
   &__body {
     padding: 1rem;
