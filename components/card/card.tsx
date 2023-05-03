@@ -15,6 +15,7 @@ export const Root: FC<{
   children: ReactElement | ReactElement[],
   href?: string,
   img?: string,
+  icon?: JSX.Element,
   width?: number,
   height?: number
   row?: boolean,
@@ -28,7 +29,7 @@ export const Root: FC<{
     return (
       <li className={`${classes.card} ${ props.row && classes.card__listCard}`}>
         <Link href={props.href} className={`${props.row && classes.card__rowCard}`}>
-          <div className={classes.card__image}>
+          <div className={classes.card__image} style={{overflow: 'hidden'}}>
             <Image
               className="image"
               src={props.img}
@@ -80,6 +81,7 @@ export const Root: FC<{
                 alt="debug"
               />
             }
+            {props.icon}
           </div>
           <div className={classes.card__body}>
             { secondaryBody

@@ -11,6 +11,7 @@ export default function cardGroup(props) {
             key={index}
             href={card.href}
             img={card.img}
+            icon={card.icon}
             width={props.imgWidth}
             height={props.imgHeight}
             row={props.row}
