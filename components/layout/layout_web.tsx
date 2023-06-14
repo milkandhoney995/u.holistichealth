@@ -18,7 +18,7 @@ function LayoutWeb(props) {
             menus={menus}
           >
             <GlassSection.Title>
-              ssss
+              Hi! I'm Utano, Web Front-end Engineer!
             </GlassSection.Title>
             <GlassSection.Body>{props.children}</GlassSection.Body>
           </GlassSection>
