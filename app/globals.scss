@@ -1,0 +1,237 @@
+@use '../styles/variables/mixin' as m;
+@use '../styles/variables/variables' as v;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    background-color: v.$pageBg;
+}
+body {
+  // font-family: "Noto Sans JP", "Cochin", BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue",
+  //   HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+:root {
+  --background: rgba(252, 236, 236, 1);
+  --secondary-background: #fffffe;
+  --white: #fffffe;
+  --footer: rgb(38, 78, 112);
+  --hamburger-background: rgb(38, 78, 112);
+  --sentence: #3f3931;
+  --caption: #b2b2a2;
+  --title-border: rgb(103, 145, 134);
+  --hover: rgb(103, 145, 134);
+  --min-width: 350px;
+
+  div {
+    line-height: 1.65;
+  }
+  h1 {
+    font-size: 2.5rem;
+    @include m.mq(sp) {
+      font-size: 1.6rem;
+    }
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+    color: v.$link;
+    cursor: pointer;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+  li, ul {
+    list-style: none;
+  }
+  // 内容部分共通
+  .image {
+    object-fit: cover;
+    position: relative;
+  }
+  // 最初のページ
+  .singlePage {
+    display: grid;
+    grid-template-areas:
+      "Left Right";
+    min-height: 100vh;
+    &__left, &__right {
+      display: grid;
+      place-content: center;
+      width: 50vw;
+      padding: 2rem;
+      text-align: center;
+      font-size: 3rem;
+      @include m.mq(sp) {
+        font-size: 1.5rem;
+      }
+    }
+    &__left {
+      grid-area: Left;
+    }
+    &__right {
+      background: rgb(249, 237, 221);
+      grid-area: Right;
+    }
+    &__btn {
+      padding: 2rem;
+      @include m.btn();
+      & a {
+        color: #ffffff;
+      }
+      & a:hover, &:hover a {
+        color: v.$green;
+      }
+      &:hover {
+        background: v.$white;
+      }
+    }
+  }
+  .container {
+    padding: 1rem;
+    &__sentence {
+      display: flex;
+      flex-direction: column;
+    }
+    &__text {
+      margin: 0 auto;
+      width: clamp(350px, 80%, 400px);
+      line-height: 2;
+      @media screen and (max-width: 880px) {
+        padding: 1.5rem;
+      }
+    }
+  }
+  // 1列レイアウト
+  .singleColumn_container {
+    padding: 1rem;
+  }
+  // 2列レイアウト
+  .twoColumns_container {
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    margin: auto;
+    max-width: 1400px;
+    &__main {
+      padding: 1rem;
+    }
+    &__side {
+      padding: 1rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .twoColumns_container {
+      grid-template-columns: 400px minmax(280px, 1fr);
+      padding: 40px;
+    }
+    .twoColumns_container__main {
+      min-width: calc(100% - 400px - 1rem);
+    }
+    .twoColumns_container.reverse {
+      grid-template-columns: minmax(280px, 1fr) 400px;
+      max-width: 1400px;
+    }
+    .twoColumns_container.reverse .twoColumns_container__side {
+      position: sticky;
+      order: 2;
+    }
+    .twoColumns_container.reverse .twoColumns_container__main {
+      order: 1;
+    }
+    .twoColumns_container--scroll {
+      position: fixed;
+      top: calc(1rem + 100px);
+      //padding-top: 13rem;
+      // width: 300px;
+      //height: calc(100vh - 100px);
+      height: 100%;
+      z-index: 5;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .twoColumns_container--scroll::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  @include m.mq(pc) {
+    .twoColumns_container.reverse {
+      grid-template-columns: minmax(280px, 1fr) 400px;
+    }
+    .twoColumns_container {
+      grid-template-columns: 400px minmax(280px, 1fr);
+      grid-gap: 40px;
+      gap: 40px;
+    }
+    .twoColumns_container--scroll {
+      width: 400px;
+    }
+    .grid--square {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+    .grid {
+      &__image {
+          grid-column: 1/3;
+          grid-row: 1/4;
+      }
+    }
+  }
+
+  // // 文字関連 // //
+  // text
+  .text {
+    &--left {
+      text-align: left;
+      margin: 0 auto;
+    }
+    &--center {
+      text-align: center;
+    }
+  }
+  // title
+  .title {
+    &--small {
+      font-size: 1rem;
+      color: var(--caption);
+    }
+  }
+  .page {
+    display: flex;
+    flex-direction: column;
+    width: clamp(350px, 100%, 900px);
+    &__title {
+      width: fit-content;
+      text-align: left;
+      border-bottom: 5px solid var(--title-border);
+    }
+    &__image {
+      margin-top: 1.5rem;
+    }
+    &__sentence {
+      margin-top: 2rem;
+      width: clamp(200px, 100%, 650px);
+    }
+  }
+  // SNSアイコン
+  .iconWrap {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}

@@ -40,6 +40,7 @@ export default function ModalGroup(props) {
                 {item.body}
               </Modal.Body>
             </Modal>
+            { item.cover.match(/mp4/)}
           </div>
         )
       })}
