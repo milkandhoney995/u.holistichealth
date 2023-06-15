@@ -30,13 +30,15 @@ export const Root: FC<{
       <li className={`${classes.card} ${ props.row && classes.card__listCard}`}>
         <Link href={props.href} className={`${props.row && classes.card__rowCard}`}>
           <div className={classes.card__image} style={{overflow: 'hidden'}}>
-            <Image
-              className="image"
-              src={props.img}
-              width={props.width}
-              height={props.height}
-              alt="debug"
-            />
+            { props.img &&
+              <Image
+                className="image"
+                src={props.img}
+                width={props.width}
+                height={props.height}
+                alt="debug"
+              />
+            }
           </div>
           <div className={classes.card__body}>
             { secondaryBody
