@@ -1,8 +1,3 @@
 ## Utano's HP
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can check my HP from the below link:
+[Utano Harada](https://uta-healthcoachandweb.vercel.app/)
